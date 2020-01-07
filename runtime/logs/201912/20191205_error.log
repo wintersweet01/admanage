@@ -1,0 +1,376 @@
+
+-----------------------------------
+0[2019-12-05 11:03:32] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCopywriting&channel=&keyword=%E7%88%B1%E5%BF%83
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 11:03:32]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 45
+SQL: SELECT COUNT(*) AS c FROM `ad_copywriting` WHERE 1 AND (`content` like %'爱心' % OR `tag` like %'爱心' %) limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'爱心' % OR `tag` like %'爱心' %) limit 1' at line 1)
+0[2019-12-05 11:03:32]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-12-05 11:03:43] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCopywriting&channel=&keyword=%E4%BA%BA
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 11:03:43]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 45
+SQL: SELECT COUNT(*) AS c FROM `ad_copywriting` WHERE 1 AND (`content` like %'人' % OR `tag` like %'人' %) limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'人' % OR `tag` like %'人' %) limit 1' at line 1)
+0[2019-12-05 11:03:43]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-12-05 11:03:57] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCopywriting&channel=&keyword=%E5%85%89%E8%BE%89
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 11:03:57]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 45
+SQL: SELECT COUNT(*) AS c FROM `ad_copywriting` WHERE 1 AND (`content` like %'光辉' % OR `tag` like %'光辉' %) limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'光辉' % OR `tag` like %'光辉' %) limit 1' at line 1)
+0[2019-12-05 11:03:57]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-12-05 11:05:19] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCopywriting&channel=&keyword=%E5%85%89%E8%BE%89
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 11:05:19]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 45
+SQL: SELECT COUNT(*) AS c FROM `ad_copywriting` WHERE 1 AND (`content` like %'光辉' % OR `tag` like %'光辉' %) limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'光辉' % OR `tag` like %'光辉' %) limit 1' at line 1)
+0[2019-12-05 11:05:19]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-12-05 11:05:23] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCopywriting&channel=&keyword=%E5%85%89%E8%BE%89
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 11:05:23]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 45
+SQL: SELECT COUNT(*) AS c FROM `ad_copywriting` WHERE 1 AND (`content` like %'光辉' % OR `tag` like %'光辉' %) limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'光辉' % OR `tag` like %'光辉' %) limit 1' at line 1)
+0[2019-12-05 11:05:23]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-12-05 11:05:25] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCopywriting&channel=&keyword=%E5%85%89%E8%BE%89
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 11:05:25]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 45
+SQL: SELECT COUNT(*) AS c FROM `ad_copywriting` WHERE 1 AND (`content` like %'光辉' % OR `tag` like %'光辉' %) limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'光辉' % OR `tag` like %'光辉' %) limit 1' at line 1)
+0[2019-12-05 11:05:25]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-12-05 11:05:30] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCopywriting&channel=&keyword=%E5%85%89%E8%BE%89
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 11:05:30]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 45
+SQL: SELECT COUNT(*) AS c FROM `ad_copywriting` WHERE 1 AND (`content` like %'光辉' % OR `tag` like %'光辉' %) limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'光辉' % OR `tag` like %'光辉' %) limit 1' at line 1)
+0[2019-12-05 11:05:30]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-12-05 11:05:31] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCopywriting&channel=&keyword=%E5%85%89%E8%BE%89
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 11:05:31]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 45
+SQL: SELECT COUNT(*) AS c FROM `ad_copywriting` WHERE 1 AND (`content` like %'光辉' % OR `tag` like %'光辉' %) limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'光辉' % OR `tag` like %'光辉' %) limit 1' at line 1)
+0[2019-12-05 11:05:31]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-12-05 11:10:58] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCopywriting&channel=&keyword=%E5%85%89%E8%BE%89
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 11:10:58]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 45
+SQL: SELECT COUNT(*) AS c FROM `ad_copywriting` WHERE 1 AND (`content` like '%'光辉' %' OR `tag` like '%'光辉' %') limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '光辉' %' OR `tag` like '%'光辉' %') limit 1' at line 1)
+0[2019-12-05 11:10:58]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-12-05 11:11:00] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCopywriting&channel=&keyword=%E5%85%89%E8%BE%89
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 11:11:00]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 45
+SQL: SELECT COUNT(*) AS c FROM `ad_copywriting` WHERE 1 AND (`content` like '%'光辉' %' OR `tag` like '%'光辉' %') limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '光辉' %' OR `tag` like '%'光辉' %') limit 1' at line 1)
+0[2019-12-05 11:11:00]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-12-05 11:11:00] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCopywriting&channel=&keyword=%E5%85%89%E8%BE%89
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 11:11:00]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 45
+SQL: SELECT COUNT(*) AS c FROM `ad_copywriting` WHERE 1 AND (`content` like '%'光辉' %' OR `tag` like '%'光辉' %') limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '光辉' %' OR `tag` like '%'光辉' %') limit 1' at line 1)
+0[2019-12-05 11:11:00]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-12-05 11:11:01] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCopywriting&channel=&keyword=%E5%85%89%E8%BE%89
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 11:11:01]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 45
+SQL: SELECT COUNT(*) AS c FROM `ad_copywriting` WHERE 1 AND (`content` like '%'光辉' %' OR `tag` like '%'光辉' %') limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '光辉' %' OR `tag` like '%'光辉' %') limit 1' at line 1)
+0[2019-12-05 11:11:01]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-12-05 11:11:01] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCopywriting&channel=&keyword=%E5%85%89%E8%BE%89
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 11:11:01]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 45
+SQL: SELECT COUNT(*) AS c FROM `ad_copywriting` WHERE 1 AND (`content` like '%'光辉' %' OR `tag` like '%'光辉' %') limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '光辉' %' OR `tag` like '%'光辉' %') limit 1' at line 1)
+0[2019-12-05 11:11:01]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-12-05 11:11:01] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCopywriting&channel=&keyword=%E5%85%89%E8%BE%89
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 11:11:01]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 45
+SQL: SELECT COUNT(*) AS c FROM `ad_copywriting` WHERE 1 AND (`content` like '%'光辉' %' OR `tag` like '%'光辉' %') limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '光辉' %' OR `tag` like '%'光辉' %') limit 1' at line 1)
+0[2019-12-05 11:11:01]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-12-05 11:11:02] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCopywriting&channel=&keyword=%E5%85%89%E8%BE%89
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 11:11:02]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 45
+SQL: SELECT COUNT(*) AS c FROM `ad_copywriting` WHERE 1 AND (`content` like '%'光辉' %' OR `tag` like '%'光辉' %') limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '光辉' %' OR `tag` like '%'光辉' %') limit 1' at line 1)
+0[2019-12-05 11:11:02]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-12-05 11:11:46] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCopywriting&channel=&keyword=%E5%85%89%E8%BE%89
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 11:11:46]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 45
+SQL: SELECT COUNT(*) AS c FROM `ad_copywriting` WHERE 1 AND (`content` like '%'光辉' %' OR `tag` like '%'光辉' %') limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '光辉' %' OR `tag` like '%'光辉' %') limit 1' at line 1)
+
+-----------------------------------
+0[2019-12-05 11:12:11] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCopywriting&channel=&keyword=%E5%85%89%E8%BE%89
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 11:12:11]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 45
+SQL: SELECT COUNT(*) AS c FROM `ad_copywriting` WHERE 1 AND (`content` like '%'光辉' %' OR `tag` like '%'光辉' %') limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '光辉' %' OR `tag` like '%'光辉' %') limit 1' at line 1)
+
+-----------------------------------
+0[2019-12-05 11:58:42] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=addCopywriting&id=2
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 11:58:42]Error: /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php 44
+Uncaught Error: Call to undefined method SrvOptimizat::fetchCopywritingInfo() in /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php:44
+Stack trace:
+#0 /home/vagrant/code/admin/lib/YX.php(173): CtlOptimizat->addCopywriting()
+#1 /home/vagrant/code/admin/lib/YX.php(136): YX::route('optimizat', 'addCopywriting')
+#2 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#3 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-05 14:41:31] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCnter
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 14:41:31]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlOptimizat不存在方法：adCnter
+
+-----------------------------------
+0[2019-12-05 16:10:18] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=editAdMaterial&material_id=7
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 16:10:18]Error: /home/vagrant/code/admin/web/admin/model/ModAdMaterial.php 14
+SQL: SELECT * FROM ad_material WHERE `id`='7' limit 1(error：Unknown column 'id' in 'where clause')
+
+-----------------------------------
+0[2019-12-05 16:10:40] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=editAdMaterial&material_id=7
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 16:10:40]Error: /home/vagrant/code/admin/web/admin/model/ModAdMaterial.php 14
+SQL: SELECT * FROM ad_material WHERE `id`='7' limit 1(error：Unknown column 'id' in 'where clause')
+
+-----------------------------------
+0[2019-12-05 16:11:36] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=editAdMaterial&material_id=7
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 16:11:36]Error: /home/vagrant/code/admin/web/admin/model/ModAdMaterial.php 14
+SQL: SELECT * FROM ad_material WHERE `id`=id limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id limit 1' at line 1)
+
+-----------------------------------
+0[2019-12-05 16:41:21] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCnter
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 16:41:21]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlOptimizat不存在方法：adCnter
+
+-----------------------------------
+0[2019-12-05 17:27:32] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=adCnter
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 17:27:32]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlOptimizat不存在方法：adCnter
+
+-----------------------------------
+0[2019-12-05 17:29:03] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=adCnter
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 17:29:03]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlOptimizat不存在方法：adCnter
+
+-----------------------------------
+0[2019-12-05 17:44:29] 192.168.10.1 http://admanage.com/?ct=platform&ac=gameList&json=1
+POST: array (
+  'page' => '1',
+  'limit' => '15',
+  'data' => '',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 17:44:29]Error: /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php 1300
+Uncaught Exception: Can not connect to tcp://127.0.0.1:1238 Connection refused in /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php:1300
+Stack trace:
+#0 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(726): GatewayClient\Gateway::getAllGatewayAddressesFromRegister()
+#1 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(701): GatewayClient\Gateway::getAllGatewayAddress()
+#2 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(214): GatewayClient\Gateway::getBufferFromAllGateway(Array)
+#3 /home/vagrant/code/admin/web/admin/service/SrvPlatform.php(111): GatewayClient\Gateway::getAllClientSessions()
+#4 /home/vagrant/code/admin/web/admin/controller/CtlPlatform.php(25): SrvPlatform->getGameList_page(1, 15, Array)
+#5 /home/vagrant/code/admin/lib/YX.php(173): CtlPlatform->gameList()
+#6 /home/vagrant/code/admin/lib/YX.php(136): YX::route('platform', 'gameList')
+#7 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#8 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-05 17:44:36] 192.168.10.1 http://admanage.com/?ct=platform&ac=gameList&json=1
+POST: array (
+  'page' => '1',
+  'limit' => '15',
+  'data' => '',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 17:44:36]Error: /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php 1300
+Uncaught Exception: Can not connect to tcp://127.0.0.1:1238 Connection refused in /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php:1300
+Stack trace:
+#0 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(726): GatewayClient\Gateway::getAllGatewayAddressesFromRegister()
+#1 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(701): GatewayClient\Gateway::getAllGatewayAddress()
+#2 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(214): GatewayClient\Gateway::getBufferFromAllGateway(Array)
+#3 /home/vagrant/code/admin/web/admin/service/SrvPlatform.php(111): GatewayClient\Gateway::getAllClientSessions()
+#4 /home/vagrant/code/admin/web/admin/controller/CtlPlatform.php(25): SrvPlatform->getGameList_page(1, 15, Array)
+#5 /home/vagrant/code/admin/lib/YX.php(173): CtlPlatform->gameList()
+#6 /home/vagrant/code/admin/lib/YX.php(136): YX::route('platform', 'gameList')
+#7 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#8 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-05 17:44:45] 192.168.10.1 http://admanage.com/?ct=admin
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-05 17:44:45]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlAdmin不存在方法：index

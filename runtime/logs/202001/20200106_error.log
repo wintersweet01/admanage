@@ -1,0 +1,573 @@
+
+-----------------------------------
+0[2020-01-06 11:26:32] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-06 11:26:32]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-06 13:54:51] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-06 13:54:51]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-06 15:25:32] 192.168.10.1 http://admanage.com/index.php?ct=extend&ac=addLandPageAction
+POST: array (
+  'page_id' => '0',
+  'model_id' => '5',
+  'game_id' => '3',
+  'package_name' => '5232323_ios_gdt_1',
+  'company_id' => '',
+  'page_name' => '1111111111',
+  'auto_jump' => '1',
+  'click_body' => '0',
+  'display_foot' => '0',
+  'auto_header' => '0',
+  'header_title' => '',
+  'header_sub_title' => '',
+  'header_button' => '',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-06 15:25:32]Error: /home/vagrant/code/admin/web/admin/model/ModExtend.php 393
+SQL: INSERT INTO `land_page` (`model_id`, `game_id`, `package_name`, `company_id`, `page_name`, `auto_jump`, `click_body`, `display_foot`, `auto_header`, `success_time`, `page_url`) VALUES ('5',  '3',  '5232323_ios_gdt_1',  '',  '1111111111',  '1',  '0',  '0',  '0',  '1578295532',  '2410695532920') (error：Incorrect integer value: '' for column 'company_id' at row 1)
+
+-----------------------------------
+0[2020-01-06 15:25:37] 192.168.10.1 http://admanage.com/index.php?ct=extend&ac=addLandPageAction
+POST: array (
+  'page_id' => '0',
+  'model_id' => '5',
+  'game_id' => '3',
+  'package_name' => '5232323_ios_gdt_1',
+  'company_id' => '',
+  'page_name' => '1111111111',
+  'auto_jump' => '1',
+  'click_body' => '1',
+  'display_foot' => '0',
+  'auto_header' => '0',
+  'header_title' => '',
+  'header_sub_title' => '',
+  'header_button' => '',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-06 15:25:37]Error: /home/vagrant/code/admin/web/admin/model/ModExtend.php 393
+SQL: INSERT INTO `land_page` (`model_id`, `game_id`, `package_name`, `company_id`, `page_name`, `auto_jump`, `click_body`, `display_foot`, `auto_header`, `success_time`, `page_url`) VALUES ('5',  '3',  '5232323_ios_gdt_1',  '',  '1111111111',  '1',  '1',  '0',  '0',  '1578295537',  '2410695537042') (error：Incorrect integer value: '' for column 'company_id' at row 1)
+
+-----------------------------------
+0[2020-01-06 15:25:51] 192.168.10.1 http://admanage.com/index.php?ct=extend&ac=addLandPageAction
+POST: array (
+  'page_id' => '0',
+  'model_id' => '5',
+  'game_id' => '3',
+  'package_name' => '5232323_ios_gdt_1',
+  'company_id' => '',
+  'page_name' => 'dfgdgdf',
+  'auto_jump' => '1',
+  'click_body' => '0',
+  'display_foot' => '1',
+  'auto_header' => '0',
+  'header_title' => '',
+  'header_sub_title' => '',
+  'header_button' => '',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-06 15:25:51]Error: /home/vagrant/code/admin/web/admin/model/ModExtend.php 393
+SQL: INSERT INTO `land_page` (`model_id`, `game_id`, `package_name`, `company_id`, `page_name`, `auto_jump`, `click_body`, `display_foot`, `auto_header`, `success_time`, `page_url`) VALUES ('5',  '3',  '5232323_ios_gdt_1',  '',  'dfgdgdf',  '1',  '0',  '1',  '0',  '1578295551',  '2410695551651') (error：Incorrect integer value: '' for column 'company_id' at row 1)
+
+-----------------------------------
+0[2020-01-06 15:25:55] 192.168.10.1 http://admanage.com/index.php?ct=extend&ac=addLandPageAction
+POST: array (
+  'page_id' => '0',
+  'model_id' => '5',
+  'game_id' => '3',
+  'package_name' => '5232323_ios_gdt_1',
+  'company_id' => '',
+  'page_name' => 'dfgdgdf',
+  'auto_jump' => '10',
+  'click_body' => '0',
+  'display_foot' => '1',
+  'auto_header' => '0',
+  'header_title' => '',
+  'header_sub_title' => '',
+  'header_button' => '',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-06 15:25:55]Error: /home/vagrant/code/admin/web/admin/model/ModExtend.php 393
+SQL: INSERT INTO `land_page` (`model_id`, `game_id`, `package_name`, `company_id`, `page_name`, `auto_jump`, `click_body`, `display_foot`, `auto_header`, `success_time`, `page_url`) VALUES ('5',  '3',  '5232323_ios_gdt_1',  '',  'dfgdgdf',  '10',  '0',  '1',  '0',  '1578295555',  '2410695555530') (error：Incorrect integer value: '' for column 'company_id' at row 1)
+
+-----------------------------------
+0[2020-01-06 15:30:35] 192.168.10.1 http://admanage.com/index.php?ct=extend&ac=addLinkAction
+POST: array (
+  'monitor_id' => '0',
+  'name' => '11111111111',
+  'parent_id' => '1',
+  'game_id' => '3',
+  'channel_id' => '36',
+  'package_name' => '5232323_ios_gdt_1',
+  'user_id' => '2',
+  'type' => '1',
+  'model_id' => '2',
+  'page_id' => '',
+  'company_id' => '',
+  'auto_jump' => '10',
+  'jump_model' => '0',
+  'click_body' => '0',
+  'display_foot' => '0',
+  'new_land' => '0',
+  'auto_header' => '0',
+  'header_title' => '',
+  'header_sub_title' => '',
+  'header_button' => '',
+  'jump_url' => '',
+  'code' => '',
+  'create_user' => 'yunhua',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-06 15:30:35]Error: /home/vagrant/code/admin/web/admin/model/ModExtend.php 393
+SQL: INSERT INTO `land_page` (`model_id`, `game_id`, `package_name`, `company_id`, `page_name`, `auto_jump`, `click_body`, `display_foot`, `auto_header`, `code`, `jump_model`, `success_time`, `page_url`) VALUES ('2',  '3',  '5232323_ios_gdt_1',  '',  '11111111111',  '10',  '0',  '0',  '0',  '',  '0',  '1578295835',  '2410695835910') (error：Incorrect integer value: '' for column 'company_id' at row 1)
+
+-----------------------------------
+0[2020-01-06 16:25:58] 192.168.10.1 http://admanage.com/?ct=platform&ac=gameList&json=1
+POST: array (
+  'page' => '1',
+  'limit' => '15',
+  'data' => '',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-06 16:25:58]Error: /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php 1300
+Uncaught Exception: Can not connect to tcp://127.0.0.1:1238 Connection refused in /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php:1300
+Stack trace:
+#0 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(726): GatewayClient\Gateway::getAllGatewayAddressesFromRegister()
+#1 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(701): GatewayClient\Gateway::getAllGatewayAddress()
+#2 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(214): GatewayClient\Gateway::getBufferFromAllGateway(Array)
+#3 /home/vagrant/code/admin/web/admin/service/SrvPlatform.php(111): GatewayClient\Gateway::getAllClientSessions()
+#4 /home/vagrant/code/admin/web/admin/controller/CtlPlatform.php(25): SrvPlatform->getGameList_page(1, 15, Array)
+#5 /home/vagrant/code/admin/lib/YX.php(173): CtlPlatform->gameList()
+#6 /home/vagrant/code/admin/lib/YX.php(136): YX::route('platform', 'gameList')
+#7 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#8 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-06 16:26:02] 192.168.10.1 http://admanage.com/?ct=platform&ac=gameList&json=1
+POST: array (
+  'page' => '1',
+  'limit' => '15',
+  'data' => '',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-06 16:26:02]Error: /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php 1300
+Uncaught Exception: Can not connect to tcp://127.0.0.1:1238 Connection refused in /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php:1300
+Stack trace:
+#0 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(726): GatewayClient\Gateway::getAllGatewayAddressesFromRegister()
+#1 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(701): GatewayClient\Gateway::getAllGatewayAddress()
+#2 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(214): GatewayClient\Gateway::getBufferFromAllGateway(Array)
+#3 /home/vagrant/code/admin/web/admin/service/SrvPlatform.php(111): GatewayClient\Gateway::getAllClientSessions()
+#4 /home/vagrant/code/admin/web/admin/controller/CtlPlatform.php(25): SrvPlatform->getGameList_page(1, 15, Array)
+#5 /home/vagrant/code/admin/lib/YX.php(173): CtlPlatform->gameList()
+#6 /home/vagrant/code/admin/lib/YX.php(136): YX::route('platform', 'gameList')
+#7 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#8 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-06 16:26:48] 192.168.10.1 http://admanage.com/?ct=platform&ac=gameList&json=1
+POST: array (
+  'page' => '1',
+  'limit' => '15',
+  'data' => '',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-06 16:26:48]Error: /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php 1300
+Uncaught Exception: Can not connect to tcp://127.0.0.1:1238 Connection refused in /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php:1300
+Stack trace:
+#0 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(726): GatewayClient\Gateway::getAllGatewayAddressesFromRegister()
+#1 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(701): GatewayClient\Gateway::getAllGatewayAddress()
+#2 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(214): GatewayClient\Gateway::getBufferFromAllGateway(Array)
+#3 /home/vagrant/code/admin/web/admin/service/SrvPlatform.php(111): GatewayClient\Gateway::getAllClientSessions()
+#4 /home/vagrant/code/admin/web/admin/controller/CtlPlatform.php(25): SrvPlatform->getGameList_page(1, 15, Array)
+#5 /home/vagrant/code/admin/lib/YX.php(173): CtlPlatform->gameList()
+#6 /home/vagrant/code/admin/lib/YX.php(136): YX::route('platform', 'gameList')
+#7 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#8 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-06 17:04:35] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=batchCreateAd
+POST: array (
+  'game_id' => '1',
+  'type' => '1',
+  'material' => '[{"material_id":1,"copywriting_ids":[1,2,4,5]},{"material_id":2,"copywriting_ids":[1,2,4,5]},{"material_id":3,"copywriting_ids":[1,2,4,5]},{"material_id":4,"copywriting_ids":[1,2,4,5]}]',
+  'user_id' => '[1,2,3,4]',
+  'channel_id' => '37',
+  'package_id' => '1',
+  'operation' => '1',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-06 17:04:35]Error: /home/vagrant/code/admin/web/admin/service/SrvAdPlatformAction.php 116
+Uncaught Exception: api:create_group advertiser_id字段需为numeric类型 in /home/vagrant/code/admin/web/admin/service/SrvAdPlatformAction.php:116
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php(174): SrvAdPlatformAction->checkParams(Array, 'create_group')
+#1 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(122): SrvJrttAction->createAdGroup(Array, Array)
+#2 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(54): SrvBatchCreateAd->_createAdGroup(Array, 10, Array, Array)
+#3 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(35): SrvBatchCreateAd->_pushAd2Platform(Array, 10)
+#4 /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php(49): SrvBatchCreateAd->createAd(Array)
+#5 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->batchCreateAd()
+#6 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'batchCreateAd')
+#7 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#8 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-06 17:04:40] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=batchCreateAd
+POST: array (
+  'game_id' => '1',
+  'type' => '1',
+  'material' => '[{"material_id":1,"copywriting_ids":[1,2,4,5]},{"material_id":2,"copywriting_ids":[1,2,4,5]},{"material_id":3,"copywriting_ids":[1,2,4,5]},{"material_id":4,"copywriting_ids":[1,2,4,5]}]',
+  'user_id' => '[1,2,3,4]',
+  'channel_id' => '37',
+  'package_id' => '1',
+  'operation' => '1',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-06 17:04:40]Error: /home/vagrant/code/admin/web/admin/service/SrvAdPlatformAction.php 116
+Uncaught Exception: api:create_group advertiser_id字段需为numeric类型 in /home/vagrant/code/admin/web/admin/service/SrvAdPlatformAction.php:116
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php(174): SrvAdPlatformAction->checkParams(Array, 'create_group')
+#1 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(121): SrvJrttAction->createAdGroup(Array, Array)
+#2 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(53): SrvBatchCreateAd->_createAdGroup(Array, 11, Array, Array)
+#3 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(35): SrvBatchCreateAd->_pushAd2Platform(Array, 11)
+#4 /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php(49): SrvBatchCreateAd->createAd(Array)
+#5 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->batchCreateAd()
+#6 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'batchCreateAd')
+#7 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#8 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-06 17:05:08] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=batchCreateAd
+POST: array (
+  'game_id' => '1',
+  'type' => '1',
+  'material' => '[{"material_id":1,"copywriting_ids":[1,2,4,5]},{"material_id":2,"copywriting_ids":[1,2,4,5]},{"material_id":3,"copywriting_ids":[1,2,4,5]},{"material_id":4,"copywriting_ids":[1,2,4,5]}]',
+  'user_id' => '[1,2,3,4]',
+  'channel_id' => '37',
+  'package_id' => '1',
+  'operation' => '1',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-06 17:05:08]Error: /home/vagrant/code/admin/web/admin/service/SrvAdPlatformAction.php 110
+Uncaught Exception: api:create_group advertiser_id为必填字段 in /home/vagrant/code/admin/web/admin/service/SrvAdPlatformAction.php:110
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php(174): SrvAdPlatformAction->checkParams(Array, 'create_group')
+#1 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(121): SrvJrttAction->createAdGroup(Array, Array)
+#2 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(53): SrvBatchCreateAd->_createAdGroup(Array, 12, Array, Array)
+#3 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(35): SrvBatchCreateAd->_pushAd2Platform(Array, 12)
+#4 /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php(49): SrvBatchCreateAd->createAd(Array)
+#5 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->batchCreateAd()
+#6 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'batchCreateAd')
+#7 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#8 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-06 17:05:48] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=batchCreateAd
+POST: array (
+  'game_id' => '1',
+  'type' => '1',
+  'material' => '[{"material_id":1,"copywriting_ids":[1,2,4,5]},{"material_id":2,"copywriting_ids":[1,2,4,5]},{"material_id":3,"copywriting_ids":[1,2,4,5]},{"material_id":4,"copywriting_ids":[1,2,4,5]}]',
+  'user_id' => '[1,2,3,4]',
+  'channel_id' => '37',
+  'package_id' => '1',
+  'operation' => '1',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-06 17:05:48]Error: /home/vagrant/code/admin/web/admin/service/SrvAdPlatformAction.php 110
+Uncaught Exception: api:create_group advertiser_id为必填字段 in /home/vagrant/code/admin/web/admin/service/SrvAdPlatformAction.php:110
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php(174): SrvAdPlatformAction->checkParams(Array, 'create_group')
+#1 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(122): SrvJrttAction->createAdGroup(Array, Array)
+#2 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(53): SrvBatchCreateAd->_createAdGroup(Array, 13, Array, Array)
+#3 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(35): SrvBatchCreateAd->_pushAd2Platform(Array, 13)
+#4 /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php(49): SrvBatchCreateAd->createAd(Array)
+#5 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->batchCreateAd()
+#6 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'batchCreateAd')
+#7 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#8 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-06 17:06:15] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=batchCreateAd
+POST: array (
+  'game_id' => '1',
+  'type' => '1',
+  'material' => '[{"material_id":1,"copywriting_ids":[1,2,4,5]},{"material_id":2,"copywriting_ids":[1,2,4,5]},{"material_id":3,"copywriting_ids":[1,2,4,5]},{"material_id":4,"copywriting_ids":[1,2,4,5]}]',
+  'user_id' => '[1,2,3,4]',
+  'channel_id' => '37',
+  'package_id' => '1',
+  'operation' => '1',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-06 17:06:15]Error: /home/vagrant/code/admin/web/admin/model/ModAdMaterial.php 40
+Uncaught TypeError: Argument 1 passed to ModAdMaterial::getAdmaterialById() must be of the type integer, string given, called in /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php on line 55 and defined in /home/vagrant/code/admin/web/admin/model/ModAdMaterial.php:40
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(55): ModAdMaterial->getAdmaterialById('[')
+#1 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(35): SrvBatchCreateAd->_pushAd2Platform(Array, 14)
+#2 /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php(49): SrvBatchCreateAd->createAd(Array)
+#3 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->batchCreateAd()
+#4 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'batchCreateAd')
+#5 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#6 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-06 17:06:57] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=batchCreateAd
+POST: array (
+  'game_id' => '1',
+  'type' => '1',
+  'material' => '[{"material_id":1,"copywriting_ids":[1,2,4,5]},{"material_id":2,"copywriting_ids":[1,2,4,5]},{"material_id":3,"copywriting_ids":[1,2,4,5]},{"material_id":4,"copywriting_ids":[1,2,4,5]}]',
+  'user_id' => '[1,2,3,4]',
+  'channel_id' => '37',
+  'package_id' => '1',
+  'operation' => '1',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-06 17:06:57]Error: /home/vagrant/code/admin/web/admin/model/ModAdProject.php 15
+SQL: SELECT a.*, b.`platform`, b.`down_url` FROM ad_project as a 
+                LEFT JOIN `game_package` as b ON a.`package_name` = b.`package_name`
+                WHERE `a.channel_id` = '37' AND `a.game_id` = '1' AND a.user_id = '1' AND `a.is_use` = is_user limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'is_user limit 1' at line 3)
+
+-----------------------------------
+0[2020-01-06 17:07:29] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=batchCreateAd
+POST: array (
+  'game_id' => '1',
+  'type' => '1',
+  'material' => '[{"material_id":1,"copywriting_ids":[1,2,4,5]},{"material_id":2,"copywriting_ids":[1,2,4,5]},{"material_id":3,"copywriting_ids":[1,2,4,5]},{"material_id":4,"copywriting_ids":[1,2,4,5]}]',
+  'user_id' => '[1,2,3,4]',
+  'channel_id' => '37',
+  'package_id' => '1',
+  'operation' => '1',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-06 17:07:29]Error: /home/vagrant/code/admin/web/admin/model/ModAdProject.php 15
+SQL: SELECT a.*, b.`platform`, b.`down_url` FROM ad_project as a 
+                LEFT JOIN `game_package` as b ON a.`package_name` = b.`package_name`
+                WHERE `a.channel_id` = '37' AND `a.game_id` = '1' AND a.user_id = '1' AND `a.is_use` = is_user limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'is_user limit 1' at line 3)
+
+-----------------------------------
+0[2020-01-06 17:08:04] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=batchCreateAd
+POST: array (
+  'game_id' => '1',
+  'type' => '1',
+  'material' => '[{"material_id":1,"copywriting_ids":[1,2,4,5]},{"material_id":2,"copywriting_ids":[1,2,4,5]},{"material_id":3,"copywriting_ids":[1,2,4,5]},{"material_id":4,"copywriting_ids":[1,2,4,5]}]',
+  'user_id' => '[1,2,3,4]',
+  'channel_id' => '37',
+  'package_id' => '1',
+  'operation' => '1',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-06 17:08:04]Error: /home/vagrant/code/admin/web/admin/model/ModAdProject.php 15
+SQL: SELECT a.*, b.`platform`, b.`down_url` FROM ad_project as a 
+                LEFT JOIN `game_package` as b ON a.`package_name` = b.`package_name`
+                WHERE `a.channel_id` = '37' AND `a.game_id` = '1' AND a.user_id = '1' AND `a.is_use` = is_user limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'is_user limit 1' at line 3)
+
+-----------------------------------
+0[2020-01-06 17:10:35] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=batchCreateAd
+POST: array (
+  'game_id' => '1',
+  'type' => '1',
+  'material' => '[{"material_id":1,"copywriting_ids":[1,2,4,5]},{"material_id":2,"copywriting_ids":[1,2,4,5]},{"material_id":3,"copywriting_ids":[1,2,4,5]},{"material_id":4,"copywriting_ids":[1,2,4,5]}]',
+  'user_id' => '[1,2,3,4]',
+  'channel_id' => '37',
+  'package_id' => '1',
+  'operation' => '1',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-06 17:10:35]Error: /home/vagrant/code/admin/web/admin/model/ModAdProject.php 15
+SQL: SELECT a.*, b.`platform`, b.`down_url` FROM ad_project as a 
+                LEFT JOIN `game_package` as b ON a.`package_name` = b.`package_name`
+                WHERE `a.channel_id` = '37' AND `a.game_id` = '1' AND a.user_id = '1' AND `a.is_use` = is_user limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'is_user limit 1' at line 3)
+
+-----------------------------------
+0[2020-01-06 17:11:18] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=batchCreateAd
+POST: array (
+  'game_id' => '3',
+  'type' => '1',
+  'material' => '[{"material_id":1,"copywriting_ids":[1,2,4,5]},{"material_id":2,"copywriting_ids":[1,2,4,5]},{"material_id":3,"copywriting_ids":[1,2,4,5]},{"material_id":4,"copywriting_ids":[1,2,4,5]}]',
+  'user_id' => '[1,2,3,4]',
+  'channel_id' => '37',
+  'package_id' => '1',
+  'operation' => '1',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-06 17:11:18]Error: /home/vagrant/code/admin/web/admin/model/ModAdProject.php 15
+SQL: SELECT a.*, b.`platform`, b.`down_url` FROM ad_project as a 
+                LEFT JOIN `game_package` as b ON a.`package_name` = b.`package_name`
+                WHERE `a.channel_id` = '37' AND `a.game_id` = '3' AND a.user_id = '1' AND `a.is_use` = is_user limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'is_user limit 1' at line 3)
+
+-----------------------------------
+0[2020-01-06 17:12:10] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=batchCreateAd
+POST: array (
+  'game_id' => '3',
+  'type' => '1',
+  'material' => '[{"material_id":1,"copywriting_ids":[1,2,4,5]},{"material_id":2,"copywriting_ids":[1,2,4,5]},{"material_id":3,"copywriting_ids":[1,2,4,5]},{"material_id":4,"copywriting_ids":[1,2,4,5]}]',
+  'user_id' => '[1,2,3,4]',
+  'channel_id' => '37',
+  'package_id' => '1',
+  'operation' => '1',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-06 17:12:10]Error: /home/vagrant/code/admin/web/admin/model/ModAdProject.php 16
+SQL: SELECT a.*, b.`platform`, b.`down_url` FROM ad_project as a 
+                LEFT JOIN `game_package` as b ON a.`package_name` = b.`package_name`
+                WHERE `a.channel_id` = '37' AND `a.game_id` = '3' AND a.user_id = '1' AND `a.is_use` = is_user limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'is_user limit 1' at line 3)
+
+-----------------------------------
+0[2020-01-06 17:13:22] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=batchCreateAd
+POST: array (
+  'game_id' => '3',
+  'type' => '1',
+  'material' => '[{"material_id":1,"copywriting_ids":[1,2,4,5]},{"material_id":2,"copywriting_ids":[1,2,4,5]},{"material_id":3,"copywriting_ids":[1,2,4,5]},{"material_id":4,"copywriting_ids":[1,2,4,5]}]',
+  'user_id' => '[1,2,3,4]',
+  'channel_id' => '37',
+  'package_id' => '1',
+  'operation' => '1',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-06 17:13:22]Error: /home/vagrant/code/admin/web/admin/model/ModAdProject.php 16
+SQL: SELECT a.*, b.`platform`, b.`down_url` FROM ad_project as a 
+                LEFT JOIN `game_package` as b ON a.`package_name` = b.`package_name`
+                WHERE a.`channel_id` = '37' AND a.`game_id` = '3' AND a.`user_id` = '1' AND a.`is_use` = is_user limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'is_user limit 1' at line 3)
+
+-----------------------------------
+0[2020-01-06 20:13:11] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-06 20:13:11]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage

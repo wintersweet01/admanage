@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>技术支持</title>
+    <link rel="stylesheet" href="../../../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../lib/drawer/css/drawer.min.css">
+    <script src="../../../js/jquery-3.3.1.min.js"></script>
+    <script src="../../../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../../lib/iscroll/iscroll.js"></script>
+    <script src="../../../lib/drawer/js/drawer.min.js"></script>
+    <style type="text/css">
+        body,html{width:100%;height:100%;margin:0;padding:0;overflow:hidden;background-color:#fff;position:relative}
+        dl,dt,li,ol,p,ul{list-style:none;margin:0;padding:0;border:0;background:0 0;outline:0}
+        a{border-bottom-color:#ccc;border-bottom-style:none;color:#666;text-decoration:none;font-family:"Microsoft Yahei",Arial,Helvetica,sans-serif;outline:0}
+        a:hover{color:#656565;text-shadow:0 0;text-decoration:none!important}
+        .drawer-navbar .drawer-nav,.drawer-navbar .drawer-navbar-header{border-bottom:1px solid #ddd}
+        .drawer-navbar .drawer-nav{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+        #success{display:none}
+        @media (min-width:75em){.main{max-width:70rem}
+            .drawer-navbar .drawer-brand{max-width:10rem;overflow:hidden;white-space:nowrap}
+        }
+        @media (min-width:64em){.drawer-navbar .drawer-brand{max-width:10rem;overflow:hidden;white-space:nowrap}
+        }
+    </style>
+</head>
+<body class="drawer drawer--top drawer--navbarTopGutter">
+<div class="overflow-auto" style="height: 100%">
+    <header class="drawer-navbar drawer-navbar--fixed" role="banner">
+        <div class="drawer-container">
+            <div class="drawer-navbar-header">
+                <a class="drawer-brand" href="#" title="<{$name}>"><{$name}></a>
+                <button type="button" class="drawer-toggle drawer-hamburger">
+                    <span class="sr-only">toggle navigation</span>
+                    <span class="drawer-hamburger-icon"></span>
+                </button>
+            </div>
+
+            <nav class="drawer-nav" role="navigation">
+                <ul class="drawer-menu">
+                    <li><a class="drawer-menu-item" href="#home">首页（Home）</a></li>
+                    <li><a class="drawer-menu-item" href="#copyright">版权声明</a></li>
+                    <li><a class="drawer-menu-item" href="#agreement">注册服务协议（Registered service agreement）</a></li>
+                    <li><a class="drawer-menu-item" href="#introduction">游戏介绍</a></li>
+                    <li><a class="drawer-menu-item" href="#contacts">联系我们</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- content -->
+    <main class="main mx-auto">
+        <section class="item text-left p-4">
+            <ul>
+                <li id="home" class="shadow p-3 mb-5 bg-white rounded">
+                    <div class="content"><{$contacts}></div>
+                </li>
+                <li id="copyright" class="shadow p-3 mb-5 bg-white rounded">
+                    <h5 class="text-center pt-2 pb-2">版权声明（Copyright declaration）</h5>
+                    <div class="content"><{$copyright}></div>
+                </li>
+                <li id="agreement" class="shadow p-3 mb-5 bg-white rounded">
+                    <h5 class="text-center pt-2 pb-2">注册服务协议（Registered service agreement）</h5>
+                    <div class="content"><{$agreement}></div>
+                </li>
+                <li id="introduction" class="shadow p-3 mb-5 bg-white rounded">
+                    <h5 class="text-center pt-2 pb-2">游戏介绍（Game Description）</h5>
+                    <div class="content"><{$introduction}></div>
+                </li>
+                <li id="contacts">
+                    <div class="col-md-8 m-auto">
+                        <h4 class="text-center">联系我们（Contact us）</h4>
+                        <div class="m-5" align="center">
+                            <button type="button" id="success" class="btn btn-secondary btn-lg" disabled>感谢提交</button>
+                        </div>
+
+                        <form method="post" action="" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="name">名字</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">邮箱</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">留言</label>
+                                <textarea class="form-control" id="message" rows="8" placeholder="Guestbook" required></textarea>
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="submit" id="submit" class="btn btn-danger btn-lg">提交</button>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+</div>
+<script>
+    $(document).ready(function () {
+        $('.drawer').drawer();
+        $('.drawer-nav li').on('click', function () {
+            $('.drawer').drawer('close');
+        });
+    });
+
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            let forms = document.getElementsByClassName('needs-validation');
+            let validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    let t = true;
+                    if (form.checkValidity() === false) {
+                        t = false;
+                    }
+
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    form.classList.add('was-validated');
+
+                    if (t) {
+                        form.style.display = "none";
+                        document.getElementById('success').style.display = 'block';
+                    }
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+
+-----------------------------------
+0[2020-01-07 11:02:09] 192.168.10.1 http://admanage.com/index.php?ct=index
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 11:02:09]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 11:02:16] 192.168.10.1 http://admanage.com/index.php?ct=base
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 11:02:16]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 11:02:21] 192.168.10.1 http://admanage.com/index.php?ct=extend&ac=linkList
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 11:02:21]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 11:02:45] 192.168.10.1 http://admanage.com/index.php?ct=extend&ac=addLink
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 11:02:45]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 11:08:43] 192.168.10.1 http://admanage.com/index.php?ct=extend&ac=linkList
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 11:08:43]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 11:15:53] 192.168.10.1 http://admanage.com/index.php?ct=system&ac=mediaAccountManage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 11:15:53]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 11:15:53] 192.168.10.1 http://admanage.com/?ct=system&ac=mediaAccountManage&json=1&page=1&limit=18
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 11:15:53]Warn: /home/vagrant/code/admin/web/admin/service/SrvMarket.php 68
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 11:15:54] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCnter
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 11:15:54]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 11:15:55] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=addJrttAd
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 11:15:55]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 11:15:58] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=addDirectional
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 11:15:58]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 16:43:46] 192.168.10.1 http://admanage.com/index.php?ct=index
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 16:43:46]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 17:10:47] 192.168.10.1 http://admanage.com/index.php?ct=base
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 17:10:47]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 17:10:49] 192.168.10.1 http://admanage.com/index.php?ct=base
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 17:10:49]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 17:10:52] 192.168.10.1 http://admanage.com/index.php?ct=system&ac=mediaAccountManage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 17:10:52]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 17:10:54] 192.168.10.1 http://admanage.com/?ct=system&ac=mediaAccountManage&json=1&page=1&limit=18
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 17:10:54]Warn: /home/vagrant/code/admin/web/admin/service/SrvMarket.php 68
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 20:22:08] 192.168.10.1 http://admanage.com/?ct=index
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 20:22:08]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 20:22:12] 192.168.10.1 http://admanage.com/index.php?ct=index
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 20:22:12]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 20:22:17] 192.168.10.1 http://admanage.com/index.php?ct=base
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 20:22:17]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 20:22:18] 192.168.10.1 http://admanage.com/index.php?ct=base
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 20:22:18]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 20:22:33] 192.168.10.1 http://admanage.com/index.php?ct=base
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 20:22:33]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 21:09:53] 192.168.10.1 http://admanage.com/?ct=index
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 21:09:53]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 21:10:23] 192.168.10.1 http://admanage.com/index.php?ct=index
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 21:10:23]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 21:10:31] 192.168.10.1 http://admanage.com/index.php?ct=base
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 21:10:31]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 21:16:08] 192.168.10.1 http://admanage.com/index.php?ct=system&ac=mediaAccountManage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 21:16:08]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 21:16:08] 192.168.10.1 http://admanage.com/?ct=system&ac=mediaAccountManage&json=1&page=1&limit=18
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 21:16:08]Warn: /home/vagrant/code/admin/web/admin/service/SrvMarket.php 68
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 21:16:17] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adCnter
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 21:16:17]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 21:16:18] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=addJrttAd
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 21:16:18]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 21:16:21] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=adMaterial
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 21:16:21]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2020-01-07 21:16:29] 192.168.10.1 http://admanage.com/index.php?ct=optimizat&ac=addAdMaterial
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 21:16:29]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()

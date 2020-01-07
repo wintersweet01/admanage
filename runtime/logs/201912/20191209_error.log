@@ -1,0 +1,252 @@
+
+-----------------------------------
+0[2019-12-09 20:25:23] 192.168.10.1 http://admanage.com/?ct=platform&ac=gameList&json=1
+POST: array (
+  'page' => '1',
+  'limit' => '15',
+  'data' => '',
+)
+COOKIE: array (
+  'PHPSESSID' => 'q87a8i1dd7ibaf3l1ee7j7p5a8',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+)
+0[2019-12-09 20:25:23]Error: /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php 1300
+Uncaught Exception: Can not connect to tcp://127.0.0.1:1238 Connection refused in /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php:1300
+Stack trace:
+#0 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(726): GatewayClient\Gateway::getAllGatewayAddressesFromRegister()
+#1 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(701): GatewayClient\Gateway::getAllGatewayAddress()
+#2 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(214): GatewayClient\Gateway::getBufferFromAllGateway(Array)
+#3 /home/vagrant/code/admin/web/admin/service/SrvPlatform.php(111): GatewayClient\Gateway::getAllClientSessions()
+#4 /home/vagrant/code/admin/web/admin/controller/CtlPlatform.php(25): SrvPlatform->getGameList_page(1, 15, Array)
+#5 /home/vagrant/code/admin/lib/YX.php(173): CtlPlatform->gameList()
+#6 /home/vagrant/code/admin/lib/YX.php(136): YX::route('platform', 'gameList')
+#7 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#8 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-09 21:17:00] 192.168.10.1 http://admanage.com/?ct=extend&ac=addLinkAction
+POST: array (
+  'monitor_id' => '0',
+  'name' => '测试推广链接',
+  'parent_id' => '1',
+  'game_id' => '3',
+  'channel_id' => '35',
+  'package_name' => '5232323_ios_gdt_1',
+  'user_id' => '1',
+  'type' => '0',
+  'model_id' => '',
+  'page_id' => '',
+  'company_id' => '',
+  'auto_jump' => '0',
+  'jump_model' => '0',
+  'click_body' => '0',
+  'display_foot' => '0',
+  'new_land' => '0',
+  'auto_header' => '0',
+  'header_title' => '',
+  'header_sub_title' => '',
+  'header_button' => '',
+  'jump_url' => '',
+  'code' => '',
+  'create_user' => 'yunhua',
+)
+COOKIE: array (
+  'PHPSESSID' => 'q87a8i1dd7ibaf3l1ee7j7p5a8',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+)
+0[2019-12-09 21:17:00]Error: /home/vagrant/code/admin/lib/library/LibRedis.php 62
+Uncaught Error: Call to a member function set() on null in /home/vagrant/code/admin/lib/library/LibRedis.php:62
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvExtend.php(1423): LibRedis::set('MONITOR_CODE_1T...', Array)
+#1 /home/vagrant/code/admin/web/admin/service/SrvExtend.php(320): SrvExtend->clearCacheLink(1)
+#2 /home/vagrant/code/admin/web/admin/controller/CtlExtend.php(252): SrvExtend->addLinkAction(1, Array)
+#3 /home/vagrant/code/admin/lib/YX.php(173): CtlExtend->addLinkAction()
+#4 /home/vagrant/code/admin/lib/YX.php(136): YX::route('extend', 'addLinkAction')
+#5 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#6 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-09 21:20:19] 192.168.10.1 http://admanage.com/?ct=extend&ac=addLinkAction
+POST: array (
+  'monitor_id' => '0',
+  'name' => '添加推广链接测试',
+  'parent_id' => '1',
+  'game_id' => '3',
+  'channel_id' => '35',
+  'package_name' => '5232323_ios_gdt_1',
+  'user_id' => '1',
+  'type' => '0',
+  'model_id' => '',
+  'page_id' => '',
+  'company_id' => '',
+  'auto_jump' => '0',
+  'jump_model' => '0',
+  'click_body' => '0',
+  'display_foot' => '0',
+  'new_land' => '0',
+  'auto_header' => '0',
+  'header_title' => '',
+  'header_sub_title' => '',
+  'header_button' => '',
+  'jump_url' => '',
+  'code' => '',
+  'create_user' => 'yunhua',
+)
+COOKIE: array (
+  'PHPSESSID' => 'q87a8i1dd7ibaf3l1ee7j7p5a8',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+)
+0[2019-12-09 21:20:19]Error: /home/vagrant/code/admin/lib/library/LibRedis.php 62
+Uncaught Error: Call to a member function set() on null in /home/vagrant/code/admin/lib/library/LibRedis.php:62
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvExtend.php(1423): LibRedis::set('MONITOR_CODE_1T...', Array)
+#1 /home/vagrant/code/admin/web/admin/service/SrvExtend.php(320): SrvExtend->clearCacheLink(2)
+#2 /home/vagrant/code/admin/web/admin/controller/CtlExtend.php(252): SrvExtend->addLinkAction(2, Array)
+#3 /home/vagrant/code/admin/lib/YX.php(173): CtlExtend->addLinkAction()
+#4 /home/vagrant/code/admin/lib/YX.php(136): YX::route('extend', 'addLinkAction')
+#5 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#6 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-09 21:27:07] 192.168.10.1 http://admanage.com/?ct=extend&ac=addLinkAction
+POST: array (
+  'monitor_id' => '0',
+  'name' => '收款登记反馈的手机费康师傅',
+  'parent_id' => '1',
+  'game_id' => '3',
+  'channel_id' => '36',
+  'package_name' => '5232323_ios_gdt_1',
+  'user_id' => '2',
+  'type' => '0',
+  'model_id' => '',
+  'page_id' => '',
+  'company_id' => '',
+  'auto_jump' => '0',
+  'jump_model' => '0',
+  'click_body' => '0',
+  'display_foot' => '0',
+  'new_land' => '0',
+  'auto_header' => '0',
+  'header_title' => '',
+  'header_sub_title' => '',
+  'header_button' => '',
+  'jump_url' => '',
+  'code' => '',
+  'create_user' => 'yunhua',
+)
+COOKIE: array (
+  'PHPSESSID' => 'q87a8i1dd7ibaf3l1ee7j7p5a8',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+)
+0[2019-12-09 21:27:07]Error: /home/vagrant/code/admin/lib/library/LibRedis.php 62
+Uncaught Error: Call to a member function set() on null in /home/vagrant/code/admin/lib/library/LibRedis.php:62
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvExtend.php(1423): LibRedis::set('MONITOR_CODE_1T...', Array)
+#1 /home/vagrant/code/admin/web/admin/service/SrvExtend.php(320): SrvExtend->clearCacheLink(4)
+#2 /home/vagrant/code/admin/web/admin/controller/CtlExtend.php(252): SrvExtend->addLinkAction(4, Array)
+#3 /home/vagrant/code/admin/lib/YX.php(173): CtlExtend->addLinkAction()
+#4 /home/vagrant/code/admin/lib/YX.php(136): YX::route('extend', 'addLinkAction')
+#5 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#6 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-09 21:28:16] 192.168.10.1 http://admanage.com/?ct=extend&ac=addLinkAction
+POST: array (
+  'monitor_id' => '4',
+  'name' => '收款登记反馈的手机费康师傅',
+  'parent_id' => '1',
+  'game_id' => '3',
+  'channel_id' => '36',
+  'package_name' => '5232323_ios_gdt_1',
+  'user_id' => '3',
+  'type' => '0',
+  'model_id' => '',
+  'page_id' => '0',
+  'company_id' => '',
+  'auto_jump' => '',
+  'jump_model' => '0',
+  'click_body' => '0',
+  'display_foot' => '0',
+  'new_land' => '0',
+  'auto_header' => '0',
+  'header_title' => '',
+  'header_sub_title' => '',
+  'header_button' => '',
+  'jump_url' => '',
+  'code' => '',
+  'create_user' => 'yunhua',
+)
+COOKIE: array (
+  'PHPSESSID' => 'q87a8i1dd7ibaf3l1ee7j7p5a8',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+)
+0[2019-12-09 21:28:16]Error: /home/vagrant/code/admin/lib/library/LibRedis.php 62
+Uncaught Error: Call to a member function set() on null in /home/vagrant/code/admin/lib/library/LibRedis.php:62
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvExtend.php(1423): LibRedis::set('MONITOR_CODE_1T...', Array)
+#1 /home/vagrant/code/admin/web/admin/service/SrvExtend.php(323): SrvExtend->clearCacheLink(4)
+#2 /home/vagrant/code/admin/web/admin/controller/CtlExtend.php(252): SrvExtend->addLinkAction(4, Array)
+#3 /home/vagrant/code/admin/lib/YX.php(173): CtlExtend->addLinkAction()
+#4 /home/vagrant/code/admin/lib/YX.php(136): YX::route('extend', 'addLinkAction')
+#5 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#6 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-09 21:30:20] 192.168.10.1 http://admanage.com/?ct=extend&ac=addLinkAction
+POST: array (
+  'monitor_id' => '0',
+  'name' => '第三方第三方',
+  'parent_id' => '1',
+  'game_id' => '3',
+  'channel_id' => '36',
+  'package_name' => '5232323_ios_gdt_1',
+  'user_id' => '3',
+  'type' => '0',
+  'model_id' => '',
+  'page_id' => '',
+  'company_id' => '',
+  'auto_jump' => '0',
+  'jump_model' => '0',
+  'click_body' => '0',
+  'display_foot' => '0',
+  'new_land' => '0',
+  'auto_header' => '0',
+  'header_title' => '',
+  'header_sub_title' => '',
+  'header_button' => '',
+  'jump_url' => '',
+  'code' => '',
+  'create_user' => 'yunhua',
+)
+COOKIE: array (
+  'PHPSESSID' => 'q87a8i1dd7ibaf3l1ee7j7p5a8',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+)
+0[2019-12-09 21:30:20]Error: /home/vagrant/code/admin/lib/library/LibRedis.php 62
+Uncaught Error: Call to a member function set() on null in /home/vagrant/code/admin/lib/library/LibRedis.php:62
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvExtend.php(1423): LibRedis::set('MONITOR_CODE_1T...', Array)
+#1 /home/vagrant/code/admin/web/admin/service/SrvExtend.php(320): SrvExtend->clearCacheLink(5)
+#2 /home/vagrant/code/admin/web/admin/controller/CtlExtend.php(252): SrvExtend->addLinkAction(5, Array)
+#3 /home/vagrant/code/admin/lib/YX.php(173): CtlExtend->addLinkAction()
+#4 /home/vagrant/code/admin/lib/YX.php(136): YX::route('extend', 'addLinkAction')
+#5 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#6 {main}
+  thrown

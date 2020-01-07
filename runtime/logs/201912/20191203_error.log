@@ -1,0 +1,181 @@
+
+-----------------------------------
+0[2019-12-03 13:25:15] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-03 13:25:15]Error: /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php 26
+Uncaught ArgumentCountError: Too few arguments to function SrvJrttAction::createAdGroup(), 0 passed in /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php on line 123 and exactly 1 expected in /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php:26
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php(123): SrvJrttAction->createAdGroup()
+#1 /home/vagrant/code/admin/lib/YX.php(173): CtlOptimizat->test()
+#2 /home/vagrant/code/admin/lib/YX.php(136): YX::route('optimizat', 'test')
+#3 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#4 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-03 13:26:25] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-03 13:26:25]Error: /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php 52
+Uncaught Exception: api:create_group advertiser_id为必填字段 in /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php:52
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php(28): SrvJrttAction->checkParams(Array, 'create_group')
+#1 /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php(123): SrvJrttAction->createAdGroup(Array)
+#2 /home/vagrant/code/admin/lib/YX.php(173): CtlOptimizat->test()
+#3 /home/vagrant/code/admin/lib/YX.php(136): YX::route('optimizat', 'test')
+#4 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#5 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-03 18:00:28] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+POST: array (
+  'advertiser_id' => '2915553993320755',
+  'campaign_name' => '111111',
+  'operation' => 'enable',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '10000',
+  'landing_type' => 'LINK',
+  'unique_fk' => '1214545212121212',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  '_lg_' => 'zh_CN',
+)
+0[2019-12-03 18:00:28]Error: /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php 109
+Uncaught Error: Function name must be a string in /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php:109
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php(66): SrvJrttAction->checkParams(Array, 'create_ad_plan')
+#1 /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php(141): SrvJrttAction->createAdPlan(Array, Array)
+#2 /home/vagrant/code/admin/lib/YX.php(173): CtlOptimizat->test()
+#3 /home/vagrant/code/admin/lib/YX.php(136): YX::route('optimizat', 'test')
+#4 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#5 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-03 18:01:46] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+POST: array (
+  'advertiser_id' => '2915553993320755',
+  'campaign_name' => '111111',
+  'operation' => 'enable',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '10000',
+  'landing_type' => 'LINK',
+  'unique_fk' => '1214545212121212',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  '_lg_' => 'zh_CN',
+)
+0[2019-12-03 18:01:46]Error: /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php 110
+Uncaught Error: Function name must be a string in /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php:110
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php(66): SrvJrttAction->checkParams(Array, 'create_ad_plan')
+#1 /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php(141): SrvJrttAction->createAdPlan(Array, Array)
+#2 /home/vagrant/code/admin/lib/YX.php(173): CtlOptimizat->test()
+#3 /home/vagrant/code/admin/lib/YX.php(136): YX::route('optimizat', 'test')
+#4 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#5 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-03 18:02:17] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+POST: array (
+  'advertiser_id' => '2915553993320755',
+  'campaign_name' => '111111',
+  'operation' => 'enable',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '10000',
+  'landing_type' => 'LINK',
+  'unique_fk' => '1214545212121212',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  '_lg_' => 'zh_CN',
+)
+0[2019-12-03 18:02:17]Error: /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php 110
+Uncaught Error: Function name must be a string in /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php:110
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php(66): SrvJrttAction->checkParams(Array, 'create_ad_plan')
+#1 /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php(141): SrvJrttAction->createAdPlan(Array, Array)
+#2 /home/vagrant/code/admin/lib/YX.php(173): CtlOptimizat->test()
+#3 /home/vagrant/code/admin/lib/YX.php(136): YX::route('optimizat', 'test')
+#4 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#5 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-03 18:02:34] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+POST: array (
+  'advertiser_id' => '2915553993320755',
+  'campaign_name' => '111111',
+  'operation' => 'enable',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '10000',
+  'landing_type' => 'LINK',
+  'unique_fk' => '1214545212121212',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  '_lg_' => 'zh_CN',
+)
+0[2019-12-03 18:02:34]Error: /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php 110
+Uncaught Error: Function name must be a string in /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php:110
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php(66): SrvJrttAction->checkParams(Array, 'create_ad_plan')
+#1 /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php(141): SrvJrttAction->createAdPlan(Array, Array)
+#2 /home/vagrant/code/admin/lib/YX.php(173): CtlOptimizat->test()
+#3 /home/vagrant/code/admin/lib/YX.php(136): YX::route('optimizat', 'test')
+#4 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#5 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-03 21:06:32] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+POST: array (
+  'advertiser_id' => '2915553993320755',
+  'campaign_name' => '111111',
+  'operation' => 'enable',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '10000',
+  'landing_type' => 'LINK',
+  'unique_fk' => '1214545212121212',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  '_lg_' => 'zh_CN',
+)
+0[2019-12-03 21:06:32]Error: /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php 91
+Uncaught TypeError: Argument 1 passed to SrvJrttAction::thirdIndustryList() must be of the type array, null given, called in /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php on line 144 and defined in /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php:91
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php(144): SrvJrttAction->thirdIndustryList(NULL)
+#1 /home/vagrant/code/admin/lib/YX.php(173): CtlOptimizat->test()
+#2 /home/vagrant/code/admin/lib/YX.php(136): YX::route('optimizat', 'test')
+#3 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#4 {main}
+  thrown

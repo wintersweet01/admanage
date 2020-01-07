@@ -1,0 +1,265 @@
+
+-----------------------------------
+0[2019-12-10 10:44:22] 192.168.10.1 http://admanage.com/?ct=extend&ac=addLinkAction
+POST: array (
+  'monitor_id' => '0',
+  'name' => '我随便一打就是十个字',
+  'parent_id' => '1',
+  'game_id' => '3',
+  'channel_id' => '35',
+  'package_name' => '5232323_ios_gdt_1',
+  'user_id' => '1',
+  'type' => '0',
+  'model_id' => '',
+  'page_id' => '',
+  'company_id' => '',
+  'auto_jump' => '0',
+  'jump_model' => '0',
+  'click_body' => '0',
+  'display_foot' => '0',
+  'new_land' => '0',
+  'auto_header' => '0',
+  'header_title' => '',
+  'header_sub_title' => '',
+  'header_button' => '',
+  'jump_url' => '',
+  'code' => '',
+  'create_user' => 'yunhua',
+)
+COOKIE: array (
+  'PHPSESSID' => 'q87a8i1dd7ibaf3l1ee7j7p5a8',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+)
+0[2019-12-10 10:44:22]Error: /home/vagrant/code/admin/lib/library/LibRedis.php 40
+Uncaught Error: Undefined class constant 'SERIALIZER_IGBINARY' in /home/vagrant/code/admin/lib/library/LibRedis.php:40
+Stack trace:
+#0 /home/vagrant/code/admin/lib/library/LibRedis.php(61): LibRedis::getInstance()
+#1 /home/vagrant/code/admin/web/admin/service/SrvExtend.php(1423): LibRedis::set('MONITOR_CODE_1T...', Array)
+#2 /home/vagrant/code/admin/web/admin/service/SrvExtend.php(320): SrvExtend->clearCacheLink(6)
+#3 /home/vagrant/code/admin/web/admin/controller/CtlExtend.php(252): SrvExtend->addLinkAction(6, Array)
+#4 /home/vagrant/code/admin/lib/YX.php(173): CtlExtend->addLinkAction()
+#5 /home/vagrant/code/admin/lib/YX.php(136): YX::route('extend', 'addLinkAction')
+#6 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#7 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-10 11:15:08] 192.168.10.1 http://admanage.com/?ct=extend&ac=addLinkAction
+POST: array (
+  'monitor_id' => '0',
+  'name' => '搜随便一打就是十个字',
+  'parent_id' => '1',
+  'game_id' => '3',
+  'channel_id' => '35',
+  'package_name' => '5232323_ios_gdt_1',
+  'user_id' => '4',
+  'type' => '0',
+  'model_id' => '',
+  'page_id' => '',
+  'company_id' => '',
+  'auto_jump' => '0',
+  'jump_model' => '0',
+  'click_body' => '0',
+  'display_foot' => '0',
+  'new_land' => '0',
+  'auto_header' => '0',
+  'header_title' => '',
+  'header_sub_title' => '',
+  'header_button' => '',
+  'jump_url' => '',
+  'code' => '',
+  'create_user' => 'yunhua',
+)
+COOKIE: array (
+  'PHPSESSID' => 'q87a8i1dd7ibaf3l1ee7j7p5a8',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+)
+0[2019-12-10 11:15:08]Error: /home/vagrant/code/admin/lib/library/LibRedis.php 40
+Uncaught Error: Undefined class constant 'SERIALIZER_IGBINARY' in /home/vagrant/code/admin/lib/library/LibRedis.php:40
+Stack trace:
+#0 /home/vagrant/code/admin/lib/library/LibRedis.php(61): LibRedis::getInstance()
+#1 /home/vagrant/code/admin/web/admin/service/SrvExtend.php(1423): LibRedis::set('MONITOR_CODE_1T...', Array)
+#2 /home/vagrant/code/admin/web/admin/service/SrvExtend.php(320): SrvExtend->clearCacheLink(7)
+#3 /home/vagrant/code/admin/web/admin/controller/CtlExtend.php(252): SrvExtend->addLinkAction(7, Array)
+#4 /home/vagrant/code/admin/lib/YX.php(173): CtlExtend->addLinkAction()
+#5 /home/vagrant/code/admin/lib/YX.php(136): YX::route('extend', 'addLinkAction')
+#6 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#7 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-10 11:18:37] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=addAd
+COOKIE: array (
+  'PHPSESSID' => 'q87a8i1dd7ibaf3l1ee7j7p5a8',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+)
+0[2019-12-10 11:18:37]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlOptimizat不存在方法：addAd
+
+-----------------------------------
+0[2019-12-10 11:46:10] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=addJrttAd&channel_id=36
+COOKIE: array (
+  'PHPSESSID' => 'q87a8i1dd7ibaf3l1ee7j7p5a8',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+)
+0[2019-12-10 11:46:10]Error: /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php 36
+Uncaught Error: Call to undefined method SrvOptimizat::getMediaAcc() in /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php:36
+Stack trace:
+#0 /home/vagrant/code/admin/lib/YX.php(173): CtlOptimizat->addJrttAd()
+#1 /home/vagrant/code/admin/lib/YX.php(136): YX::route('optimizat', 'addJrttAd')
+#2 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#3 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-10 15:37:43] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=getMediaAcc&channel_id=35&game_id=3
+COOKIE: array (
+  'PHPSESSID' => 'q87a8i1dd7ibaf3l1ee7j7p5a8',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+)
+0[2019-12-10 15:37:43]Error: /home/vagrant/code/admin/web/admin/model/ModAdMaterial.php 22
+SQL: SELECT a.*, c.company_name, (
+                SELECT count(*) FROM ad_project 
+                WHERE user_id = a.user_id AND channel_id = '35' AND gameId = '3' AND `status` = 0 AND type = 0 ) AS count 
+                FROM channel_user AS a
+                LEFT JOIN channel_user AS b ON a.user_id = b.user_id
+                LEFT JOIN channel_company AS c ON b.company_id = c.company_id 
+                WHERE
+                a.channel_id = '35' (error：Unknown column 'gameId' in 'where clause')
+
+-----------------------------------
+0[2019-12-10 15:39:27] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=getMediaAcc&channel_id=35&game_id=3
+COOKIE: array (
+  'PHPSESSID' => 'q87a8i1dd7ibaf3l1ee7j7p5a8',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+)
+0[2019-12-10 15:39:27]Error: /home/vagrant/code/admin/web/admin/model/ModAdMaterial.php 23
+SQL: SELECT a.*, c.company_name, (
+                SELECT count(*) FROM ad_project 
+                WHERE user_id = a.user_id AND channel_id = '35' AND gameId = '3' AND `status` = 0 AND type = 0 ) AS count 
+                FROM channel_user AS a
+                LEFT JOIN channel_user AS b ON a.user_id = b.user_id
+                LEFT JOIN channel_company AS c ON b.company_id = c.company_id 
+                WHERE
+                a.channel_id = '35' (error：Unknown column 'gameId' in 'where clause')
+
+-----------------------------------
+0[2019-12-10 16:01:35] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=getMediaAcc
+COOKIE: array (
+  'PHPSESSID' => 'q87a8i1dd7ibaf3l1ee7j7p5a8',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+)
+0[2019-12-10 16:01:35]Error: /home/vagrant/code/admin/web/admin/service/SrvOptimizat.php 13
+Uncaught TypeError: Argument 1 passed to SrvOptimizat::getMediaAcc() must be of the type integer, string given, called in /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php on line 46 and defined in /home/vagrant/code/admin/web/admin/service/SrvOptimizat.php:13
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php(46): SrvOptimizat->getMediaAcc('', '')
+#1 /home/vagrant/code/admin/lib/YX.php(173): CtlOptimizat->getMediaAcc()
+#2 /home/vagrant/code/admin/lib/YX.php(136): YX::route('optimizat', 'getMediaAcc')
+#3 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#4 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-10 16:11:51] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=getMediaAcc&channel_id=undefined&gameId=3
+COOKIE: array (
+  'PHPSESSID' => 'q87a8i1dd7ibaf3l1ee7j7p5a8',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+)
+0[2019-12-10 16:11:51]Error: /home/vagrant/code/admin/web/admin/service/SrvOptimizat.php 13
+Uncaught TypeError: Argument 1 passed to SrvOptimizat::getMediaAcc() must be of the type integer, string given, called in /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php on line 47 and defined in /home/vagrant/code/admin/web/admin/service/SrvOptimizat.php:13
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php(47): SrvOptimizat->getMediaAcc('', '')
+#1 /home/vagrant/code/admin/lib/YX.php(173): CtlOptimizat->getMediaAcc()
+#2 /home/vagrant/code/admin/lib/YX.php(136): YX::route('optimizat', 'getMediaAcc')
+#3 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#4 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-10 16:13:48] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=getMediaAcc&channel_id=35&gameId=3
+COOKIE: array (
+  'PHPSESSID' => 'q87a8i1dd7ibaf3l1ee7j7p5a8',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+)
+0[2019-12-10 16:13:48]Error: /home/vagrant/code/admin/web/admin/service/SrvOptimizat.php 13
+Uncaught TypeError: Argument 2 passed to SrvOptimizat::getMediaAcc() must be of the type integer, string given, called in /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php on line 47 and defined in /home/vagrant/code/admin/web/admin/service/SrvOptimizat.php:13
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php(47): SrvOptimizat->getMediaAcc(35, '')
+#1 /home/vagrant/code/admin/lib/YX.php(173): CtlOptimizat->getMediaAcc()
+#2 /home/vagrant/code/admin/lib/YX.php(136): YX::route('optimizat', 'getMediaAcc')
+#3 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#4 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-10 16:13:53] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=getMediaAcc&channel_id=35&gameId=2
+COOKIE: array (
+  'PHPSESSID' => 'q87a8i1dd7ibaf3l1ee7j7p5a8',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+)
+0[2019-12-10 16:13:53]Error: /home/vagrant/code/admin/web/admin/service/SrvOptimizat.php 13
+Uncaught TypeError: Argument 2 passed to SrvOptimizat::getMediaAcc() must be of the type integer, string given, called in /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php on line 47 and defined in /home/vagrant/code/admin/web/admin/service/SrvOptimizat.php:13
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php(47): SrvOptimizat->getMediaAcc(35, '')
+#1 /home/vagrant/code/admin/lib/YX.php(173): CtlOptimizat->getMediaAcc()
+#2 /home/vagrant/code/admin/lib/YX.php(136): YX::route('optimizat', 'getMediaAcc')
+#3 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#4 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-10 16:14:43] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=getMediaAcc&channel_id=35&gameId=3
+COOKIE: array (
+  'PHPSESSID' => 'q87a8i1dd7ibaf3l1ee7j7p5a8',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+)
+0[2019-12-10 16:14:43]Error: /home/vagrant/code/admin/web/admin/service/SrvOptimizat.php 13
+Uncaught TypeError: Argument 2 passed to SrvOptimizat::getMediaAcc() must be of the type integer, string given, called in /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php on line 47 and defined in /home/vagrant/code/admin/web/admin/service/SrvOptimizat.php:13
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php(47): SrvOptimizat->getMediaAcc(35, '')
+#1 /home/vagrant/code/admin/lib/YX.php(173): CtlOptimizat->getMediaAcc()
+#2 /home/vagrant/code/admin/lib/YX.php(136): YX::route('optimizat', 'getMediaAcc')
+#3 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#4 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-10 17:04:22] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=getMediaAcc&channel_id=35&game_id=3
+COOKIE: array (
+  'PHPSESSID' => 'q87a8i1dd7ibaf3l1ee7j7p5a8',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+)
+0[2019-12-10 17:04:22]Error: /home/vagrant/code/admin/web/admin/model/ModAdMaterial.php 23
+SQL: SELECT a.*, b.company_name, c.account_id (
+                SELECT count(*) FROM ad_project
+                WHERE user_id = a.user_id AND channel_id = '35' AND game_id = '3' AND `status` = 0 AND type = 0 ) AS count 
+                FROM channel_user AS a
+                LEFT JOIN channel_company AS b ON a.company_id = b.company_id 
+                RIGHT JOIN channel_user_auth AS c ON a.user_id = c.user_id
+                RIGHT JOIN channel_group as d ON a.group_id = d.group_id
+                WHERE a.channel_id = '35' AND d.group_admin_id = '86' (error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT count(*) FROM ad_project
+                WHERE user_id = a.user_id AND ch' at line 2)

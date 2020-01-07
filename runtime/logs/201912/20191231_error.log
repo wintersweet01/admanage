@@ -1,0 +1,675 @@
+
+-----------------------------------
+0[2019-12-31 11:30:02] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=saveDirectional
+POST: array (
+  'delivery_range' => 'DEFAULT',
+  'union_video_type' => 'ORIGINAL_VIDEO',
+  'district' => 'CITY',
+  'gender' => 'GENDER_MALE',
+  'age' => 
+  array (
+    2 => 'AGE_BETWEEN_24_30',
+    3 => 'AGE_BETWEEN_31_40',
+  ),
+  'interest_action_mode' => 'CUSTOM',
+  'action_scene' => 'E-COMMERCE',
+  'action_days' => '60',
+  'ac' => '4G',
+  'carrier' => 'on',
+  'activate_type' => 'ONE_MONTH_2_THREE_MONTH',
+  'device_brand' => 
+  array (
+    1 => 'HONOR',
+    2 => 'APPLE',
+    3 => 'HUAWEI',
+    12 => 'LETV',
+    14 => 'CHINAMOBILE',
+    23 => '360',
+  ),
+  'launch_price' => 
+  array (
+    0 => '1000',
+    1 => '5000',
+  ),
+  'smart_bid_type' => 'SMART_BID_CUSTOM',
+  'flow_control_mode' => 'FLOW_CONTROL_MODE_SMOOTH',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '300',
+  'schedule_type' => 'SCHEDULE_START_END',
+  'start_time' => '2019-12-27',
+  'end_time' => '2020-01-23',
+  'schedule_time' => '011111111111111111110000001111111111110000000000000000000000000000000000011100000000000011111110111111111111011110111100011100000000000000000001111111111111000000000000011100011111111111111001001111111111111000111100011100000000000000000011001111111111111111111110011100001111111111110011000000000000000111111110011100001111111111110011',
+  'cpa_bid' => '1000',
+  'hide_if_converted' => 'AD',
+  'ad_position' => '2',
+  'smart_inventory' => '0',
+  'inventory_type' => 
+  array (
+    0 => 'INVENTORY_FEED',
+    3 => 'INVENTORY_AWEME_FEED',
+    4 => 'INVENTORY_UNION_SLOT',
+    5 => 'UNION_BOUTIQUE_GAME',
+  ),
+  'scene_inventory' => 'VIDEO_SCENE',
+  'is_presented_video' => '1',
+  'generate_derived_ad' => '1',
+  'is_comment_disable' => '0',
+  'creative_display_mode' => 'CREATIVE_DISPLAY_MODE_RANDOM',
+  'third_industry_id' => '19010101',
+  'ad_keywords' => 
+  array (
+    0 => '哈哈哈哈',
+    1 => '哈哈哈哈',
+    2 => '哈哈哈哈哈',
+    3 => '哈哈哈',
+  ),
+  'package_name' => 'test定向包',
+  'city' => 
+  array (
+    0 => '11',
+    1 => '13',
+    2 => '14',
+    3 => '15',
+    4 => '21',
+    5 => '22',
+  ),
+  'action_categories' => 
+  array (
+    0 => '16',
+    1 => '18',
+    2 => '17',
+    3 => '12',
+    4 => '15',
+    5 => '7',
+  ),
+  'action_words' => 
+  array (
+    0 => '910848',
+    1 => '2400931',
+    2 => '94903',
+    3 => '3449397',
+    4 => '2416310',
+  ),
+  'interest_categories' => 
+  array (
+    0 => '16',
+    1 => '18',
+    2 => '17',
+    3 => '12',
+    4 => '1501',
+    5 => '1502',
+    6 => '1503',
+    7 => '1505',
+    8 => '1506',
+    9 => '1507',
+    10 => '1508',
+    11 => '1509',
+    12 => '1510',
+    13 => '1511',
+    14 => '1512',
+    15 => '1513',
+    16 => '1514',
+    17 => '1515',
+    18 => '1516',
+    19 => '1517',
+    20 => '1518',
+    21 => '1519',
+    22 => '1520',
+  ),
+  'interest_words' => 
+  array (
+    0 => '50312195',
+    1 => '2400931',
+    2 => '94903',
+    3 => '3449397',
+    4 => '2416310',
+  ),
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2019-12-31 11:30:02]Error: /home/vagrant/code/admin/web/admin/model/ModDirectionalPackage.php 13
+SQL: INSERT INTO `directional_package` (`package_name`, `content`) VALUES ('test定向包',  '{\"delivery_range\":\"DEFAULT\",\"union_video_type\":\"ORIGINAL_VIDEO\",\"district\":\"CITY\",\"gender\":\"GENDER_MALE\",\"age\":{\"2\":\"AGE_BETWEEN_24_30\",\"3\":\"AGE_BETWEEN_31_40\"},\"interest_action_mode\":\"CUSTOM\",\"action_scene\":\"E-COMMERCE\",\"action_days\":\"60\",\"ac\":\"4G\",\"carrier\":\"on\",\"activate_type\":\"ONE_MONTH_2_THREE_MONTH\",\"device_brand\":{\"1\":\"HONOR\",\"2\":\"APPLE\",\"3\":\"HUAWEI\",\"12\":\"LETV\",\"14\":\"CHINAMOBILE\",\"23\":\"360\"},\"launch_price\":[\"1000\",\"5000\"],\"smart_bid_type\":\"SMART_BID_CUSTOM\",\"flow_control_mode\":\"FLOW_CONTROL_MODE_SMOOTH\",\"budget_mode\":\"BUDGET_MODE_DAY\",\"budget\":\"300\",\"schedule_type\":\"SCHEDULE_START_END\",\"start_time\":\"2019-12-27\",\"end_time\":\"2020-01-23\",\"schedule_time\":\"011111111111111111110000001111111111110000000000000000000000000000000000011100000000000011111110111111111111011110111100011100000000000000000001111111111111000000000000011100011111111111111001001111111111111000111100011100000000000000000011001111111111111111111110011100001111111111110011000000000000000111111110011100001111111111110011\",\"cpa_bid\":\"1000\",\"hide_if_converted\":\"AD\",\"ad_position\":\"2\",\"smart_inventory\":\"0\",\"inventory_type\":{\"0\":\"INVENTORY_FEED\",\"3\":\"INVENTORY_AWEME_FEED\",\"4\":\"INVENTORY_UNION_SLOT\",\"5\":\"UNION_BOUTIQUE_GAME\"},\"scene_inventory\":\"VIDEO_SCENE\",\"is_presented_video\":\"1\",\"generate_derived_ad\":\"1\",\"is_comment_disable\":\"0\",\"creative_display_mode\":\"CREATIVE_DISPLAY_MODE_RANDOM\",\"third_industry_id\":\"19010101\",\"ad_keywords\":[\"\\u54c8\\u54c8\\u54c8\\u54c8\",\"\\u54c8\\u54c8\\u54c8\\u54c8\",\"\\u54c8\\u54c8\\u54c8\\u54c8\\u54c8\",\"\\u54c8\\u54c8\\u54c8\"],\"city\":[\"11\",\"13\",\"14\",\"15\",\"21\",\"22\"],\"action_categories\":[\"16\",\"18\",\"17\",\"12\",\"15\",\"7\"],\"action_words\":[\"910848\",\"2400931\",\"94903\",\"3449397\",\"2416310\"],\"interest_categories\":[\"16\",\"18\",\"17\",\"12\",\"1501\",\"1502\",\"1503\",\"1505\",\"1506\",\"1507\",\"1508\",\"1509\",\"1510\",\"1511\",\"1512\",\"1513\",\"1514\",\"1515\",\"1516\",\"1517\",\"1518\",\"1519\",\"1520\"],\"interest_words\":[\"50312195\",\"2400931\",\"94903\",\"3449397\",\"2416310\"]}') (error：Unknown column 'content' in 'field list')
+
+-----------------------------------
+0[2019-12-31 11:30:56] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=saveDirectional
+POST: array (
+  'delivery_range' => 'DEFAULT',
+  'union_video_type' => 'ORIGINAL_VIDEO',
+  'district' => 'CITY',
+  'gender' => 'GENDER_MALE',
+  'age' => 
+  array (
+    2 => 'AGE_BETWEEN_24_30',
+    3 => 'AGE_BETWEEN_31_40',
+  ),
+  'interest_action_mode' => 'CUSTOM',
+  'action_scene' => 'E-COMMERCE',
+  'action_days' => '60',
+  'ac' => '4G',
+  'carrier' => 'on',
+  'activate_type' => 'ONE_MONTH_2_THREE_MONTH',
+  'device_brand' => 
+  array (
+    1 => 'HONOR',
+    2 => 'APPLE',
+    3 => 'HUAWEI',
+    12 => 'LETV',
+    14 => 'CHINAMOBILE',
+    23 => '360',
+  ),
+  'launch_price' => 
+  array (
+    0 => '1000',
+    1 => '5000',
+  ),
+  'smart_bid_type' => 'SMART_BID_CUSTOM',
+  'flow_control_mode' => 'FLOW_CONTROL_MODE_SMOOTH',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '300',
+  'schedule_type' => 'SCHEDULE_START_END',
+  'start_time' => '2019-12-27',
+  'end_time' => '2020-01-23',
+  'schedule_time' => '011111111111111111110000001111111111110000000000000000000000000000000000011100000000000011111110111111111111011110111100011100000000000000000001111111111111000000000000011100011111111111111001001111111111111000111100011100000000000000000011001111111111111111111110011100001111111111110011000000000000000111111110011100001111111111110011',
+  'cpa_bid' => '1000',
+  'hide_if_converted' => 'AD',
+  'ad_position' => '2',
+  'smart_inventory' => '0',
+  'inventory_type' => 
+  array (
+    0 => 'INVENTORY_FEED',
+    3 => 'INVENTORY_AWEME_FEED',
+    4 => 'INVENTORY_UNION_SLOT',
+    5 => 'UNION_BOUTIQUE_GAME',
+  ),
+  'scene_inventory' => 'VIDEO_SCENE',
+  'is_presented_video' => '1',
+  'generate_derived_ad' => '1',
+  'is_comment_disable' => '0',
+  'creative_display_mode' => 'CREATIVE_DISPLAY_MODE_RANDOM',
+  'third_industry_id' => '19010101',
+  'ad_keywords' => 
+  array (
+    0 => '哈哈哈哈',
+    1 => '哈哈哈哈',
+    2 => '哈哈哈哈哈',
+    3 => '哈哈哈',
+  ),
+  'package_name' => 'test定向包',
+  'city' => 
+  array (
+    0 => '11',
+    1 => '13',
+    2 => '14',
+    3 => '15',
+    4 => '21',
+    5 => '22',
+  ),
+  'action_categories' => 
+  array (
+    0 => '16',
+    1 => '18',
+    2 => '17',
+    3 => '12',
+    4 => '15',
+    5 => '7',
+  ),
+  'action_words' => 
+  array (
+    0 => '910848',
+    1 => '2400931',
+    2 => '94903',
+    3 => '3449397',
+    4 => '2416310',
+  ),
+  'interest_categories' => 
+  array (
+    0 => '16',
+    1 => '18',
+    2 => '17',
+    3 => '12',
+    4 => '1501',
+    5 => '1502',
+    6 => '1503',
+    7 => '1505',
+    8 => '1506',
+    9 => '1507',
+    10 => '1508',
+    11 => '1509',
+    12 => '1510',
+    13 => '1511',
+    14 => '1512',
+    15 => '1513',
+    16 => '1514',
+    17 => '1515',
+    18 => '1516',
+    19 => '1517',
+    20 => '1518',
+    21 => '1519',
+    22 => '1520',
+  ),
+  'interest_words' => 
+  array (
+    0 => '50312195',
+    1 => '2400931',
+    2 => '94903',
+    3 => '3449397',
+    4 => '2416310',
+  ),
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2019-12-31 11:30:56]Error: /home/vagrant/code/admin/web/admin/model/ModDirectionalPackage.php 13
+SQL: INSERT INTO `directional_package` (`package_name`, `content`) VALUES ('test定向包',  '{\"delivery_range\":\"DEFAULT\",\"union_video_type\":\"ORIGINAL_VIDEO\",\"district\":\"CITY\",\"gender\":\"GENDER_MALE\",\"age\":{\"2\":\"AGE_BETWEEN_24_30\",\"3\":\"AGE_BETWEEN_31_40\"},\"interest_action_mode\":\"CUSTOM\",\"action_scene\":\"E-COMMERCE\",\"action_days\":\"60\",\"ac\":\"4G\",\"carrier\":\"on\",\"activate_type\":\"ONE_MONTH_2_THREE_MONTH\",\"device_brand\":{\"1\":\"HONOR\",\"2\":\"APPLE\",\"3\":\"HUAWEI\",\"12\":\"LETV\",\"14\":\"CHINAMOBILE\",\"23\":\"360\"},\"launch_price\":[\"1000\",\"5000\"],\"smart_bid_type\":\"SMART_BID_CUSTOM\",\"flow_control_mode\":\"FLOW_CONTROL_MODE_SMOOTH\",\"budget_mode\":\"BUDGET_MODE_DAY\",\"budget\":\"300\",\"schedule_type\":\"SCHEDULE_START_END\",\"start_time\":\"2019-12-27\",\"end_time\":\"2020-01-23\",\"schedule_time\":\"011111111111111111110000001111111111110000000000000000000000000000000000011100000000000011111110111111111111011110111100011100000000000000000001111111111111000000000000011100011111111111111001001111111111111000111100011100000000000000000011001111111111111111111110011100001111111111110011000000000000000111111110011100001111111111110011\",\"cpa_bid\":\"1000\",\"hide_if_converted\":\"AD\",\"ad_position\":\"2\",\"smart_inventory\":\"0\",\"inventory_type\":{\"0\":\"INVENTORY_FEED\",\"3\":\"INVENTORY_AWEME_FEED\",\"4\":\"INVENTORY_UNION_SLOT\",\"5\":\"UNION_BOUTIQUE_GAME\"},\"scene_inventory\":\"VIDEO_SCENE\",\"is_presented_video\":\"1\",\"generate_derived_ad\":\"1\",\"is_comment_disable\":\"0\",\"creative_display_mode\":\"CREATIVE_DISPLAY_MODE_RANDOM\",\"third_industry_id\":\"19010101\",\"ad_keywords\":[\"\\u54c8\\u54c8\\u54c8\\u54c8\",\"\\u54c8\\u54c8\\u54c8\\u54c8\",\"\\u54c8\\u54c8\\u54c8\\u54c8\\u54c8\",\"\\u54c8\\u54c8\\u54c8\"],\"city\":[\"11\",\"13\",\"14\",\"15\",\"21\",\"22\"],\"action_categories\":[\"16\",\"18\",\"17\",\"12\",\"15\",\"7\"],\"action_words\":[\"910848\",\"2400931\",\"94903\",\"3449397\",\"2416310\"],\"interest_categories\":[\"16\",\"18\",\"17\",\"12\",\"1501\",\"1502\",\"1503\",\"1505\",\"1506\",\"1507\",\"1508\",\"1509\",\"1510\",\"1511\",\"1512\",\"1513\",\"1514\",\"1515\",\"1516\",\"1517\",\"1518\",\"1519\",\"1520\"],\"interest_words\":[\"50312195\",\"2400931\",\"94903\",\"3449397\",\"2416310\"]}') (error：Unknown column 'content' in 'field list')
+
+-----------------------------------
+0[2019-12-31 11:31:36] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=saveDirectional
+POST: array (
+  'delivery_range' => 'DEFAULT',
+  'union_video_type' => 'ORIGINAL_VIDEO',
+  'district' => 'CITY',
+  'gender' => 'GENDER_MALE',
+  'age' => 
+  array (
+    2 => 'AGE_BETWEEN_24_30',
+    3 => 'AGE_BETWEEN_31_40',
+  ),
+  'interest_action_mode' => 'CUSTOM',
+  'action_scene' => 'E-COMMERCE',
+  'action_days' => '60',
+  'ac' => '4G',
+  'carrier' => 'on',
+  'activate_type' => 'ONE_MONTH_2_THREE_MONTH',
+  'device_brand' => 
+  array (
+    1 => 'HONOR',
+    2 => 'APPLE',
+    3 => 'HUAWEI',
+    12 => 'LETV',
+    14 => 'CHINAMOBILE',
+    23 => '360',
+  ),
+  'launch_price' => 
+  array (
+    0 => '1000',
+    1 => '5000',
+  ),
+  'smart_bid_type' => 'SMART_BID_CUSTOM',
+  'flow_control_mode' => 'FLOW_CONTROL_MODE_SMOOTH',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '300',
+  'schedule_type' => 'SCHEDULE_START_END',
+  'start_time' => '2019-12-27',
+  'end_time' => '2020-01-23',
+  'schedule_time' => '011111111111111111110000001111111111110000000000000000000000000000000000011100000000000011111110111111111111011110111100011100000000000000000001111111111111000000000000011100011111111111111001001111111111111000111100011100000000000000000011001111111111111111111110011100001111111111110011000000000000000111111110011100001111111111110011',
+  'cpa_bid' => '1000',
+  'hide_if_converted' => 'AD',
+  'ad_position' => '2',
+  'smart_inventory' => '0',
+  'inventory_type' => 
+  array (
+    0 => 'INVENTORY_FEED',
+    3 => 'INVENTORY_AWEME_FEED',
+    4 => 'INVENTORY_UNION_SLOT',
+    5 => 'UNION_BOUTIQUE_GAME',
+  ),
+  'scene_inventory' => 'VIDEO_SCENE',
+  'is_presented_video' => '1',
+  'generate_derived_ad' => '1',
+  'is_comment_disable' => '0',
+  'creative_display_mode' => 'CREATIVE_DISPLAY_MODE_RANDOM',
+  'third_industry_id' => '19010101',
+  'ad_keywords' => 
+  array (
+    0 => '哈哈哈哈',
+    1 => '哈哈哈哈',
+    2 => '哈哈哈哈哈',
+    3 => '哈哈哈',
+  ),
+  'package_name' => 'test定向包',
+  'city' => 
+  array (
+    0 => '11',
+    1 => '13',
+    2 => '14',
+    3 => '15',
+    4 => '21',
+    5 => '22',
+  ),
+  'action_categories' => 
+  array (
+    0 => '16',
+    1 => '18',
+    2 => '17',
+    3 => '12',
+    4 => '15',
+    5 => '7',
+  ),
+  'action_words' => 
+  array (
+    0 => '910848',
+    1 => '2400931',
+    2 => '94903',
+    3 => '3449397',
+    4 => '2416310',
+  ),
+  'interest_categories' => 
+  array (
+    0 => '16',
+    1 => '18',
+    2 => '17',
+    3 => '12',
+    4 => '1501',
+    5 => '1502',
+    6 => '1503',
+    7 => '1505',
+    8 => '1506',
+    9 => '1507',
+    10 => '1508',
+    11 => '1509',
+    12 => '1510',
+    13 => '1511',
+    14 => '1512',
+    15 => '1513',
+    16 => '1514',
+    17 => '1515',
+    18 => '1516',
+    19 => '1517',
+    20 => '1518',
+    21 => '1519',
+    22 => '1520',
+  ),
+  'interest_words' => 
+  array (
+    0 => '50312195',
+    1 => '2400931',
+    2 => '94903',
+    3 => '3449397',
+    4 => '2416310',
+  ),
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2019-12-31 11:31:36]Error: /home/vagrant/code/admin/web/admin/model/ModDirectionalPackage.php 13
+SQL: INSERT INTO `directional_package` (`package_name`, `content`, `update_time`, `create_time`) VALUES ('test定向包',  '{\"delivery_range\":\"DEFAULT\",\"union_video_type\":\"ORIGINAL_VIDEO\",\"district\":\"CITY\",\"gender\":\"GENDER_MALE\",\"age\":{\"2\":\"AGE_BETWEEN_24_30\",\"3\":\"AGE_BETWEEN_31_40\"},\"interest_action_mode\":\"CUSTOM\",\"action_scene\":\"E-COMMERCE\",\"action_days\":\"60\",\"ac\":\"4G\",\"carrier\":\"on\",\"activate_type\":\"ONE_MONTH_2_THREE_MONTH\",\"device_brand\":{\"1\":\"HONOR\",\"2\":\"APPLE\",\"3\":\"HUAWEI\",\"12\":\"LETV\",\"14\":\"CHINAMOBILE\",\"23\":\"360\"},\"launch_price\":[\"1000\",\"5000\"],\"smart_bid_type\":\"SMART_BID_CUSTOM\",\"flow_control_mode\":\"FLOW_CONTROL_MODE_SMOOTH\",\"budget_mode\":\"BUDGET_MODE_DAY\",\"budget\":\"300\",\"schedule_type\":\"SCHEDULE_START_END\",\"start_time\":\"2019-12-27\",\"end_time\":\"2020-01-23\",\"schedule_time\":\"011111111111111111110000001111111111110000000000000000000000000000000000011100000000000011111110111111111111011110111100011100000000000000000001111111111111000000000000011100011111111111111001001111111111111000111100011100000000000000000011001111111111111111111110011100001111111111110011000000000000000111111110011100001111111111110011\",\"cpa_bid\":\"1000\",\"hide_if_converted\":\"AD\",\"ad_position\":\"2\",\"smart_inventory\":\"0\",\"inventory_type\":{\"0\":\"INVENTORY_FEED\",\"3\":\"INVENTORY_AWEME_FEED\",\"4\":\"INVENTORY_UNION_SLOT\",\"5\":\"UNION_BOUTIQUE_GAME\"},\"scene_inventory\":\"VIDEO_SCENE\",\"is_presented_video\":\"1\",\"generate_derived_ad\":\"1\",\"is_comment_disable\":\"0\",\"creative_display_mode\":\"CREATIVE_DISPLAY_MODE_RANDOM\",\"third_industry_id\":\"19010101\",\"ad_keywords\":[\"\\u54c8\\u54c8\\u54c8\\u54c8\",\"\\u54c8\\u54c8\\u54c8\\u54c8\",\"\\u54c8\\u54c8\\u54c8\\u54c8\\u54c8\",\"\\u54c8\\u54c8\\u54c8\"],\"city\":[\"11\",\"13\",\"14\",\"15\",\"21\",\"22\"],\"action_categories\":[\"16\",\"18\",\"17\",\"12\",\"15\",\"7\"],\"action_words\":[\"910848\",\"2400931\",\"94903\",\"3449397\",\"2416310\"],\"interest_categories\":[\"16\",\"18\",\"17\",\"12\",\"1501\",\"1502\",\"1503\",\"1505\",\"1506\",\"1507\",\"1508\",\"1509\",\"1510\",\"1511\",\"1512\",\"1513\",\"1514\",\"1515\",\"1516\",\"1517\",\"1518\",\"1519\",\"1520\"],\"interest_words\":[\"50312195\",\"2400931\",\"94903\",\"3449397\",\"2416310\"]}',  '2019-12-31 11:31:36',  '2019-12-31 11:31:36') (error：Unknown column 'content' in 'field list')
+
+-----------------------------------
+0[2019-12-31 11:31:47] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=saveDirectional
+POST: array (
+  'delivery_range' => 'DEFAULT',
+  'union_video_type' => 'ORIGINAL_VIDEO',
+  'district' => 'CITY',
+  'gender' => 'GENDER_MALE',
+  'age' => 
+  array (
+    2 => 'AGE_BETWEEN_24_30',
+    3 => 'AGE_BETWEEN_31_40',
+  ),
+  'interest_action_mode' => 'CUSTOM',
+  'action_scene' => 'E-COMMERCE',
+  'action_days' => '60',
+  'ac' => '4G',
+  'carrier' => 'on',
+  'activate_type' => 'ONE_MONTH_2_THREE_MONTH',
+  'device_brand' => 
+  array (
+    1 => 'HONOR',
+    2 => 'APPLE',
+    3 => 'HUAWEI',
+    12 => 'LETV',
+    14 => 'CHINAMOBILE',
+    23 => '360',
+  ),
+  'launch_price' => 
+  array (
+    0 => '1000',
+    1 => '5000',
+  ),
+  'smart_bid_type' => 'SMART_BID_CUSTOM',
+  'flow_control_mode' => 'FLOW_CONTROL_MODE_SMOOTH',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '300',
+  'schedule_type' => 'SCHEDULE_START_END',
+  'start_time' => '2019-12-27',
+  'end_time' => '2020-01-23',
+  'schedule_time' => '011111111111111111110000001111111111110000000000000000000000000000000000011100000000000011111110111111111111011110111100011100000000000000000001111111111111000000000000011100011111111111111001001111111111111000111100011100000000000000000011001111111111111111111110011100001111111111110011000000000000000111111110011100001111111111110011',
+  'cpa_bid' => '1000',
+  'hide_if_converted' => 'AD',
+  'ad_position' => '2',
+  'smart_inventory' => '0',
+  'inventory_type' => 
+  array (
+    0 => 'INVENTORY_FEED',
+    3 => 'INVENTORY_AWEME_FEED',
+    4 => 'INVENTORY_UNION_SLOT',
+    5 => 'UNION_BOUTIQUE_GAME',
+  ),
+  'scene_inventory' => 'VIDEO_SCENE',
+  'is_presented_video' => '1',
+  'generate_derived_ad' => '1',
+  'is_comment_disable' => '0',
+  'creative_display_mode' => 'CREATIVE_DISPLAY_MODE_RANDOM',
+  'third_industry_id' => '19010101',
+  'ad_keywords' => 
+  array (
+    0 => '哈哈哈哈',
+    1 => '哈哈哈哈',
+    2 => '哈哈哈哈哈',
+    3 => '哈哈哈',
+  ),
+  'package_name' => 'test定向包',
+  'city' => 
+  array (
+    0 => '11',
+    1 => '13',
+    2 => '14',
+    3 => '15',
+    4 => '21',
+    5 => '22',
+  ),
+  'action_categories' => 
+  array (
+    0 => '16',
+    1 => '18',
+    2 => '17',
+    3 => '12',
+    4 => '15',
+    5 => '7',
+  ),
+  'action_words' => 
+  array (
+    0 => '910848',
+    1 => '2400931',
+    2 => '94903',
+    3 => '3449397',
+    4 => '2416310',
+  ),
+  'interest_categories' => 
+  array (
+    0 => '16',
+    1 => '18',
+    2 => '17',
+    3 => '12',
+    4 => '1501',
+    5 => '1502',
+    6 => '1503',
+    7 => '1505',
+    8 => '1506',
+    9 => '1507',
+    10 => '1508',
+    11 => '1509',
+    12 => '1510',
+    13 => '1511',
+    14 => '1512',
+    15 => '1513',
+    16 => '1514',
+    17 => '1515',
+    18 => '1516',
+    19 => '1517',
+    20 => '1518',
+    21 => '1519',
+    22 => '1520',
+  ),
+  'interest_words' => 
+  array (
+    0 => '50312195',
+    1 => '2400931',
+    2 => '94903',
+    3 => '3449397',
+    4 => '2416310',
+  ),
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2019-12-31 11:31:47]Error: /home/vagrant/code/admin/web/admin/model/ModDirectionalPackage.php 13
+SQL: INSERT INTO `directional_package` (`package_name`, `content`, `update_time`, `create_time`) VALUES ('test定向包',  '{\"delivery_range\":\"DEFAULT\",\"union_video_type\":\"ORIGINAL_VIDEO\",\"district\":\"CITY\",\"gender\":\"GENDER_MALE\",\"age\":{\"2\":\"AGE_BETWEEN_24_30\",\"3\":\"AGE_BETWEEN_31_40\"},\"interest_action_mode\":\"CUSTOM\",\"action_scene\":\"E-COMMERCE\",\"action_days\":\"60\",\"ac\":\"4G\",\"carrier\":\"on\",\"activate_type\":\"ONE_MONTH_2_THREE_MONTH\",\"device_brand\":{\"1\":\"HONOR\",\"2\":\"APPLE\",\"3\":\"HUAWEI\",\"12\":\"LETV\",\"14\":\"CHINAMOBILE\",\"23\":\"360\"},\"launch_price\":[\"1000\",\"5000\"],\"smart_bid_type\":\"SMART_BID_CUSTOM\",\"flow_control_mode\":\"FLOW_CONTROL_MODE_SMOOTH\",\"budget_mode\":\"BUDGET_MODE_DAY\",\"budget\":\"300\",\"schedule_type\":\"SCHEDULE_START_END\",\"start_time\":\"2019-12-27\",\"end_time\":\"2020-01-23\",\"schedule_time\":\"011111111111111111110000001111111111110000000000000000000000000000000000011100000000000011111110111111111111011110111100011100000000000000000001111111111111000000000000011100011111111111111001001111111111111000111100011100000000000000000011001111111111111111111110011100001111111111110011000000000000000111111110011100001111111111110011\",\"cpa_bid\":\"1000\",\"hide_if_converted\":\"AD\",\"ad_position\":\"2\",\"smart_inventory\":\"0\",\"inventory_type\":{\"0\":\"INVENTORY_FEED\",\"3\":\"INVENTORY_AWEME_FEED\",\"4\":\"INVENTORY_UNION_SLOT\",\"5\":\"UNION_BOUTIQUE_GAME\"},\"scene_inventory\":\"VIDEO_SCENE\",\"is_presented_video\":\"1\",\"generate_derived_ad\":\"1\",\"is_comment_disable\":\"0\",\"creative_display_mode\":\"CREATIVE_DISPLAY_MODE_RANDOM\",\"third_industry_id\":\"19010101\",\"ad_keywords\":[\"\\u54c8\\u54c8\\u54c8\\u54c8\",\"\\u54c8\\u54c8\\u54c8\\u54c8\",\"\\u54c8\\u54c8\\u54c8\\u54c8\\u54c8\",\"\\u54c8\\u54c8\\u54c8\"],\"city\":[\"11\",\"13\",\"14\",\"15\",\"21\",\"22\"],\"action_categories\":[\"16\",\"18\",\"17\",\"12\",\"15\",\"7\"],\"action_words\":[\"910848\",\"2400931\",\"94903\",\"3449397\",\"2416310\"],\"interest_categories\":[\"16\",\"18\",\"17\",\"12\",\"1501\",\"1502\",\"1503\",\"1505\",\"1506\",\"1507\",\"1508\",\"1509\",\"1510\",\"1511\",\"1512\",\"1513\",\"1514\",\"1515\",\"1516\",\"1517\",\"1518\",\"1519\",\"1520\"],\"interest_words\":[\"50312195\",\"2400931\",\"94903\",\"3449397\",\"2416310\"]}',  '2019-12-31 11:31:47',  '2019-12-31 11:31:47') (error：Unknown column 'content' in 'field list')
+
+-----------------------------------
+0[2019-12-31 11:33:57] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=saveDirectional
+POST: array (
+  'delivery_range' => 'DEFAULT',
+  'union_video_type' => 'ORIGINAL_VIDEO',
+  'district' => 'CITY',
+  'gender' => 'GENDER_MALE',
+  'age' => 
+  array (
+    2 => 'AGE_BETWEEN_24_30',
+    3 => 'AGE_BETWEEN_31_40',
+  ),
+  'interest_action_mode' => 'CUSTOM',
+  'action_scene' => 'E-COMMERCE',
+  'action_days' => '60',
+  'ac' => '4G',
+  'carrier' => 'on',
+  'activate_type' => 'ONE_MONTH_2_THREE_MONTH',
+  'device_brand' => 
+  array (
+    1 => 'HONOR',
+    2 => 'APPLE',
+    3 => 'HUAWEI',
+    12 => 'LETV',
+    14 => 'CHINAMOBILE',
+    23 => '360',
+  ),
+  'launch_price' => 
+  array (
+    0 => '1000',
+    1 => '5000',
+  ),
+  'smart_bid_type' => 'SMART_BID_CUSTOM',
+  'flow_control_mode' => 'FLOW_CONTROL_MODE_SMOOTH',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '300',
+  'schedule_type' => 'SCHEDULE_START_END',
+  'start_time' => '2019-12-27',
+  'end_time' => '2020-01-23',
+  'schedule_time' => '011111111111111111110000001111111111110000000000000000000000000000000000011100000000000011111110111111111111011110111100011100000000000000000001111111111111000000000000011100011111111111111001001111111111111000111100011100000000000000000011001111111111111111111110011100001111111111110011000000000000000111111110011100001111111111110011',
+  'cpa_bid' => '1000',
+  'hide_if_converted' => 'AD',
+  'ad_position' => '2',
+  'smart_inventory' => '0',
+  'inventory_type' => 
+  array (
+    0 => 'INVENTORY_FEED',
+    3 => 'INVENTORY_AWEME_FEED',
+    4 => 'INVENTORY_UNION_SLOT',
+    5 => 'UNION_BOUTIQUE_GAME',
+  ),
+  'scene_inventory' => 'VIDEO_SCENE',
+  'is_presented_video' => '1',
+  'generate_derived_ad' => '1',
+  'is_comment_disable' => '0',
+  'creative_display_mode' => 'CREATIVE_DISPLAY_MODE_RANDOM',
+  'third_industry_id' => '19010101',
+  'ad_keywords' => 
+  array (
+    0 => '哈哈哈哈',
+    1 => '哈哈哈哈',
+    2 => '哈哈哈哈哈',
+    3 => '哈哈哈',
+  ),
+  'package_name' => 'test定向包',
+  'city' => 
+  array (
+    0 => '11',
+    1 => '13',
+    2 => '14',
+    3 => '15',
+    4 => '21',
+    5 => '22',
+  ),
+  'action_categories' => 
+  array (
+    0 => '16',
+    1 => '18',
+    2 => '17',
+    3 => '12',
+    4 => '15',
+    5 => '7',
+  ),
+  'action_words' => 
+  array (
+    0 => '910848',
+    1 => '2400931',
+    2 => '94903',
+    3 => '3449397',
+    4 => '2416310',
+  ),
+  'interest_categories' => 
+  array (
+    0 => '16',
+    1 => '18',
+    2 => '17',
+    3 => '12',
+    4 => '1501',
+    5 => '1502',
+    6 => '1503',
+    7 => '1505',
+    8 => '1506',
+    9 => '1507',
+    10 => '1508',
+    11 => '1509',
+    12 => '1510',
+    13 => '1511',
+    14 => '1512',
+    15 => '1513',
+    16 => '1514',
+    17 => '1515',
+    18 => '1516',
+    19 => '1517',
+    20 => '1518',
+    21 => '1519',
+    22 => '1520',
+  ),
+  'interest_words' => 
+  array (
+    0 => '50312195',
+    1 => '2400931',
+    2 => '94903',
+    3 => '3449397',
+    4 => '2416310',
+  ),
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2019-12-31 11:33:57]Error: /home/vagrant/code/admin/web/admin/model/ModDirectionalPackage.php 13
+SQL: INSERT INTO `directional_package` (`package_name`, `content`, `update_time`, `create_time`) VALUES ('test定向包',  '{\"delivery_range\":\"DEFAULT\",\"union_video_type\":\"ORIGINAL_VIDEO\",\"district\":\"CITY\",\"gender\":\"GENDER_MALE\",\"age\":{\"2\":\"AGE_BETWEEN_24_30\",\"3\":\"AGE_BETWEEN_31_40\"},\"interest_action_mode\":\"CUSTOM\",\"action_scene\":\"E-COMMERCE\",\"action_days\":\"60\",\"ac\":\"4G\",\"carrier\":\"on\",\"activate_type\":\"ONE_MONTH_2_THREE_MONTH\",\"device_brand\":{\"1\":\"HONOR\",\"2\":\"APPLE\",\"3\":\"HUAWEI\",\"12\":\"LETV\",\"14\":\"CHINAMOBILE\",\"23\":\"360\"},\"launch_price\":[\"1000\",\"5000\"],\"smart_bid_type\":\"SMART_BID_CUSTOM\",\"flow_control_mode\":\"FLOW_CONTROL_MODE_SMOOTH\",\"budget_mode\":\"BUDGET_MODE_DAY\",\"budget\":\"300\",\"schedule_type\":\"SCHEDULE_START_END\",\"start_time\":\"2019-12-27\",\"end_time\":\"2020-01-23\",\"schedule_time\":\"011111111111111111110000001111111111110000000000000000000000000000000000011100000000000011111110111111111111011110111100011100000000000000000001111111111111000000000000011100011111111111111001001111111111111000111100011100000000000000000011001111111111111111111110011100001111111111110011000000000000000111111110011100001111111111110011\",\"cpa_bid\":\"1000\",\"hide_if_converted\":\"AD\",\"ad_position\":\"2\",\"smart_inventory\":\"0\",\"inventory_type\":{\"0\":\"INVENTORY_FEED\",\"3\":\"INVENTORY_AWEME_FEED\",\"4\":\"INVENTORY_UNION_SLOT\",\"5\":\"UNION_BOUTIQUE_GAME\"},\"scene_inventory\":\"VIDEO_SCENE\",\"is_presented_video\":\"1\",\"generate_derived_ad\":\"1\",\"is_comment_disable\":\"0\",\"creative_display_mode\":\"CREATIVE_DISPLAY_MODE_RANDOM\",\"third_industry_id\":\"19010101\",\"ad_keywords\":[\"\\u54c8\\u54c8\\u54c8\\u54c8\",\"\\u54c8\\u54c8\\u54c8\\u54c8\",\"\\u54c8\\u54c8\\u54c8\\u54c8\\u54c8\",\"\\u54c8\\u54c8\\u54c8\"],\"city\":[\"11\",\"13\",\"14\",\"15\",\"21\",\"22\"],\"action_categories\":[\"16\",\"18\",\"17\",\"12\",\"15\",\"7\"],\"action_words\":[\"910848\",\"2400931\",\"94903\",\"3449397\",\"2416310\"],\"interest_categories\":[\"16\",\"18\",\"17\",\"12\",\"1501\",\"1502\",\"1503\",\"1505\",\"1506\",\"1507\",\"1508\",\"1509\",\"1510\",\"1511\",\"1512\",\"1513\",\"1514\",\"1515\",\"1516\",\"1517\",\"1518\",\"1519\",\"1520\"],\"interest_words\":[\"50312195\",\"2400931\",\"94903\",\"3449397\",\"2416310\"]}',  '2019-12-31 11:33:57',  '2019-12-31 11:33:57') (error：Unknown column 'content' in 'field list')

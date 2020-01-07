@@ -1,0 +1,15 @@
+.layui-btn + .layui-btn {
+    margin-left: 2px !important;
+}
+
+.layui-btn {
+    border-radius: .2rem !important;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}

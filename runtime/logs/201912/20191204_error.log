@@ -1,0 +1,361 @@
+
+-----------------------------------
+0[2019-12-04 10:51:52] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=adCnter
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-04 10:51:52]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlOptimizat不存在方法：adCnter
+
+-----------------------------------
+0[2019-12-04 13:49:39] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+POST: array (
+  'advertiser_id' => '2915553993320755',
+  'campaign_name' => '111111',
+  'operation' => 'enable',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '10000',
+  'landing_type' => 'LINK',
+  'unique_fk' => '1214545212121212',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  '_lg_' => 'zh_CN',
+)
+0[2019-12-04 13:49:39]Error: /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php 7
+Access level to SrvJrttAction::$platform must be protected (as in class SrvAdPlatformAction) or weaker
+
+-----------------------------------
+0[2019-12-04 13:50:25] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+POST: array (
+  'advertiser_id' => '2915553993320755',
+  'campaign_name' => '111111',
+  'operation' => 'enable',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '10000',
+  'landing_type' => 'LINK',
+  'unique_fk' => '1214545212121212',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  '_lg_' => 'zh_CN',
+)
+0[2019-12-04 13:50:25]Error: /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php 7
+Access level to SrvJrttAction::$platform must be protected (as in class SrvAdPlatformAction) or weaker
+
+-----------------------------------
+0[2019-12-04 13:50:30] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+POST: array (
+  'advertiser_id' => '2915553993320755',
+  'campaign_name' => '111111',
+  'operation' => 'enable',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '10000',
+  'landing_type' => 'LINK',
+  'unique_fk' => '1214545212121212',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  '_lg_' => 'zh_CN',
+)
+0[2019-12-04 13:50:30]Error: /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php 7
+Access level to SrvJrttAction::$platform must be protected (as in class SrvAdPlatformAction) or weaker
+
+-----------------------------------
+0[2019-12-04 13:50:46] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+POST: array (
+  'advertiser_id' => '2915553993320755',
+  'campaign_name' => '111111',
+  'operation' => 'enable',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '10000',
+  'landing_type' => 'LINK',
+  'unique_fk' => '1214545212121212',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  '_lg_' => 'zh_CN',
+)
+0[2019-12-04 13:50:46]Error: /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php 7
+Access level to SrvJrttAction::$platform must be protected (as in class SrvAdPlatformAction) or weaker
+
+-----------------------------------
+0[2019-12-04 13:51:03] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+POST: array (
+  'advertiser_id' => '2915553993320755',
+  'campaign_name' => '111111',
+  'operation' => 'enable',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '10000',
+  'landing_type' => 'LINK',
+  'unique_fk' => '1214545212121212',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  '_lg_' => 'zh_CN',
+)
+0[2019-12-04 13:51:03]Error: /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php 7
+Access level to SrvJrttAction::$platform must be protected (as in class SrvAdPlatformAction) or weaker
+
+-----------------------------------
+0[2019-12-04 13:51:12] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-04 13:51:12]Error: /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php 7
+Access level to SrvJrttAction::$platform must be protected (as in class SrvAdPlatformAction) or weaker
+
+-----------------------------------
+0[2019-12-04 13:51:42] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-04 13:51:42]Error: /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php 7
+Access level to SrvJrttAction::$platform must be protected (as in class SrvAdPlatformAction) or weaker
+
+-----------------------------------
+0[2019-12-04 13:51:52] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-04 13:51:52]Error: /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php 7
+Access level to SrvJrttAction::$platform must be protected (as in class SrvAdPlatformAction) or weaker
+
+-----------------------------------
+0[2019-12-04 13:52:39] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-04 13:52:39]Error: /home/vagrant/code/admin/web/admin/service/SrvAdPlatformAction.php 84
+Uncaught Error: Cannot access private property SrvJrttAction::$config in /home/vagrant/code/admin/web/admin/service/SrvAdPlatformAction.php:84
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php(93): SrvAdPlatformAction->checkParams(Array, 'upload_ad_img')
+#1 /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php(133): SrvJrttAction->uploadAdImg(Array, Array, Array)
+#2 /home/vagrant/code/admin/lib/YX.php(173): CtlOptimizat->test()
+#3 /home/vagrant/code/admin/lib/YX.php(136): YX::route('optimizat', 'test')
+#4 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#5 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-04 14:43:08] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+POST: array (
+  'advertiser_id' => '2915553993320755',
+  'campaign_name' => '111111',
+  'operation' => 'enable',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '10000',
+  'landing_type' => 'LINK',
+  'unique_fk' => '1214545212121212',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  '_lg_' => 'zh_CN',
+)
+0[2019-12-04 14:43:08]Error: /home/vagrant/code/admin/web/admin/service/SrvGdtAction.php 7
+Access level to SrvGdtAction::$isDebug must be protected (as in class SrvAdPlatformAction) or weaker
+
+-----------------------------------
+0[2019-12-04 14:43:42] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+POST: array (
+  'advertiser_id' => '2915553993320755',
+  'campaign_name' => '111111',
+  'operation' => 'enable',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '10000',
+  'landing_type' => 'LINK',
+  'unique_fk' => '1214545212121212',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  '_lg_' => 'zh_CN',
+)
+0[2019-12-04 14:43:42]Error: /home/vagrant/code/admin/web/admin/service/SrvGdtAction.php 7
+Access level to SrvGdtAction::$isDebug must be protected (as in class SrvAdPlatformAction) or weaker
+
+-----------------------------------
+0[2019-12-04 14:44:00] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+POST: array (
+  'advertiser_id' => '2915553993320755',
+  'campaign_name' => '111111',
+  'operation' => 'enable',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '10000',
+  'landing_type' => 'LINK',
+  'unique_fk' => '1214545212121212',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  '_lg_' => 'zh_CN',
+)
+0[2019-12-04 14:44:00]Error: /home/vagrant/code/admin/web/admin/service/SrvGdtAction.php 7
+Access level to SrvGdtAction::$isDebug must be protected (as in class SrvAdPlatformAction) or weaker
+
+-----------------------------------
+0[2019-12-04 14:59:36] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=test
+POST: array (
+  'advertiser_id' => '2915553993320755',
+  'campaign_name' => '111111',
+  'operation' => 'enable',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '10000',
+  'landing_type' => 'LINK',
+  'unique_fk' => '1214545212121212',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  '_lg_' => 'zh_CN',
+)
+0[2019-12-04 14:59:36]Error: /home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php 128
+syntax error, unexpected ''https://api.e.qq.com/v1.1/adg' (T_CONSTANT_ENCAPSED_STRING)
+
+-----------------------------------
+0[2019-12-04 20:01:52] 192.168.10.1 http://admanage.com/?ct=copywriting&ac=index
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-04 20:01:52]Error: /home/vagrant/code/admin/web/admin/controller/CtlCopywriting.php 17
+Uncaught Error: Call to undefined method SrvCopywriting::getCopywritingList() in /home/vagrant/code/admin/web/admin/controller/CtlCopywriting.php:17
+Stack trace:
+#0 /home/vagrant/code/admin/lib/YX.php(173): CtlCopywriting->index()
+#1 /home/vagrant/code/admin/lib/YX.php(136): YX::route('copywriting', 'index')
+#2 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#3 {main}
+  thrown
+
+-----------------------------------
+0[2019-12-04 20:02:13] 192.168.10.1 http://admanage.com/?ct=copywriting&ac=index
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-04 20:02:13]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-12-04 20:08:46] 192.168.10.1 http://admanage.com/?ct=copywriting&ac=add
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-04 20:08:46]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-12-04 21:48:33] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=addCopywritingAction
+POST: array (
+  'data' => 'channel=1&content=sdfdsf&tag=',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-04 21:48:33]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 13
+SQL: INSERT INTO `ad_copywriting` (`content`, `tag`, `update_time`, `create_time`) VALUES ('',  '',  '2019-12-04 21:48:33',  '2019-12-04 21:48:33') (error：Field 'channel' doesn't have a default value)
+
+-----------------------------------
+0[2019-12-04 21:48:45] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=addCopywritingAction
+POST: array (
+  'data' => 'channel=1&content=sdfsdf&tag=',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-04 21:48:45]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 13
+SQL: INSERT INTO `ad_copywriting` (`content`, `tag`, `update_time`, `create_time`) VALUES ('',  '',  '2019-12-04 21:48:45',  '2019-12-04 21:48:45') (error：Field 'channel' doesn't have a default value)
+
+-----------------------------------
+0[2019-12-04 21:49:19] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=addCopywritingAction
+POST: array (
+  'data' => 'channel=1&content=sdfsf&tag=',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-04 21:49:19]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 14
+SQL: INSERT INTO `ad_copywriting` (`content`, `tag`, `update_time`, `create_time`) VALUES ('',  '',  '2019-12-04 21:49:19',  '2019-12-04 21:49:19') (error：Field 'channel' doesn't have a default value)
+
+-----------------------------------
+0[2019-12-04 21:50:36] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=addCopywritingAction
+POST: array (
+  'data' => 'channel=1&content=dsfsdf&tag=',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-04 21:50:36]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 14
+SQL: INSERT INTO `ad_copywriting` (`content`, `tag`, `channel`, `update_time`, `create_time`) VALUES ('',  '',  '',  '2019-12-04 21:50:36',  '2019-12-04 21:50:36') (error：Incorrect integer value: '' for column 'channel' at row 1)
+
+-----------------------------------
+0[2019-12-04 21:51:30] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=addCopywritingAction
+POST: array (
+  'data' => 'channel=1&content=sdfdsfdsf&tag=',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-12-04 21:51:30]Error: /home/vagrant/code/admin/web/admin/model/ModCopywriting.php 14
+SQL: INSERT INTO `ad_copywriting` (`content`, `tag`, `channel`, `update_time`, `create_time`) VALUES ('',  '',  '',  '2019-12-04 21:51:30',  '2019-12-04 21:51:30') (error：Incorrect integer value: '' for column 'channel' at row 1)

@@ -1,0 +1,116 @@
+
+-----------------------------------
+0[2020-01-07 11:15:56] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 11:15:56]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-07 20:30:24] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=batchCreateAd
+POST: array (
+  'game_id' => '3',
+  'type' => '1',
+  'title_list' => '[1,2,3,4,5,6,7,8,9]',
+  'user_id' => '[1,2,3,4]',
+  'channel_id' => '37',
+  'package_id' => '1',
+  'operation' => '1',
+  'image_list' => '[2]',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-07 20:30:24]Error: /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php 162
+Uncaught TypeError: Argument 1 passed to SrvBatchCreateAd::_getTitleList() must be of the type array, string given, called in /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php on line 130 and defined in /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php:162
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(130): SrvBatchCreateAd->_getTitleList('[1,2,3,4,5,6,7,...', 2)
+#1 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(36): SrvBatchCreateAd->_pushAd2Platform(Array, 24)
+#2 /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php(50): SrvBatchCreateAd->createAd(Array)
+#3 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->batchCreateAd()
+#4 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'batchCreateAd')
+#5 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#6 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-07 20:31:20] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=batchCreateAd
+POST: array (
+  'game_id' => '3',
+  'type' => '1',
+  'title_list' => '[1,2,3,4,5,6,7,8,9]',
+  'user_id' => '[1,2,3,4]',
+  'channel_id' => '37',
+  'package_id' => '1',
+  'operation' => '1',
+  'image_list' => '[2]',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-07 20:31:20]Error: /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php 142
+Uncaught TypeError: Argument 1 passed to SrvBatchCreateAd::_getImageList() must be of the type array, string given, called in /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php on line 131 and defined in /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php:142
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(131): SrvBatchCreateAd->_getImageList('[2]')
+#1 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(36): SrvBatchCreateAd->_pushAd2Platform(Array, 25)
+#2 /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php(50): SrvBatchCreateAd->createAd(Array)
+#3 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->batchCreateAd()
+#4 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'batchCreateAd')
+#5 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#6 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-07 20:31:39] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=batchCreateAd
+POST: array (
+  'game_id' => '3',
+  'type' => '1',
+  'title_list' => '[1,2,3,4,5,6,7,8,9]',
+  'user_id' => '[1,2,3,4]',
+  'channel_id' => '37',
+  'package_id' => '1',
+  'operation' => '1',
+  'image_list' => '[2]',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-07 20:31:39]Error: /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php 227
+Uncaught ArgumentCountError: Too few arguments to function SrvJrttAction::uploadAdImg(), 0 passed in /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php on line 150 and at least 2 expected in /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php:227
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(150): SrvJrttAction->uploadAdImg()
+#1 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(131): SrvBatchCreateAd->_getImageList(Array)
+#2 /home/vagrant/code/admin/web/admin/service/SrvBatchCreateAd.php(36): SrvBatchCreateAd->_pushAd2Platform(Array, 26)
+#3 /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php(50): SrvBatchCreateAd->createAd(Array)
+#4 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->batchCreateAd()
+#5 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'batchCreateAd')
+#6 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#7 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-07 21:16:19] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-07 21:16:19]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage

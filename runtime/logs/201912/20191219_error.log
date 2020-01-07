@@ -1,0 +1,75 @@
+
+-----------------------------------
+0[2019-12-19 10:14:47] 192.168.10.1 http://admanage.com/?ct=kfVip&ac=vipManage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2019-12-19 10:14:47]Error: /home/vagrant/code/admin/web/admin/model/ModKfVip.php 144
+SQL: SELECT COUNT(*) AS c FROM (SELECT a.*,b.`admin_id`,MAX(c.`login_time`) login_time,MAX(c.`pay_time`) pay_time,
+                    DATEDIFF(DATE(NOW()),FROM_UNIXTIME(MAX(c.`pay_time`))) AS diff_pay,
+                    DATEDIFF(DATE(NOW()),FROM_UNIXTIME(MAX(c.`login_time`))) AS diff_login
+                    FROM `kf_vip` a 
+                    LEFT JOIN `kf_game_server` b 
+                        ON a.`game_id`=b.`parent_id` AND a.`server_id`=b.`server_id` AND a.`platform`=b.`platform`
+                    LEFT JOIN `user_role` c FORCE INDEX(`uid`)
+                        ON a.`uid`=c.`uid` AND a.`role_id`=c.`role_id` AND a.`server_id`=c.`server_id`
+                 WHERE  1  and a.`insr_time`>='1576684800' and a.`insr_time`<='1576769039' GROUP BY a.`game_id`,a.`uid`,a.`server_id`,a.`role_id`
+                 HAVING  1  ) tmp limit 1(error：Expression #21 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sdk_data.b.admin_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by)
+0[2019-12-19 10:14:47]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-12-19 10:14:48] 192.168.10.1 http://admanage.com/?ct=kfVip&ac=vipAchieve
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2019-12-19 10:14:48]Error: /home/vagrant/code/admin/web/admin/model/ModKfVip.php 296
+SQL: select count(c.`role_id`) as pay_man,sum(c.`total_charge`) as pay_money,c.`insr_kefu`,c.`parent_id`,c.`account`
+              from (
+                    select a.`uid`,a.`game_id`,a.`role_id`,sum(a.`total_fee`) as total_charge,b.`insr_kefu`,
+                      b.`game_id` as parent_id,c.`username` `account`
+                    from `sy_order` as a
+                        inner join `game` as g
+                            using(`game_id`)
+                        inner join `kf_vip` as b
+                            force index(uid)
+                            force index(game_id)
+                            on a.`uid`=b.`uid` 
+                            and g.`parent_id`=b.`game_id` 
+                            and a.`server_id`=b.`server_id` 
+                            and a.`role_id`=b.`role_id`
+                        left join `sy_user` as c
+                            on a.`uid`=c.`uid`    
+                    where  1  and a.`pay_time`>='1575129600' and a.`pay_time`<='1576771199' and a.`pay_time` >= b.`touch_time`
+                        and b.`status`=2 and a.`is_pay`=2
+                    group by parent_id,a.`uid`,a.`role_id`
+                ) as c where c.`total_charge` >= 500000 group by c.`insr_kefu`,c.`parent_id`(error：Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sdk_data.a.game_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by)
+0[2019-12-19 10:14:48]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+0[2019-12-19 10:14:48]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-12-19 21:27:25] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=actionKeyword
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2019-12-19 21:27:25]Error: /home/vagrant/code/admin/web/admin/service/SrvAdPlatformAction.php 110
+Uncaught Exception: api:get_action_keyword query_words为必填字段 in /home/vagrant/code/admin/web/admin/service/SrvAdPlatformAction.php:110
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php(145): SrvAdPlatformAction->checkParams(Array, 'get_action_keyw...')
+#1 /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php(228): SrvJrttAction->getActionKeyword(Array, Array)
+#2 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->actionKeyword()
+#3 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'actionKeyword')
+#4 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#5 {main}
+  thrown

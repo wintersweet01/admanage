@@ -1,0 +1,119 @@
+
+-----------------------------------
+0[2019-12-30 21:38:04] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=saveDirectional
+POST: array (
+  'delivery_range' => 'UNION',
+  'union_video_type' => 'REWARDED_VIDEO',
+  'district' => 'CITY',
+  'gender' => 'GENDER_MALE',
+  'age' => 
+  array (
+    1 => 'AGE_BETWEEN_18_23',
+    2 => 'AGE_BETWEEN_24_30',
+    3 => 'AGE_BETWEEN_31_40',
+  ),
+  'interest_action_mode' => 'CUSTOM',
+  'action_scene' => 'APP',
+  'action_days' => '30',
+  'ac' => 'WIFI',
+  'carrier' => 'MOBILE',
+  'activate_type' => 'on',
+  'device_brand' => 
+  array (
+    1 => 'HONOR',
+    2 => 'APPLE',
+    3 => 'HUAWEI',
+    4 => 'XIAOMI',
+  ),
+  'launch_price' => '500',
+  'smart_bid_type' => 'SMART_BID_CONSERVATIVE',
+  'flow_control_mode' => 'FLOW_CONTROL_MODE_FAST',
+  'budget_mode' => 'BUDGET_MODE_DAY',
+  'budget' => '1000',
+  'schedule_type' => 'SCHEDULE_FROM_NOW',
+  'start_time' => '2019-12-30',
+  'end_time' => '2019-12-30',
+  'schedule_time' => '000110000000000000000000000111111000010000000000000110000000110000011100000000000000000000000000000110000000110000000011111110000000000000000000000000000000000000001110000000000000000000000000010000000000010000001110000000011111100000000000010001110000000001110000000111111000000000000000000000000011110000000000000000000001111100000000',
+  'cpa_bid' => '1000',
+  'hide_if_converted' => 'NO_EXCLUDE',
+  'ad_position' => '3',
+  'smart_inventory' => '0',
+  'inventory_type' => 
+  array (
+    0 => 'INVENTORY_FEED',
+    3 => 'INVENTORY_AWEME_FEED',
+    4 => 'INVENTORY_UNION_SLOT',
+    5 => 'UNION_BOUTIQUE_GAME',
+  ),
+  'scene_inventory' => 'VIDEO_SCENE',
+  'is_presented_video' => '1',
+  'generate_derived_ad' => '1',
+  'is_comment_disable' => '1',
+  'creative_display_mode' => 'CREATIVE_DISPLAY_MODE_CTR',
+  'third_industry_id' => '',
+  'ad_keywords' => 
+  array (
+    0 => 'kkkdf',
+    1 => 'ksjfk',
+    2 => 'sdkk',
+    3 => 'dskjk',
+    4 => 'sdfkd',
+    5 => 'dskfkds',
+  ),
+  'city' => 
+  array (
+    0 => '11',
+    1 => '12',
+    2 => '130100',
+    3 => '130200',
+    4 => '130300',
+    5 => '130500',
+    6 => '130600',
+    7 => '130700',
+    8 => '130800',
+    9 => '130900',
+    10 => '131000',
+    11 => '131100',
+  ),
+  'action_categories' => 
+  array (
+    0 => '16',
+    1 => '1803',
+    2 => '1805',
+    3 => '1807',
+  ),
+  'action_words' => 
+  array (
+    0 => '71465',
+    1 => '2400931',
+    2 => '3449397',
+    3 => '94903',
+  ),
+  'interest_categories' => 
+  array (
+    0 => '1602',
+    1 => '160404',
+    2 => '160413',
+  ),
+  'interest_words' => 
+  array (
+    0 => '50312195',
+    1 => '2400931',
+    2 => '94903',
+    3 => '3449397',
+  ),
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2019-12-30 21:38:04]Error: /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php 20
+Uncaught Error: Call to undefined function dd() in /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php:20
+Stack trace:
+#0 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->saveDirectional()
+#1 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'saveDirectional')
+#2 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#3 {main}
+  thrown

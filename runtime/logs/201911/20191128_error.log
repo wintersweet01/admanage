@@ -1,0 +1,599 @@
+
+-----------------------------------
+0[2019-11-28 15:24:12] 192.168.10.1 http://admanage.com/?ct=index&ac=login
+POST: array (
+  'username' => '1111',
+  'password' => '1111',
+  'code' => '',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+)
+0[2019-11-28 15:24:12]Error: /home/vagrant/code/admin/web/admin/model/ModAuth.php 19
+SQL: SELECT a.*, b.* FROM `admin_user` a LEFT JOIN `admin_role` b ON a.`role_id` = b.`role_id` WHERE a.`user` = '1111' limit 1(error：Table 'sdk_data.admin_user' doesn't exist)
+
+-----------------------------------
+0[2019-11-28 16:10:58] 192.168.10.1 http://admanage.com/?ct=admin
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+)
+0[2019-11-28 16:10:58]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlAdmin不存在方法：index
+
+-----------------------------------
+0[2019-11-28 16:15:42] 192.168.10.1 http://admanage.com/?ct=index&ac=addAdmin
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+)
+0[2019-11-28 16:15:42]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlIndex不存在方法：addAdmin
+
+-----------------------------------
+0[2019-11-28 16:15:49] 192.168.10.1 http://admanage.com/?ct=index&ac=addadmin
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+)
+0[2019-11-28 16:15:49]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlIndex不存在方法：addadmin
+
+-----------------------------------
+0[2019-11-28 16:16:35] 192.168.10.1 http://admanage.com/?ct=index&ac=addadmin
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+)
+0[2019-11-28 16:16:35]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlIndex不存在方法：addadmin
+
+-----------------------------------
+0[2019-11-28 16:41:49] 192.168.10.1 http://admanage.com/?ct=base
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 16:41:49]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 16:42:06] 192.168.10.1 http://admanage.com/?ct=platform&ac=gameList
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 16:42:06]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 16:42:06] 192.168.10.1 http://admanage.com/?ct=platform&ac=gameList&json=1
+POST: array (
+  'page' => '1',
+  'limit' => '15',
+  'data' => '',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 16:42:06]Error: /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php 1300
+Uncaught Exception: Can not connect to tcp://127.0.0.1:1238 Connection refused in /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php:1300
+Stack trace:
+#0 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(726): GatewayClient\Gateway::getAllGatewayAddressesFromRegister()
+#1 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(701): GatewayClient\Gateway::getAllGatewayAddress()
+#2 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(214): GatewayClient\Gateway::getBufferFromAllGateway(Array)
+#3 /home/vagrant/code/admin/web/admin/service/SrvPlatform.php(111): GatewayClient\Gateway::getAllClientSessions()
+#4 /home/vagrant/code/admin/web/admin/controller/CtlPlatform.php(25): SrvPlatform->getGameList_page(1, 15, Array)
+#5 /home/vagrant/code/admin/lib/YX.php(173): CtlPlatform->gameList()
+#6 /home/vagrant/code/admin/lib/YX.php(136): YX::route('platform', 'gameList')
+#7 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#8 {main}
+  thrown
+
+-----------------------------------
+0[2019-11-28 16:42:29] 192.168.10.1 http://admanage.com/?ct=platform&ac=gameList&json=1
+POST: array (
+  'page' => '1',
+  'limit' => '15',
+  'data' => '',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 16:42:29]Error: /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php 1300
+Uncaught Exception: Can not connect to tcp://127.0.0.1:1238 Connection refused in /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php:1300
+Stack trace:
+#0 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(726): GatewayClient\Gateway::getAllGatewayAddressesFromRegister()
+#1 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(701): GatewayClient\Gateway::getAllGatewayAddress()
+#2 /home/vagrant/code/admin/lib/library/GatewayClient/Gateway.php(214): GatewayClient\Gateway::getBufferFromAllGateway(Array)
+#3 /home/vagrant/code/admin/web/admin/service/SrvPlatform.php(111): GatewayClient\Gateway::getAllClientSessions()
+#4 /home/vagrant/code/admin/web/admin/controller/CtlPlatform.php(25): SrvPlatform->getGameList_page(1, 15, Array)
+#5 /home/vagrant/code/admin/lib/YX.php(173): CtlPlatform->gameList()
+#6 /home/vagrant/code/admin/lib/YX.php(136): YX::route('platform', 'gameList')
+#7 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#8 {main}
+  thrown
+
+-----------------------------------
+0[2019-11-28 17:21:27] 192.168.10.1 http://admanage.com/?ct=admin&ac=adminList
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:21:27]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 17:21:37] 192.168.10.1 http://admanage.com/?ct=platform&ac=packageList
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:21:37]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 17:21:42] 192.168.10.1 http://admanage.com/?ct=platform&ac=packageGift
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:21:42]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 17:21:48] 192.168.10.1 http://admanage.com/?ct=data&ac=online
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:21:48]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 17:22:19] 192.168.10.1 http://admanage.com/?ct=data&ac=dataDay
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:22:19]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 17:22:22] 192.168.10.1 http://admanage.com/?ct=data&ac=serverCondition
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:22:22]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 17:22:26] 192.168.10.1 http://admanage.com/?ct=data&ac=roi
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:22:26]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 17:22:38] 192.168.10.1 http://admanage.com/?ct=system&ac=adioManage
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:22:38]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 17:22:38] 192.168.10.1 http://admanage.com/?ct=system&ac=adioManage&json=1&page=1&limit=
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:22:38]Error: /home/vagrant/code/admin/web/admin/model/ModMarket.php 277
+SQL: SELECT COUNT(*) c FROM `ad_adio` a WHERE 1 limit 1(error：Table 'sdk_data.ad_adio' doesn't exist)
+0[2019-11-28 17:22:38]Warn: /home/vagrant/code/admin/web/admin/service/SrvMarket.php 337
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 17:22:40] 192.168.10.1 http://admanage.com/?ct=system&ac=mediaAccountManage
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:22:40]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 17:22:40] 192.168.10.1 http://admanage.com/?ct=system&ac=mediaAccountManage&json=1&page=1&limit=18
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:22:40]Error: /home/vagrant/code/admin/web/admin/model/ModMarket.php 105
+SQL: SELECT count(*) c FROM `ad_account` WHERE 1 limit 1(error：Table 'sdk_data.ad_account' doesn't exist)
+0[2019-11-28 17:22:40]Warn: /home/vagrant/code/admin/web/admin/service/SrvMarket.php 68
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 17:22:42] 192.168.10.1 http://admanage.com/?ct=system&ac=appManage
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:22:42]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 17:22:42] 192.168.10.1 http://admanage.com/?ct=system&ac=appManage&json=1&page=1&limit=
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:22:42]Error: /home/vagrant/code/admin/web/admin/model/ModMarket.php 191
+SQL: SELECT COUNT(*) c FROM `ad_app` WHERE 1 limit 1(error：Table 'sdk_data.ad_app' doesn't exist)
+0[2019-11-28 17:22:42]Warn: /home/vagrant/code/admin/web/admin/service/SrvMarket.php 253
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 17:22:44] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=adCnter
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:22:44]Error: /home/vagrant/code/admin/lib/YX.php 226
+自动加载CtlOptimizat时，文件/home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php不存在
+
+-----------------------------------
+0[2019-11-28 17:22:49] 192.168.10.1 http://admanage.com/?ct=system&ac=appManage&json=1&page=1&limit=
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:22:49]Error: /home/vagrant/code/admin/web/admin/model/ModMarket.php 191
+SQL: SELECT COUNT(*) c FROM `ad_app` WHERE 1 limit 1(error：Table 'sdk_data.ad_app' doesn't exist)
+0[2019-11-28 17:22:49]Warn: /home/vagrant/code/admin/web/admin/service/SrvMarket.php 253
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 17:22:51] 192.168.10.1 http://admanage.com/?ct=auxTool&ac=toolList
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:22:51]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 17:23:02] 192.168.10.1 http://admanage.com/?ct=auxTool&ac=toolAim
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:23:02]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 17:23:03] 192.168.10.1 http://admanage.com/?ct=auxTool&ac=toolText
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:23:03]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_template.php 219
+Uncaught  --> Smarty: Unable to load template file 'tool/tooltext.tpl' <-- 
+  thrown
+
+-----------------------------------
+0[2019-11-28 17:23:19] 192.168.10.1 http://admanage.com/?ct=system&ac=adioManage&json=1&page=1&limit=
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:23:19]Error: /home/vagrant/code/admin/web/admin/model/ModMarket.php 277
+SQL: SELECT COUNT(*) c FROM `ad_adio` a WHERE 1 limit 1(error：Table 'sdk_data.ad_adio' doesn't exist)
+0[2019-11-28 17:23:19]Warn: /home/vagrant/code/admin/web/admin/service/SrvMarket.php 337
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 17:23:20] 192.168.10.1 http://admanage.com/?ct=system&ac=adioAdd
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:23:20]Error: /home/vagrant/code/admin/web/admin/model/ModMarket.php 79
+SQL: SELECT a.`account_id`,a.`media`,a.`account`,a.`account_nickname`,a.`status`,b.`advertiser_id` 
+              FROM `ad_account` a 
+              LEFT JOIN `ad_account_auth` b ON a.`account_id`=b.`account_id`
+              WHERE 1  
+              ORDER BY b.`time` DESC(error：Table 'sdk_data.ad_account' doesn't exist)
+0[2019-11-28 17:23:20]Error: /home/vagrant/code/admin/web/admin/model/ModMarket.php 236
+SQL: SELECT * FROM `ad_adio_group`(error：Table 'sdk_data.ad_adio_group' doesn't exist)
+0[2019-11-28 17:23:20]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 17:23:26] 192.168.10.1 http://admanage.com/?ct=system&ac=adioManage&json=1&page=1&limit=
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:23:26]Error: /home/vagrant/code/admin/web/admin/model/ModMarket.php 277
+SQL: SELECT COUNT(*) c FROM `ad_adio` a WHERE 1 limit 1(error：Table 'sdk_data.ad_adio' doesn't exist)
+0[2019-11-28 17:23:26]Warn: /home/vagrant/code/admin/web/admin/service/SrvMarket.php 337
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 17:23:28] 192.168.10.1 http://admanage.com/?ct=system&ac=mediaAccountManage&json=1&page=1&limit=18
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:23:28]Error: /home/vagrant/code/admin/web/admin/model/ModMarket.php 105
+SQL: SELECT count(*) c FROM `ad_account` WHERE 1 limit 1(error：Table 'sdk_data.ad_account' doesn't exist)
+0[2019-11-28 17:23:28]Warn: /home/vagrant/code/admin/web/admin/service/SrvMarket.php 68
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 17:23:33] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=adCnter
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:23:33]Error: /home/vagrant/code/admin/lib/YX.php 226
+自动加载CtlOptimizat时，文件/home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php不存在
+
+-----------------------------------
+0[2019-11-28 17:23:37] 192.168.10.1 http://admanage.com/?ct=system&ac=mediaAccountManage&json=1&page=1&limit=18
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:23:37]Error: /home/vagrant/code/admin/web/admin/model/ModMarket.php 105
+SQL: SELECT count(*) c FROM `ad_account` WHERE 1 limit 1(error：Table 'sdk_data.ad_account' doesn't exist)
+0[2019-11-28 17:23:37]Warn: /home/vagrant/code/admin/web/admin/service/SrvMarket.php 68
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 18:01:27] 192.168.10.1 http://admanage.com/?ct=material&ac=materialBox
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 18:01:27]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 18:21:14] 192.168.10.1 http://admanage.com/?ct=system&ac=adioManage&json=1&page=1&limit=
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 18:21:14]Error: /home/vagrant/code/admin/web/admin/model/ModMarket.php 277
+SQL: SELECT COUNT(*) c FROM `ad_adio` a WHERE 1 limit 1(error：Table 'sdk_data.ad_adio' doesn't exist)
+0[2019-11-28 18:21:14]Warn: /home/vagrant/code/admin/web/admin/service/SrvMarket.php 337
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 18:21:16] 192.168.10.1 http://admanage.com/?ct=system&ac=mediaAccountManage&json=1&page=1&limit=18
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 18:21:16]Error: /home/vagrant/code/admin/web/admin/model/ModMarket.php 105
+SQL: SELECT count(*) c FROM `ad_account` WHERE 1 limit 1(error：Table 'sdk_data.ad_account' doesn't exist)
+0[2019-11-28 18:21:16]Warn: /home/vagrant/code/admin/web/admin/service/SrvMarket.php 68
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 18:21:19] 192.168.10.1 http://admanage.com/?ct=system&ac=mediaAccountAdd
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 18:21:19]Error: /home/vagrant/code/admin/web/admin/model/ModMarket.php 205
+SQL: SELECT * FROM `ad_app` ORDER BY `time` DESC(error：Table 'sdk_data.ad_app' doesn't exist)
+0[2019-11-28 18:21:19]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+0[2019-11-28 18:21:19]Warn: /home/vagrant/code/admin/runtime/cache/a60c8abe9646f46de23071fbf3a0c75cba713b20_2.file.accountadd.tpl.php 145
+in_array() expects parameter 2 to be array, null given
+
+-----------------------------------
+0[2019-11-28 18:21:23] 192.168.10.1 http://admanage.com/?ct=system&ac=appManage&json=1&page=1&limit=
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 18:21:23]Error: /home/vagrant/code/admin/web/admin/model/ModMarket.php 191
+SQL: SELECT COUNT(*) c FROM `ad_app` WHERE 1 limit 1(error：Table 'sdk_data.ad_app' doesn't exist)
+0[2019-11-28 18:21:23]Warn: /home/vagrant/code/admin/web/admin/service/SrvMarket.php 253
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 18:21:25] 192.168.10.1 http://admanage.com/?ct=optimizat&ac=adCnter
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 18:21:25]Error: /home/vagrant/code/admin/lib/YX.php 226
+自动加载CtlOptimizat时，文件/home/vagrant/code/admin/web/admin/controller/CtlOptimizat.php不存在
+
+-----------------------------------
+0[2019-11-28 18:21:27] 192.168.10.1 http://admanage.com/?ct=system&ac=appManage&json=1&page=1&limit=
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 18:21:27]Error: /home/vagrant/code/admin/web/admin/model/ModMarket.php 191
+SQL: SELECT COUNT(*) c FROM `ad_app` WHERE 1 limit 1(error：Table 'sdk_data.ad_app' doesn't exist)
+0[2019-11-28 18:21:27]Warn: /home/vagrant/code/admin/web/admin/service/SrvMarket.php 253
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 18:21:34] 192.168.10.1 http://admanage.com/?ct=auxTool&ac=toolText
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 18:21:34]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_template.php 219
+Uncaught  --> Smarty: Unable to load template file 'tool/tooltext.tpl' <-- 
+  thrown
+
+-----------------------------------
+0[2019-11-28 18:21:41] 192.168.10.1 http://admanage.com/?ct=system&ac=adioManage&json=1&page=1&limit=
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 18:21:41]Error: /home/vagrant/code/admin/web/admin/model/ModMarket.php 277
+SQL: SELECT COUNT(*) c FROM `ad_adio` a WHERE 1 limit 1(error：Table 'sdk_data.ad_adio' doesn't exist)
+0[2019-11-28 18:21:41]Warn: /home/vagrant/code/admin/web/admin/service/SrvMarket.php 337
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 18:21:41] 192.168.10.1 http://admanage.com/?ct=system&ac=mediaAccountManage&json=1&page=1&limit=18
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 18:21:41]Error: /home/vagrant/code/admin/web/admin/model/ModMarket.php 105
+SQL: SELECT count(*) c FROM `ad_account` WHERE 1 limit 1(error：Table 'sdk_data.ad_account' doesn't exist)
+0[2019-11-28 18:21:41]Warn: /home/vagrant/code/admin/web/admin/service/SrvMarket.php 68
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 18:21:42] 192.168.10.1 http://admanage.com/?ct=system&ac=appManage&json=1&page=1&limit=
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 18:21:42]Error: /home/vagrant/code/admin/web/admin/model/ModMarket.php 191
+SQL: SELECT COUNT(*) c FROM `ad_app` WHERE 1 limit 1(error：Table 'sdk_data.ad_app' doesn't exist)
+0[2019-11-28 18:21:42]Warn: /home/vagrant/code/admin/web/admin/service/SrvMarket.php 253
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 20:27:13] 192.168.10.1 http://admanage.com/?ct=material&ac=materialDay
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-11-28 20:27:13]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 20:27:35] 192.168.10.1 http://admanage.com/?ct=adData&ac=userEffect
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-11-28 20:27:35]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 20:30:54] 192.168.10.1 http://admanage.com/?ct=ad&ac=channelList
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-11-28 20:30:54]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 20:36:15] 192.168.10.1 http://admanage.com/?ct=ad&ac=addChannel
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-11-28 20:36:15]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls

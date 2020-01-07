@@ -1,0 +1,351 @@
+
+-----------------------------------
+0[2019-11-28 15:10:57] 192.168.10.1 http://admanage.com/?ct=index
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+)
+0[2019-11-28 15:10:57]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 15:21:21] 192.168.10.1 http://admanage.com/?ct=index
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+)
+0[2019-11-28 15:21:21]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 16:10:47] 192.168.10.1 http://admanage.com/?ct=index
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+)
+0[2019-11-28 16:10:47]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 16:11:44] 192.168.10.1 http://admanage.com/?ct=index
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+)
+0[2019-11-28 16:11:44]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 16:11:52] 192.168.10.1 http://admanage.com/?ct=index
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+)
+0[2019-11-28 16:11:52]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 16:16:38] 192.168.10.1 http://admanage.com/?ct=index
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+)
+0[2019-11-28 16:16:38]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 16:33:53] 192.168.10.1 http://admanage.com/?ct=admin&ac=addAdmin
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+)
+0[2019-11-28 16:33:53]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+0[2019-11-28 16:33:53]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 16:35:34] 192.168.10.1 http://admanage.com/?ct=admin&ac=roleAdd
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+)
+0[2019-11-28 16:35:34]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+0[2019-11-28 16:35:34]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 16:38:45] 192.168.10.1 http://admanage.com/?ct=admin&ac=addAdmin
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+)
+0[2019-11-28 16:38:45]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 16:39:32] 192.168.10.1 http://admanage.com/?ct=admin&ac=addAdminAction
+POST: array (
+  'admin_id' => '0',
+  'inputUser' => 'yunhua',
+  'name' => 'yunhua',
+  'inputPwd' => '123456',
+  'inputPwd2' => '123456',
+  'role_id' => '22',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+)
+0[2019-11-28 16:39:32]Warn: /home/vagrant/code/admin/web/admin/model/ModAdmin.php 70
+implode(): Invalid arguments passed
+0[2019-11-28 16:39:32]Warn: /home/vagrant/code/admin/web/admin/model/ModAdmin.php 71
+implode(): Invalid arguments passed
+0[2019-11-28 16:39:32]Warn: /home/vagrant/code/admin/web/admin/model/ModAdmin.php 72
+implode(): Invalid arguments passed
+0[2019-11-28 16:39:32]Warn: /home/vagrant/code/admin/web/admin/model/ModAdmin.php 73
+implode(): Invalid arguments passed
+
+-----------------------------------
+0[2019-11-28 16:41:40] 192.168.10.1 http://admanage.com/?ct=index
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+)
+0[2019-11-28 16:41:40]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 17:21:14] 192.168.10.1 http://admanage.com/?ct=index
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+)
+0[2019-11-28 17:21:14]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 17:22:17] 192.168.10.1 http://admanage.com/?ct=data&ac=overview
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:22:17]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 263
+bcdiv(): Division by zero
+0[2019-11-28 17:22:17]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 264
+bcdiv(): Division by zero
+0[2019-11-28 17:22:17]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 265
+bcdiv(): Division by zero
+0[2019-11-28 17:22:17]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 266
+bcdiv(): Division by zero
+0[2019-11-28 17:22:17]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 267
+bcdiv(): Division by zero
+0[2019-11-28 17:22:17]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 268
+bcdiv(): Division by zero
+0[2019-11-28 17:22:17]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 269
+bcdiv(): Division by zero
+0[2019-11-28 17:22:17]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 270
+bcdiv(): Division by zero
+0[2019-11-28 17:22:17]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 271
+bcdiv(): Division by zero
+0[2019-11-28 17:22:17]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 272
+bcdiv(): Division by zero
+0[2019-11-28 17:22:17]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 17:22:21] 192.168.10.1 http://admanage.com/?ct=data&ac=overviewMonth
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:22:21]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 676
+Invalid argument supplied for foreach()
+0[2019-11-28 17:22:21]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 681
+Invalid argument supplied for foreach()
+0[2019-11-28 17:22:21]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 705
+Division by zero
+0[2019-11-28 17:22:21]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 17:22:24] 192.168.10.1 http://admanage.com/?ct=data&ac=ltv
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:22:24]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 1819
+Division by zero
+0[2019-11-28 17:22:24]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 1821
+Division by zero
+0[2019-11-28 17:22:24]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 1821
+Division by zero
+0[2019-11-28 17:22:24]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 1821
+Division by zero
+0[2019-11-28 17:22:24]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 1821
+Division by zero
+0[2019-11-28 17:22:24]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 1821
+Division by zero
+0[2019-11-28 17:22:24]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 1821
+Division by zero
+0[2019-11-28 17:22:24]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 1821
+Division by zero
+0[2019-11-28 17:22:24]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 1821
+Division by zero
+0[2019-11-28 17:22:24]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 1821
+Division by zero
+0[2019-11-28 17:22:24]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 1821
+Division by zero
+0[2019-11-28 17:22:24]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 1821
+Division by zero
+0[2019-11-28 17:22:24]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 1821
+Division by zero
+0[2019-11-28 17:22:24]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 1821
+Division by zero
+0[2019-11-28 17:22:24]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 17:22:27] 192.168.10.1 http://admanage.com/?ct=data&ac=newViewData
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:22:27]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 1397
+Invalid argument supplied for foreach()
+0[2019-11-28 17:22:27]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 17:22:28] 192.168.10.1 http://admanage.com/?ct=data&ac=payHall
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:22:28]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 1933
+Invalid argument supplied for foreach()
+0[2019-11-28 17:22:28]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 17:22:30] 192.168.10.1 http://admanage.com/?ct=data&ac=payHallRole
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+)
+0[2019-11-28 17:22:30]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 2016
+array_map(): Argument #2 should be an array
+0[2019-11-28 17:22:30]Warn: /home/vagrant/code/admin/web/admin/service/SrvData.php 2017
+array_map(): Argument #2 should be an array
+0[2019-11-28 17:22:30]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 20:25:34] 192.168.10.1 http://admanage.com/?ct=index
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'ht_keep' => '0',
+  'js_collapse' => '0',
+)
+0[2019-11-28 20:25:34]Warn: /home/vagrant/code/admin/web/admin/service/SrvAuth.php 263
+Invalid argument supplied for foreach()
+
+-----------------------------------
+0[2019-11-28 20:25:53] 192.168.10.1 http://admanage.com/?ct=extend&ac=landModel
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-11-28 20:25:53]Warn: /home/vagrant/code/admin/web/admin/service/SrvExtend.php 697
+Invalid argument supplied for foreach()
+0[2019-11-28 20:25:53]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 20:27:03] 192.168.10.1 http://admanage.com/?ct=material&ac=materialData
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-11-28 20:27:03]Warn: /home/vagrant/code/admin/web/admin/service/SrvMaterial.php 27
+Invalid argument supplied for foreach()
+0[2019-11-28 20:27:03]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 20:27:07] 192.168.10.1 http://admanage.com/?ct=material&ac=materialData2
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-11-28 20:27:07]Warn: /home/vagrant/code/admin/web/admin/service/SrvMaterial.php 144
+Invalid argument supplied for foreach()
+0[2019-11-28 20:27:08]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 20:27:26] 192.168.10.1 http://admanage.com/?ct=adData&ac=channelOverview
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-11-28 20:27:26]Warn: /home/vagrant/code/admin/web/admin/service/SrvAdData.php 1648
+Invalid argument supplied for foreach()
+0[2019-11-28 20:27:26]Error: /home/vagrant/code/admin/lib/library/smarty/sysplugins/smarty_internal_compilebase.php 75
+The each() function is deprecated. This message will be suppressed on further calls
+
+-----------------------------------
+0[2019-11-28 20:39:23] 192.168.10.1 http://admanage.com/?ct=upload&ac=uploadAdmin
+POST: array (
+  'guid' => 'wu_1dqp065fea4756611hp16fhen40',
+  'chunkSize' => '47361',
+  'fileMd5' => '62e815b67d79781c88bee0bd3c9468fb',
+  'id' => 'WU_FILE_0',
+  'name' => '钱袋.png',
+  'type' => 'image/png',
+  'lastModifiedDate' => 'Thu Nov 28 2019 17:51:40 GMT+0800 (中国标准时间)',
+  'size' => '47361',
+)
+COOKIE: array (
+  'PHPSESSID' => 'vbne5vr0lsoathegm8qp87ira7',
+  'js_collapse' => '0',
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+)
+0[2019-11-28 20:39:23]Info: /home/vagrant/code/admin/lib/library/LibFile.php 85
+array (
+  'file' => 
+  array (
+    'name' => '钱袋.png',
+    'type' => 'image/png',
+    'tmp_name' => '/tmp/phpQLfjdX',
+    'error' => 0,
+    'size' => 47361,
+  ),
+)

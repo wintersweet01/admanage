@@ -1,0 +1,579 @@
+
+-----------------------------------
+0[2020-01-03 14:23:08] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:23:08]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:31:14] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:31:14]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:32:33] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:32:33]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:33:05] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:33:05]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:33:18] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:33:18]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:33:31] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:33:31]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:33:48] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:33:48]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:33:58] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:33:58]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:34:24] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:34:24]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:34:33] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:34:33]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:34:46] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:34:46]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:35:02] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:35:02]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:35:11] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:35:11]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:46:09] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:46:09]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:46:13] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:46:13]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:50:40] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:50:40]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:53:44] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:53:44]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:54:11] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:54:11]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:55:05] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:55:05]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:55:32] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:55:32]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:56:00] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:56:00]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:56:35] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:56:35]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:57:03] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:57:03]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:58:53] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:58:53]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:59:40] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:59:40]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 14:59:59] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 14:59:59]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 15:00:30] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 15:00:30]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 15:01:57] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 15:01:57]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 15:02:12] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 15:02:12]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 15:02:24] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 15:02:24]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 15:02:34] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 15:02:34]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 15:02:53] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 15:02:53]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 15:03:07] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 15:03:07]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 15:10:59] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 15:10:59]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 15:11:50] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 15:11:50]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 15:12:21] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 15:12:21]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 15:15:02] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 15:15:02]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 15:15:03] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 15:15:03]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 15:15:56] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 15:15:56]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 15:16:11] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 15:16:11]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 15:16:18] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 15:16:18]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 15:16:24] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 15:16:24]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 16:05:04] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 16:05:04]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 17:22:58] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=batchCreateAd
+POST: array (
+  'game_id' => '1',
+  'type' => '2',
+  'material' => '[{"material_id":1,"copywriting_ids":[1,2,4,5]},{"material_id":2,"copywriting_ids":[1,2,4,5]},{"material_id":3,"copywriting_ids":[1,2,4,5]},{"material_id":4,"copywriting_ids":[1,2,4,5]}]',
+  'user_id' => '10',
+  'channel_id' => '37',
+  'package_id' => '1',
+  'operation' => '1',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-03 17:22:58]Error: /home/vagrant/code/admin/lib/YX.php 226
+自动加载ModBatchCreateAd时，文件/home/vagrant/code/admin/web/admin/model/ModBatchCreateAd.php不存在
+
+-----------------------------------
+0[2020-01-03 18:04:39] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 18:04:39]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage
+
+-----------------------------------
+0[2020-01-03 20:29:03] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=batchCreateAd
+POST: array (
+  'game_id' => '1',
+  'type' => '2',
+  'material' => '[{"material_id":1,"copywriting_ids":[1,2,4,5]},{"material_id":2,"copywriting_ids":[1,2,4,5]},{"material_id":3,"copywriting_ids":[1,2,4,5]},{"material_id":4,"copywriting_ids":[1,2,4,5]}]',
+  'user_id' => '{10, 2, 1}',
+  'channel_id' => '37',
+  'package_id' => '1',
+  'operation' => '1',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-03 20:29:03]Error: /home/vagrant/code/admin/web/admin/model/ModBatchCreateAd.php 13
+SQL: INSERT INTO `batch_create_ad` (`game_id`, `type`, `material`, `user_id`, `channel_id`, `package_id`, `operation`, `update_time`, `create_time`) VALUES ('1',  '2',  '[{\"material_id\":1,\"copywriting_ids\":[1,2,4,5]},{\"material_id\":2,\"copywriting_ids\":[1,2,4,5]},{\"material_id\":3,\"copywriting_ids\":[1,2,4,5]},{\"material_id\":4,\"copywriting_ids\":[1,2,4,5]}]',  '{10, 2, 1}',  '37',  '1',  '1',  '2020-01-03 20:29:03',  '2020-01-03 20:29:03') (error：Invalid JSON text: "Missing a name for object member." at position 1 in value for column 'batch_create_ad.user_id'.)
+
+-----------------------------------
+0[2020-01-03 20:29:38] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=batchCreateAd
+POST: array (
+  'game_id' => '1',
+  'type' => '2',
+  'material' => '[{"material_id":1,"copywriting_ids":[1,2,4,5]},{"material_id":2,"copywriting_ids":[1,2,4,5]},{"material_id":3,"copywriting_ids":[1,2,4,5]},{"material_id":4,"copywriting_ids":[1,2,4,5]}]',
+  'user_id' => '{10, 2, 1}',
+  'channel_id' => '37',
+  'package_id' => '1',
+  'operation' => '1',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-03 20:29:38]Error: /home/vagrant/code/admin/web/admin/model/ModBatchCreateAd.php 13
+SQL: INSERT INTO `batch_create_ad` (`game_id`, `type`, `material`, `user_id`, `channel_id`, `package_id`, `operation`, `update_time`, `create_time`) VALUES ('1',  '2',  '[{\"material_id\":1,\"copywriting_ids\":[1,2,4,5]},{\"material_id\":2,\"copywriting_ids\":[1,2,4,5]},{\"material_id\":3,\"copywriting_ids\":[1,2,4,5]},{\"material_id\":4,\"copywriting_ids\":[1,2,4,5]}]',  '{10, 2, 1}',  '37',  '1',  '1',  '2020-01-03 20:29:38',  '2020-01-03 20:29:38') (error：Invalid JSON text: "Missing a name for object member." at position 1 in value for column 'batch_create_ad.user_id'.)
+
+-----------------------------------
+0[2020-01-03 20:30:16] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=batchCreateAd
+POST: array (
+  'game_id' => '1',
+  'type' => '2',
+  'material' => '[{"material_id":1,"copywriting_ids":[1,2,4,5]},{"material_id":2,"copywriting_ids":[1,2,4,5]},{"material_id":3,"copywriting_ids":[1,2,4,5]},{"material_id":4,"copywriting_ids":[1,2,4,5]}]',
+  'user_id' => '{10, 2, 1}',
+  'channel_id' => '37',
+  'package_id' => '1',
+  'operation' => '1',
+)
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-03 20:30:16]Error: /home/vagrant/code/admin/web/admin/model/ModBatchCreateAd.php 13
+SQL: INSERT INTO `batch_create_ad` (`game_id`, `type`, `material`, `user_id`, `channel_id`, `package_id`, `operation`, `update_time`, `create_time`) VALUES ('1',  '2',  '[{\"material_id\":1,\"copywriting_ids\":[1,2,4,5]},{\"material_id\":2,\"copywriting_ids\":[1,2,4,5]},{\"material_id\":3,\"copywriting_ids\":[1,2,4,5]},{\"material_id\":4,\"copywriting_ids\":[1,2,4,5]}]',  '{10, 2, 1}',  '37',  '1',  '1',  '2020-01-03 20:30:16',  '2020-01-03 20:30:16') (error：Invalid JSON text: "Missing a name for object member." at position 1 in value for column 'batch_create_ad.user_id'.)
+
+-----------------------------------
+0[2020-01-03 22:09:26] 192.168.10.1 http://admanage.com/index.php?ct=jrtt&ac=getDirectionalPackage
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-03 22:09:26]Error: /home/vagrant/code/admin/lib/YX.php 168
+控制器CtlJrtt不存在方法：getDirectionalPackage

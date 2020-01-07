@@ -1,0 +1,199 @@
+
+-----------------------------------
+0[2020-01-02 10:28:16] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=authCallback
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-02 10:28:16]Error: /home/vagrant/code/admin/lib/library/LibRedis.php 40
+Uncaught Error: Undefined class constant 'SERIALIZER_IGBINARY' in /home/vagrant/code/admin/lib/library/LibRedis.php:40
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php(20): LibRedis::getInstance()
+#1 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->authCallback()
+#2 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'authCallback')
+#3 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#4 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-02 11:02:12] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=authCallback
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-02 11:02:12]Error: /home/vagrant/code/admin/lib/library/LibRedis.php 40
+Uncaught Error: Undefined class constant 'SERIALIZER_IGBINARY' in /home/vagrant/code/admin/lib/library/LibRedis.php:40
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php(20): LibRedis::getInstance()
+#1 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->authCallback()
+#2 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'authCallback')
+#3 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#4 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-02 11:39:26] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=authCallback
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-02 11:39:26]Error: Unknown 0
+Module 'redis' already loaded
+
+-----------------------------------
+0[2020-01-02 11:39:55] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=authCallback
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-02 11:39:55]Error: /home/vagrant/code/admin/lib/library/LibRedis.php 40
+Uncaught Error: Undefined class constant 'SERIALIZER_IGBINARY' in /home/vagrant/code/admin/lib/library/LibRedis.php:40
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php(21): LibRedis::getInstance()
+#1 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->authCallback()
+#2 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'authCallback')
+#3 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#4 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-02 11:40:15] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=authCallback
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-02 11:40:15]Error: /home/vagrant/code/admin/lib/library/LibRedis.php 40
+Uncaught Error: Undefined class constant 'SERIALIZER_IGBINARY' in /home/vagrant/code/admin/lib/library/LibRedis.php:40
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php(21): LibRedis::getInstance()
+#1 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->authCallback()
+#2 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'authCallback')
+#3 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#4 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-02 11:40:37] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=authCallback
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-02 11:40:37]Error: /home/vagrant/code/admin/lib/library/LibRedis.php 40
+Uncaught Error: Undefined class constant 'SERIALIZER_IGBINARY' in /home/vagrant/code/admin/lib/library/LibRedis.php:40
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php(21): LibRedis::getInstance()
+#1 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->authCallback()
+#2 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'authCallback')
+#3 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#4 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-02 11:58:22] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=authCallback
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-02 11:58:22]Error: /home/vagrant/code/admin/lib/library/LibRedis.php 40
+Uncaught Error: Undefined class constant 'SERIALIZER_IGBINARY' in /home/vagrant/code/admin/lib/library/LibRedis.php:40
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php(21): LibRedis::getInstance()
+#1 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->authCallback()
+#2 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'authCallback')
+#3 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#4 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-02 11:59:28] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=authCallback
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+)
+0[2020-01-02 11:59:28]Error: /home/vagrant/code/admin/lib/library/LibRedis.php 40
+Uncaught Error: Undefined class constant 'SERIALIZER_IGBINARY' in /home/vagrant/code/admin/lib/library/LibRedis.php:40
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php(21): LibRedis::getInstance()
+#1 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->authCallback()
+#2 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'authCallback')
+#3 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#4 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-02 12:08:38] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=authCallback
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-02 12:08:38]Error: /home/vagrant/code/admin/lib/library/LibRedis.php 40
+Uncaught Error: Undefined class constant 'SERIALIZER_IGBINARY' in /home/vagrant/code/admin/lib/library/LibRedis.php:40
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php(21): LibRedis::getInstance()
+#1 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->authCallback()
+#2 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'authCallback')
+#3 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#4 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-02 12:08:44] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=authCallback
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-02 12:08:44]Error: /home/vagrant/code/admin/lib/library/LibRedis.php 40
+Uncaught Error: Undefined class constant 'SERIALIZER_IGBINARY' in /home/vagrant/code/admin/lib/library/LibRedis.php:40
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php(21): LibRedis::getInstance()
+#1 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->authCallback()
+#2 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'authCallback')
+#3 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#4 {main}
+  thrown
+
+-----------------------------------
+0[2020-01-02 14:25:19] 192.168.10.1 http://admanage.com/?ct=jrtt&ac=authCallback
+COOKIE: array (
+  'ht_name' => 'yunhua',
+  'ht_keep' => '1',
+  'js_collapse' => '0',
+  'PHPSESSID' => 'rfl5tgkt3tiodnnjogoab39rig',
+  '_lg_' => 'zh_CN',
+)
+0[2020-01-02 14:25:19]Error: /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php 19
+Uncaught Exception: 回调参数缺失 in /home/vagrant/code/admin/web/admin/service/SrvJrttAction.php:19
+Stack trace:
+#0 /home/vagrant/code/admin/web/admin/controller/CtlJrtt.php(22): SrvJrttAction->authCallback('', '')
+#1 /home/vagrant/code/admin/lib/YX.php(173): CtlJrtt->authCallback()
+#2 /home/vagrant/code/admin/lib/YX.php(136): YX::route('jrtt', 'authCallback')
+#3 /home/vagrant/code/admin/web/admin/index.php(48): YX::run()
+#4 {main}
+  thrown

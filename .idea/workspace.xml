@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8332e327-d876-48d6-8631-24338f3f5b16" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/GatewayWorker/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/GatewayWorker/vendor/workerman/gateway-worker" />
+      <path value="$PROJECT_DIR$/GatewayWorker/vendor/workerman/workerman" />
+      <path value="$PROJECT_DIR$/GatewayWorker/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1UEcGdFtmmTbotwnDPvfkwM1ly3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/admin/static/jquery-autocompleter" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\code\admin\web\admin\static\layui-v2.5.5" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\code\admin\web\admin\static\jquery-autocompleter" />
+      <recent name="C:\Users\Administrator\code\admin\web\admin\static\zTree_v3\js" />
+      <recent name="C:\Users\Administrator\code\admin\web\admin\static" />
+      <recent name="C:\Users\Administrator\code\admin\web\admin\static\jrtt" />
+      <recent name="C:\Users\Administrator\code\admin\web\admin\model" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8332e327-d876-48d6-8631-24338f3f5b16" name="Default Changelist" comment="" />
+      <created>1574925100634</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574925100634</updated>
+      <workItem from="1574925102625" duration="3269000" />
+      <workItem from="1574929262001" duration="6410000" />
+      <workItem from="1574992835785" duration="16891000" />
+      <workItem from="1575266396709" duration="134764000" />
+      <workItem from="1575854595749" duration="129186000" />
+      <workItem from="1576461013630" duration="183440000" />
+      <workItem from="1577105301966" duration="2818000" />
+      <workItem from="1577152679631" duration="1174000" />
+      <workItem from="1577154086872" duration="151749000" />
+      <workItem from="1577968249440" duration="29328000" />
+      <workItem from="1578276262646" duration="353000" />
+      <workItem from="1578276633936" duration="56139000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="671" y="266" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577432034070">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="671" y="266" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1577432034070" />
+    <state x="733" y="284" key="FileChooserDialogImpl" timestamp="1578020936645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="733" y="284" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578020936645" />
+    <state x="771" y="295" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1577243886064" />
+    <state x="688" y="340" key="NewPhpClassDialog" timestamp="1578291518660">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="688" y="340" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578291518660" />
+    <state x="728" y="353" key="NewPhpClassDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1577947302221" />
+    <state x="636" y="253" width="647" height="534" key="find.popup" timestamp="1578033709362">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="636" y="253" width="647" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578033709362" />
+    <state x="612" y="226" width="695" height="653" key="search.everywhere.popup" timestamp="1578404800081">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="612" y="226" width="695" height="653" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578404800081" />
+    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1577955379488" />
+  </component>
+</project>
