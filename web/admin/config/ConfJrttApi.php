@@ -610,7 +610,7 @@ return [
     'material_type' => [
         'CREATIVE_IMAGE_MODE_SMALL' => [
             'name' => '小图',
-            'max' => round(500 / 1024), // m为单位
+            'max' => round(500 / 1024, 2), // m为单位
         ]
     ]
 ];
