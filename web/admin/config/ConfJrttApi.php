@@ -611,6 +611,7 @@ return [
         'CREATIVE_IMAGE_MODE_SMALL' => [
             'name' => '小图',
             'max' => round(500 / 1024, 2), // m为单位
+            'min_w_h' => '228,150'
         ]
     ]
 ];
