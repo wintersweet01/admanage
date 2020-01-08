@@ -39,7 +39,6 @@ class SrvAdPlatformAction
         return $response;
     }
 
-
     /**
      * 写入请求响应日志
      * @param string $api

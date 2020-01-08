@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2020-01-03 15:00:32
+<?php /* Smarty version 3.1.27, created on 2020-01-08 10:23:57
          compiled from "/home/vagrant/code/admin/web/admin/template/adCnter/selectDirectional.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:13567237095e0ee69004b385_63416027%%*/
+/*%%SmartyHeaderCode:9431936185e153d3ddec700_46621164%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,24 +9,24 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '0bd2330cb219c46f70a4c614ac2868ebac51f988' => 
     array (
       0 => '/home/vagrant/code/admin/web/admin/template/adCnter/selectDirectional.tpl',
-      1 => 1578034826,
+      1 => 1578386620,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '13567237095e0ee69004b385_63416027',
+  'nocache_hash' => '9431936185e153d3ddec700_46621164',
   'variables' => 
   array (
     '_cdn_static_url_' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5e0ee690095208_06012435',
+  'unifunc' => 'content_5e153d3de1c668_89529679',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5e0ee690095208_06012435')) {
-function content_5e0ee690095208_06012435 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5e153d3de1c668_89529679')) {
+function content_5e153d3de1c668_89529679 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '13567237095e0ee69004b385_63416027';
+$_smarty_tpl->properties['nocache_hash'] = '9431936185e153d3ddec700_46621164';
 ?>
 <!DOCTYPE html>
 <html>
@@ -636,7 +636,7 @@ zTree_v3/css/zTreeStyle/zTreeStyle.css" type="text/css">
                     </fieldset>
                 </div>
                 <div class="layui-form-item">
-                    <label class="layui-form-label">* 出价方式</label>
+                    <label class="layui-form-label">出价方式</label>
                     <div class="layui-input-block">
                         <input type="radio" name="smart_bid_type" title="手动" lay-filter="smart_bid_type" checked value="SMART_BID_CUSTOM">
                         <input type="radio" name="smart_bid_type" title="自动" lay-filter="smart_bid_type" value="SMART_BID_CONSERVATIVE">
@@ -1210,7 +1210,7 @@ zTree_v3/css/zTreeStyle/zTreeStyle.css" type="text/css">
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label class="layui-form-label">* 创意展现</label>
+                    <label class="layui-form-label">创意展现</label>
                     <div class="layui-input-block">
                         <input type="radio" name="creative_display_mode" title="优选模式" checked value="CREATIVE_DISPLAY_MODE_CTR">
                         <input type="radio" name="creative_display_mode" title="轮播模式" value="CREATIVE_DISPLAY_MODE_RANDOM">

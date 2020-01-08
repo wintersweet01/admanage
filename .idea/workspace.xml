@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8332e327-d876-48d6-8631-24338f3f5b16" name="Default Changelist" comment="" />
+    <list default="true" id="8332e327-d876-48d6-8631-24338f3f5b16" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/cache/0bd2330cb219c46f70a4c614ac2868ebac51f988_2.file.selectDirectional.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/cache/0bd2330cb219c46f70a4c614ac2868ebac51f988_2.file.selectDirectional.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/config/ConfJrttApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/config/ConfJrttApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/service/SrvAdPlatformAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/service/SrvAdPlatformAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/service/SrvBatchCreateAd.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/service/SrvBatchCreateAd.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +93,7 @@
       <workItem from="1577154086872" duration="151749000" />
       <workItem from="1577968249440" duration="29328000" />
       <workItem from="1578276262646" duration="353000" />
-      <workItem from="1578276633936" duration="56738000" />
+      <workItem from="1578276633936" duration="87185000" />
     </task>
     <servers />
   </component>
@@ -113,10 +119,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="636" y="253" width="647" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578033709362" />
-    <state x="612" y="226" width="695" height="653" key="search.everywhere.popup" timestamp="1578404800081">
+    <state x="612" y="226" width="695" height="653" key="search.everywhere.popup" timestamp="1578470706623">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="612" y="226" width="695" height="653" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578404800081" />
+    <state x="612" y="226" width="695" height="653" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578470706623" />
     <state x="654" y="235" width="672" height="678" key="search.everywhere.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1577955379488" />
+    <state x="682" y="431" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1578463833805">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="682" y="431" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578463833805" />
   </component>
 </project>

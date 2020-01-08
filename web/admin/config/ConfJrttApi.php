@@ -424,10 +424,11 @@ return [
             'image_file' => [
                 'type' => 'string',
                 'required' => false,
-                'required_if' => [
+                // 不验证
+                /*'required_if' => [
                     'key' => 'upload_type',
                     'val' => 'UPLOAD_BY_FILE'
-                ],
+                ],*/
                 'desc' => '图片文件'
             ],
             'image_url' => [
@@ -610,8 +611,45 @@ return [
     'material_type' => [
         'CREATIVE_IMAGE_MODE_SMALL' => [
             'name' => '小图',
-            'max' => round(500 / 1024, 2), // m为单位
-            'min_w_h' => '228,150'
+            'memory_size' => round(500 / 1024, 2), // 图片大小，m为单位
+            'min_size' => '228*150', // 图片最小尺寸
+            'max_size' => '1368*900', // 图片最大尺寸
+            'recommend_size' => '456*300', // 图片推荐尺寸
+        ],
+        'CREATIVE_IMAGE_MODE_LARGE' => [
+            'name' => '大图横图',
+            'memory_size' => round(500 / 1024, 2),
+            'min_size' => '690*388',
+            'max_size' => '2560*1440',
+            'recommend_size' => '1280*720',
+        ],
+        'CREATIVE_IMAGE_MODE_GROUP' => [
+            'name' => '组图',
+            'memory_size' => round(500 / 1024, 2),
+            'min_size' => '456*300',
+        ],
+        'CREATIVE_IMAGE_MODE_VIDEO' => [
+            'name' => '	横版视频',
+            'memory_size' => 1000,
+            'cover_min_size' => '690*388', // 封面图大小
+            'cover_max_size' => '2560*1440', // 封面图大小
+            'allow_mime_type' => 'video/mp4,video/mpeg,video/3gpp,video/x-msvideo'
+        ],
+        'CREATIVE_IMAGE_MODE_GIF' => [
+            'name' => '	GIF图',
+            'memory_size' => 2,
+        ],
+        'CREATIVE_IMAGE_MODE_LARGE_VERTICAL' => [
+            'name' => '大图竖图',
+            'memory_size' => round(500 / 1024, 2),
+            'min_size' => '720*1280',
+        ],
+        'CREATIVE_IMAGE_MODE_VIDEO_VERTICAL' => [
+            'name' => '竖版视频',
+            'memory_size' => 100,
+            'cover_min_size' => '690*388',
+            'cover_max_size' => '2560*1440',
+            'allow_mime_type' => 'video/mp4,video/mpeg,video/3gpp,video/x-msvideo'
         ]
     ]
 ];
