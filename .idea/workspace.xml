@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8332e327-d876-48d6-8631-24338f3f5b16" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/model/ModJrttAdPushRecord.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/cache/0bd2330cb219c46f70a4c614ac2868ebac51f988_2.file.selectDirectional.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/cache/0bd2330cb219c46f70a4c614ac2868ebac51f988_2.file.selectDirectional.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/library/LibTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/library/LibTable.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/admin/config/ConfJrttApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/config/ConfJrttApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/controller/CtlJrtt.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/controller/CtlJrtt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/model/ModCopywriting.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/model/ModCopywriting.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/admin/service/SrvAdPlatformAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/service/SrvAdPlatformAction.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/admin/service/SrvBatchCreateAd.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/service/SrvBatchCreateAd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/service/SrvJrttAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/service/SrvJrttAction.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +48,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/admin/static/jquery-autocompleter" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -93,7 +100,9 @@
       <workItem from="1577154086872" duration="151749000" />
       <workItem from="1577968249440" duration="29328000" />
       <workItem from="1578276262646" duration="353000" />
-      <workItem from="1578276633936" duration="87185000" />
+      <workItem from="1578276633936" duration="121765000" />
+      <workItem from="1578574225422" duration="88000" />
+      <workItem from="1578574321260" duration="5468000" />
     </task>
     <servers />
   </component>
@@ -105,24 +114,28 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="671" y="266" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1577432034070" />
+    <state x="560" y="112" key="CommitChangelistDialog2" timestamp="1578579911326">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578579911326" />
     <state x="733" y="284" key="FileChooserDialogImpl" timestamp="1578020936645">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="733" y="284" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578020936645" />
     <state x="771" y="295" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1577243886064" />
-    <state x="688" y="340" key="NewPhpClassDialog" timestamp="1578291518660">
+    <state x="688" y="340" key="NewPhpClassDialog" timestamp="1578555113418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="688" y="340" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578291518660" />
+    <state x="688" y="340" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578555113418" />
     <state x="728" y="353" key="NewPhpClassDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1577947302221" />
     <state x="636" y="253" width="647" height="534" key="find.popup" timestamp="1578033709362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="636" y="253" width="647" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578033709362" />
-    <state x="612" y="226" width="695" height="653" key="search.everywhere.popup" timestamp="1578470706623">
+    <state x="612" y="226" width="695" height="653" key="search.everywhere.popup" timestamp="1578572614947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="612" y="226" width="695" height="653" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578470706623" />
+    <state x="612" y="226" width="695" height="653" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578572614947" />
     <state x="654" y="235" width="672" height="678" key="search.everywhere.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1577955379488" />
     <state x="682" y="431" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1578463833805">
       <screen x="0" y="0" width="1920" height="1040" />

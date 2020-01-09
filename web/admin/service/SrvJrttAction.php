@@ -16,22 +16,23 @@ class SrvJrttAction extends SrvAdPlatformAction
     /**
      * 刷新授权
      * @param $user_id
-     * @return array
+     * @return bool
+     * @throws Exception
      */
     public function refreshToken($user_id)
     {
         if(! is_numeric($user_id)) {
-            return ['code' => 'F', 'msg' => '参数错误'];
+            throw new Exception('参数错误');
         }
         $mod = new ModAd();
         $user_info = $mod->getChannelUserAuthInfo($user_id);
         if(empty($user_info)) {
-            return ['code' => 'F', 'msg' => '记录不存在'];
+            throw new Exception('记录不存在');
         }
         $config = LibUtil::config('channel_auth');
         $cnf = $config[$user_info['client_id']];
         if(empty($cnf)) {
-            return ['code' => 'F', 'msg' => '渠道未配置'];
+            throw new Exception('渠道未配置');
         }
         $param = [
             'app_id' => $cnf ['client_id'],
@@ -42,61 +43,62 @@ class SrvJrttAction extends SrvAdPlatformAction
         $url = $this->getRequestUrl('refresh_token');
         $response = $this->send($url, $param, [], 'refresh_token');
         if(! isset($response['data']) || empty($response['data'])) {
-            return ['code' => 'F', 'msg' => '授权刷新失败[1]'];
+            throw new Exception('授权刷新失败[1]');
         }
         $result = $this->saveAccessToken($user_id, $user_info['client_id'], $response);
         if (!$result) {
-            return ['code' => 'F', 'msg' => "授权刷新失败[2]"];
+            throw new Exception('授权刷新失败[2]');
         }
-        return ['code' => 'S', 'msg' => '授权刷新成功'];
+        return true;
     }
 
     /**
      * 授权回调
      * @param $state
      * @param $auth_code
-     * @return array
+     * @return bool
+     * @throws Exception
      */
     public function authCallback($state, $auth_code)
     {
         if (!$state || !$auth_code) {
-            return ['code' => 'F', 'msg' => '回调参数缺失'];
+            throw new Exception('回调参数缺失');
         }
         list($user_id, $client_id, $sign) = explode('|', $state);
 
         if (!$user_id || !$client_id || !$sign) {
-            return ['code' => 'F', 'msg' => '透传参数错误'];
+            throw new Exception('透传参数错误');
         }
 
         $config = LibUtil::config('channel_auth');
         $cnf = $config[$client_id];
         if (empty($cnf)) {
-            return ['code' => 'F', 'msg' => "应用未配置[{$client_id}]"];
+            throw new Exception("应用未配置[{$client_id}]");
         }
 
         $dign = md5($client_id . $cnf['key']);
         if ($dign != $sign) {
-            return ['code' => 'F', 'msg' => "验签失败"];
+            throw new Exception('验签失败');
         }
 
         $ret = $this->getAccessToken($cnf, $auth_code);
         if (empty($ret)) {
-            return ['code' => 'F', 'msg' => "授权失败[1]"];
+            throw new Exception('授权失败[1]');
         }
 
         $result = $this->saveAccessToken($user_id, $client_id, $ret);
         if (!$result) {
-            return ['code' => 'F', 'msg' => "授权失败[2]"];
+            throw new Exception('授权失败[2]');
         }
-        return ['code' => 'S', 'msg' => '授权成功'];
+        return true;
     }
-
 
     /**
      * 获取access_token
      * @param $cnf
      * @param $auth_code
      * @return array
+     * @throws Exception
      */
     private function getAccessToken($cnf, $auth_code)
     {
@@ -173,7 +175,20 @@ class SrvJrttAction extends SrvAdPlatformAction
     {
         $this->checkParams($param, 'create_group');
         $url = $this->getRequestUrl('create_group');
-        return $this->send($url, $param, $header, 'create_group');
+        return $this->_resultHandle($this->send($url, $param, $header, 'create_group'));
+    }
+
+    /**
+     * api返回结果处理
+     * @param $result
+     * @return mixed
+     * @throws Exception
+     */
+    private function _resultHandle($result)
+    {
+        if($result['code'] != 0)
+            throw new Exception($result['message']);
+        return $result['data'];
     }
 
     /**
@@ -187,7 +202,7 @@ class SrvJrttAction extends SrvAdPlatformAction
     {
         $this->checkParams($param, 'create_ad_plan');
         $url = $this->getRequestUrl('create_ad_plan');
-        return $this->send($url, $param, $header, 'create_ad_plan');
+        return $this->_resultHandle($this->send($url, $param, $header, 'create_ad_plan'));
     }
 
     /**
@@ -201,7 +216,7 @@ class SrvJrttAction extends SrvAdPlatformAction
     {
         $this->checkParams($param, 'create_ad_originality');
         $url = $this->getRequestUrl('create_ad_originality');
-        return $this->send($url, $param, $header, 'create_ad_originality');
+        return $this->_resultHandle($this->send($url, $param, $header, 'create_ad_originality'));
     }
 
     /**
@@ -209,6 +224,7 @@ class SrvJrttAction extends SrvAdPlatformAction
      * @param array $param
      * @param array $header
      * @return array
+     * @throws Exception
      */
     public function thirdIndustryList(array $param, array $header)
     {
@@ -231,8 +247,10 @@ class SrvJrttAction extends SrvAdPlatformAction
         $this->writeLog('upload_ad_img', $param, 'request');
         $response = LibUtil::request($url, $param, 30, '', $header, '', false, $file);
         $response['result'] = json_decode($response['result'], true);
+        if ($response['code'] != '200')
+            throw new Exception('第三方接口请求失败，curl错误码:' . $response['code'] . '。请求地址：' . $url);
         $this->writeLog('upload_ad_img', $response, 'response');
-        return $response;
+        return $this->_resultHandle($response['result']);
     }
 
     /**
@@ -250,8 +268,10 @@ class SrvJrttAction extends SrvAdPlatformAction
         $this->writeLog('upload_ad_video', $param, 'request');
         $response = LibUtil::request($url, $param, 30, '', $header, '', false, $file);
         $response['result'] = json_decode($response['result'], true);
+        if ($response['code'] != '200')
+            throw new Exception('第三方接口请求失败，curl错误码:' . $response['code'] . '。请求地址：' . $url);
         $this->writeLog('upload_ad_video', $response, 'response');
-        return $response;
+        return $this->_resultHandle($response['result']);
     }
 
     /**
@@ -350,5 +370,19 @@ class SrvJrttAction extends SrvAdPlatformAction
         $this->checkParams($param, 'keyword_suggest');
         $url = $this->getRequestUrl('keyword_suggest') . '?' . http_build_query($param);
         return $this->send($url, [], $header, 'keyword_suggest');
+    }
+
+    /**
+     * 创建定向包
+     * @param array $param
+     * @param array $header
+     * @return array
+     * @throws Exception
+     */
+    public function createAudiencePackage(array $param, array $header)
+    {
+        $this->checkParams($param, 'create_audience_package');
+        $url = $this->getRequestUrl('create_audience_package');
+        return $this->_resultHandle($this->send($url, $param, $header, 'create_audience_package'));
     }
 }

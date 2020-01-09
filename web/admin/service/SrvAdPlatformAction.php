@@ -29,14 +29,17 @@ class SrvAdPlatformAction
      * @param array $header
      * @param string $api
      * @return array
+     * @throws Exception
      */
-    protected function send(string $url, array $param, array $header = array(), string $api)
+    protected function send(string $url, array $param, array $header = [], string $api)
     {
         $this->writeLog($api, $param, 'request');
         $response = LibUtil::request($url, $param, 30, '', $header);
         $response['result'] = json_decode($response['result'], true);
         $this->writeLog($api, $response, 'response');
-        return $response;
+        if ($response['code'] != '200')
+            throw new Exception('第三方接口请求失败，curl错误码:' . $response['code'] . '。请求地址：' . $url);
+        return $response['result'];
     }
 
     /**

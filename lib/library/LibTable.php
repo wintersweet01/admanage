@@ -124,6 +124,7 @@ class LibTable
     static $ad_copywriting = 'ad_copywriting';// 文案
     static $directional_package = 'directional_package';
     static $batch_create_ad = 'batch_create_ad'; // 批量创建广告
+    static $jrtt_ad_push_record = 'jrtt_ad_push_record';
 
     //联运分发
     static $platform = 'platform';

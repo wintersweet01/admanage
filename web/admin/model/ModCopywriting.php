@@ -32,6 +32,7 @@ class ModCopywriting extends Model
     /**
      * 获取指定的文案
      * @param array $id
+     * @param int $channel
      * @return array|bool|resource|string
      */
     public function getCopywritingByIds(array $id, int $channel)

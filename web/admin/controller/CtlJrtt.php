@@ -47,8 +47,12 @@ class CtlJrtt extends Controller
         ];
 
         $srv = new SrvBatchCreateAd();
-        $result = $srv->createAd($data);
-        $this->out = $result;
+        try{
+            $result = $srv->createAd($data);
+            $this->out = $result;
+        }catch (Exception $e){
+            $this->out = ['code' => 'F', 'msg' => $e->getMessage()];
+        }
     }
 
     /**

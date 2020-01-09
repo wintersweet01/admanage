@@ -21,6 +21,7 @@ return [
         'id2word' => '/2/tools/interest_action/id2word/',
         'keyword_suggest' => '/2/tools/interest_action/keyword/suggest/',
         'get_industry' => '/2/tools/industry/get/',
+        'create_audience_package' => '/2/audience_package/create/',
     ],
     'api_param_rule' => [
         'create_group' => [
@@ -607,6 +608,174 @@ return [
                 'desc' => '数据分类'
             ]
         ],
+        'create_audience_package' => [
+            'advertiser_id' => [
+                'advertiser_id' => [
+                    'type' => 'numeric',
+                    'required' => true,
+                    'desc' => '广告主id',
+                ],
+                'name' => [
+                    'type' => 'string',
+                    'required' => true,
+                    'desc' => '定向包名称',
+                    'min' => 1,
+                    'max' => 20
+                ],
+                'description' => [
+                    'type' => 'string',
+                    'required' => true,
+                    'desc' => '定向包描述',
+                    'min' => 1,
+                    'max' => 50
+                ],
+                'landing_type' => [
+                    'type' => 'string',
+                    'required' => true,
+                    'desc' => '定向包类型',
+                    'value' => ['EXTERNAL', 'ARTICLE', 'GOODS', 'DPA', 'STORE', 'AWEME', 'SHOP', 'APP_ANDROID', 'APP_IOS'],
+                ],
+                'retargeting_tags' => [
+                    'type' => 'array',
+                    'required' => false,
+                    'desc' => '定向人群包列表'
+                ],
+                'retargeting_tags_exclude' => [
+                    'type' => 'array',
+                    'required' => false,
+                    'desc' => '排除人群包列表'
+                ],
+                'gender' => [
+                    'type' => 'string',
+                    'required' => false,
+                    'desc' => '受众性别',
+                    'value' => ['GENDER_FEMALE', 'GENDER_MALE', 'NONE']
+                ],
+                'age' => [
+                    'type' => 'array',
+                    'required' => false,
+                    'value' => ['AGE_BETWEEN_18_23', 'AGE_BETWEEN_24_30', 'AGE_BETWEEN_31_40', 'AGE_BETWEEN_41_49', 'AGE_ABOVE_50'],
+                    'desc' => '受众年龄区间'
+                ],
+                'android_osv' => [
+                    'type' => 'string',
+                    'required' => false,
+                    'value' => ["0.0", "2.0", "2.1", "2.2", "2.3", "3.0", "3.1", "3.2", "4.0","4.1","4.2", "4.3", "4.4", "4.5", "5.0", "NONE"],
+                    'desc' => '受众最低android版本'
+                ],
+                'ios_osv' => [
+                    'type' => 'string',
+                    'required' => false,
+                    'value' => ["0.0", "4.0", "4.1", "4.2", "4.3", "5.0", "5.1", "6.0", "7.0","7.1","8.0", "8.1", "8.2", "9.0", "NONE"],
+                    'desc' => '受众最低ios版本'
+                ],
+                'carrier' => [
+                    'type' => 'string',
+                    'required' => false,
+                    'value' => ["MOBILE", "UNICOM", "TELCOM"],
+                    'desc' => '受众运营商'
+                ],
+                'ac' => [
+                    'type' => 'array',
+                    'required' => false,
+                    'value' => ['WIFI', '2G', '3G', '4G'],
+                    'desc' => '受众网络类型'
+                ],
+                'device_brand' => [
+                    'type' => 'array',
+                    'required' => false,
+                    'value' => ["HONOR","APPLE","HUAWEI","XIAOMI","SAMSUNG","OPPO","VIVO","MEIZU","GIONEE","COOLPAD","LENOVO","LETV","ZTE","CHINAMOBILE","HTC","PEPPER","NUBIA","HISENSE","QIKU","TCL","SONY","SMARTISAN","360","ONEPLUS","LG","MOTO","NOKIA","GOOGLE"],
+                    'desc' => '受众手机品牌'
+                ],
+                'article_category' => [
+                    'type' => 'array',
+                    'required' => false,
+                    'desc' => '受众文章分类'
+                ],
+                'activate_type' => [
+                    'type' => 'array',
+                    'required' => false,
+                    'value' => ['WITH_IN_A_MONTH', 'ONE_MONTH_2_THREE_MONTH', 'THREE_MONTH_EAILIER'],
+                    'desc' => '用户首次激活时间',
+                ],
+                'platform' => [
+                    'type' => 'array',
+                    'required' => false,
+                    'value' => ['ANDROID', 'IOS', 'PC'],
+                    'desc' => '受众平台'
+                ],
+                'auto_extend_enabled' => [
+                    'type' => 'numeric',
+                    'required' => false,
+                    'value' => [0, 1],
+                    'desc' => '是否允许智能放量'
+                ],
+                'auto_extend_targets' => [
+                    'type' => 'string',
+                    'required' => false,
+                    'value' => ["REGION","GENDER", "AGE", "CUSTOM_AUDIENCE"],
+                    'desc' => '智能放量定向'
+                ],
+                'launch_price' => [
+                    'type' => 'array',
+                    'required' => false,
+                    'desc' => '手机价格定向'
+                ],
+                'interest_action_mode' => [
+                    'type' => 'string',
+                    'required' => false,
+                    'value' => ["UNLIMITED","CUSTOM","RECOMMEND"],
+                    'desc' => '行为兴趣选择',
+                ],
+                'action_scene' => [
+                    'type' => 'array',
+                    'required' => false,
+                    'value' => ["E-COMMERCE","NEWS", "APP"],
+                    'desc' => '行为场景'
+                ],
+                'action_days' => [
+                    'type' => 'numeric',
+                    'required' => false,
+                    'value' => [7, 15, 30, 60, 90, 180, 365],
+                    'desc' => '行为天数'
+                ],
+                'action_categories' => [
+                    'type' => 'array',
+                    'required' => false,
+                    'desc' => '行为类目'
+                ],
+                'action_words' => [
+                    'type' => 'array',
+                    'required' => false,
+                    'desc' => '行为关键词'
+                ],
+                'interest_categories' => [
+                    'type' => 'array',
+                    'required' => false,
+                    'desc' => '兴趣分类',
+                ],
+                'interest_words' => [
+                    'type' => 'array',
+                    'required' => false,
+                    'desc' => '兴趣关键词',
+                ],
+                'city' => [
+                    'type' => 'array',
+                    'required' => false,
+                    'desc' => '地域定向城市',
+                ],
+                'business_ids' => [
+                    'type' => 'array',
+                    'required' => false,
+                    'desc' => '商圈id数组'
+                ],
+                'district' => [
+                    'type' => 'string',
+                    'required' => false,
+                    'value' => ['CITY', 'COUNTY', 'BUSINESS_DISTRICT', 'NONE']
+                ]
+            ]
+        ]
     ],
     'material_type' => [
         'CREATIVE_IMAGE_MODE_SMALL' => [
