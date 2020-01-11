@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * 批量创建广告模型
+ * Class ModBatchCreateAd
+ * @author dyh
+ * @version 2020/01/11
+ */
 
 class ModBatchCreateAd extends Model
 {

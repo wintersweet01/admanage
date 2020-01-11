@@ -1,5 +1,5 @@
 <?php
-/*本文件由程序自动生成（2019-12-09 20:52:04）*/
+/*本文件由程序自动生成（2020-01-10 14:47:41）*/
 return array (
   436 => 
   array (
@@ -9599,27 +9599,27 @@ return array (
   array (
     'game_id' => '5',
     'parent_id' => '4',
-    'name' => '仙凡变__安卓',
-    'alias' => 'qyz-xfb-android',
+    'name' => 'cf',
+    'alias' => 'cf',
     'type' => '1',
     'package_version' => '1',
-    'sdk_version' => 'v1.0.39',
+    'sdk_version' => '',
     'icon' => '',
     'logo' => '',
-    'sdk_key' => '9518791656429b457b46e3a42eda3161',
-    'server_key' => 'db1bf891f87e48e636e8d4c4e289bc5f',
+    'sdk_key' => '9b7e3a9c2d6f49eb4e5388c03b575578',
+    'server_key' => '6def0fda7941dc2dd339c72424539269',
     'status' => '0',
     'is_login' => '1',
     'is_reg' => '1',
     'is_pay' => '1',
     'device_type' => '2',
-    'ratio' => '0',
+    'ratio' => '100',
     'unit' => '0',
-    'config' => 'a:9:{s:7:"pay_url";a:4:{s:4:"main";s:68:"http://pay.public.sdk.gzyouai.com/paycheck/confirm/shqyj2/hutao/V3_0";s:4:"test";s:0:"";s:3:"ios";s:0:"";s:5:"noios";s:0:"";}s:4:"kefu";a:5:{s:2:"qq";s:9:"800184455";s:5:"group";s:0:"";s:4:"mail";s:0:"";s:5:"phone";s:0:"";s:6:"weixin";s:12:"胡桃互娱";}s:3:"vip";a:6:{s:5:"money";s:4:"3000";s:2:"qq";s:9:"800184455";s:5:"group";s:0:"";s:4:"mail";s:0:"";s:5:"phone";s:0:"";s:6:"weixin";s:0:"";}s:9:"login_url";a:4:{s:4:"main";s:0:"";s:4:"test";s:0:"";s:3:"ios";s:0:"";s:5:"noios";s:0:"";}s:7:"combine";a:6:{s:5:"login";s:1:"0";s:11:"login_ratio";s:0:"";s:3:"pay";s:1:"0";s:5:"ratio";s:2:"10";s:7:"pay_num";s:0:"";s:9:"pay_money";s:0:"";}s:8:"discount";a:2:{s:3:"ios";a:6:{i:2;s:0:"";i:4;s:0:"";i:7;s:0:"";i:8;s:0:"";i:9;s:0:"";i:10;s:0:"";}s:7:"android";a:6:{i:2;s:0:"";i:4;s:0:"";i:7;s:0:"";i:8;s:0:"";i:9;s:0:"";i:10;s:0:"";}}s:8:"pay_mode";a:3:{s:7:"pay_num";s:0:"";s:9:"pay_money";s:0:"";s:7:"android";a:2:{i:0;s:1:"7";i:1;s:1:"8";}}s:6:"status";a:2:{s:3:"ios";s:1:"1";s:7:"android";s:1:"1";}s:8:"is_adult";s:1:"1";}',
+    'config' => 'a:11:{s:9:"login_url";a:4:{s:4:"main";s:0:"";s:4:"test";s:0:"";s:3:"ios";s:0:"";s:5:"noios";s:0:"";}s:7:"pay_url";a:4:{s:4:"main";s:19:"http://admanage.com";s:4:"test";s:19:"http://admanage.com";s:3:"ios";s:0:"";s:5:"noios";s:0:"";}s:4:"kefu";a:5:{s:2:"qq";s:11:"15474547454";s:5:"group";s:7:"1515515";s:4:"mail";s:16:"155151515@qq.com";s:5:"phone";s:11:"15874745847";s:6:"weixin";s:6:"测试";}s:3:"vip";a:6:{s:5:"money";s:4:"1000";s:2:"qq";s:10:"1584747474";s:5:"group";s:6:"545454";s:4:"mail";s:13:"545454@qq.com";s:5:"phone";s:11:"15874745847";s:6:"weixin";s:6:"测试";}s:8:"pay_mode";a:5:{s:3:"ios";a:1:{i:0;s:1:"1";}s:7:"pay_num";s:0:"";s:9:"pay_money";s:0:"";s:3:"usa";s:1:"1";s:7:"android";a:2:{i:0;s:1:"7";i:1;s:1:"8";}}s:8:"discount";a:2:{s:3:"ios";a:7:{i:2;s:0:"";i:4;s:0:"";i:7;s:0:"";i:8;s:0:"";i:9;s:0:"";i:10;s:0:"";i:11;s:0:"";}s:7:"android";a:7:{i:2;s:0:"";i:4;s:0:"";i:7;s:0:"";i:8;s:0:"";i:9;s:0:"";i:10;s:0:"";i:11;s:0:"";}}s:7:"combine";a:6:{s:5:"login";s:1:"0";s:11:"login_ratio";s:0:"";s:3:"pay";s:1:"0";s:7:"pay_num";s:0:"";s:9:"pay_money";s:0:"";s:5:"ratio";s:2:"10";}s:14:"platform_alias";s:5:"hutao";s:9:"signature";s:5:"hutao";s:6:"status";a:2:{s:3:"ios";s:1:"1";s:7:"android";s:1:"1";}s:14:"iso_audit_user";s:0:"";}',
     'close_time' => '0',
-    'upload_time' => '1559028526',
-    'update_time' => '1559016197',
-    'create_time' => '1544076932',
+    'upload_time' => '0',
+    'update_time' => '0',
+    'create_time' => '1578638861',
   ),
   4 => 
   array (

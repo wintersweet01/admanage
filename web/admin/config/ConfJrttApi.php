@@ -22,6 +22,11 @@ return [
         'keyword_suggest' => '/2/tools/interest_action/keyword/suggest/',
         'get_industry' => '/2/tools/industry/get/',
         'create_audience_package' => '/2/audience_package/create/',
+        'create_ad_convert' => '/2/tools/ad_convert/create/',
+        'upload_data_source' => '/2/dmp/data_source/file/upload/',
+        'custom_audience_push' => '/2/dmp/custom_audience/push_v2/',
+        'data_source_read' => '/2/dmp/data_source/read/',
+        'custom_audience_publish' => '/2/dmp/custom_audience/publish/',
     ],
     'api_param_rule' => [
         'create_group' => [
@@ -660,13 +665,13 @@ return [
                 'android_osv' => [
                     'type' => 'string',
                     'required' => false,
-                    'value' => ["0.0", "2.0", "2.1", "2.2", "2.3", "3.0", "3.1", "3.2", "4.0","4.1","4.2", "4.3", "4.4", "4.5", "5.0", "NONE"],
+                    'value' => ["0.0", "2.0", "2.1", "2.2", "2.3", "3.0", "3.1", "3.2", "4.0", "4.1", "4.2", "4.3", "4.4", "4.5", "5.0", "NONE"],
                     'desc' => '受众最低android版本'
                 ],
                 'ios_osv' => [
                     'type' => 'string',
                     'required' => false,
-                    'value' => ["0.0", "4.0", "4.1", "4.2", "4.3", "5.0", "5.1", "6.0", "7.0","7.1","8.0", "8.1", "8.2", "9.0", "NONE"],
+                    'value' => ["0.0", "4.0", "4.1", "4.2", "4.3", "5.0", "5.1", "6.0", "7.0", "7.1", "8.0", "8.1", "8.2", "9.0", "NONE"],
                     'desc' => '受众最低ios版本'
                 ],
                 'carrier' => [
@@ -684,7 +689,7 @@ return [
                 'device_brand' => [
                     'type' => 'array',
                     'required' => false,
-                    'value' => ["HONOR","APPLE","HUAWEI","XIAOMI","SAMSUNG","OPPO","VIVO","MEIZU","GIONEE","COOLPAD","LENOVO","LETV","ZTE","CHINAMOBILE","HTC","PEPPER","NUBIA","HISENSE","QIKU","TCL","SONY","SMARTISAN","360","ONEPLUS","LG","MOTO","NOKIA","GOOGLE"],
+                    'value' => ["HONOR", "APPLE", "HUAWEI", "XIAOMI", "SAMSUNG", "OPPO", "VIVO", "MEIZU", "GIONEE", "COOLPAD", "LENOVO", "LETV", "ZTE", "CHINAMOBILE", "HTC", "PEPPER", "NUBIA", "HISENSE", "QIKU", "TCL", "SONY", "SMARTISAN", "360", "ONEPLUS", "LG", "MOTO", "NOKIA", "GOOGLE"],
                     'desc' => '受众手机品牌'
                 ],
                 'article_category' => [
@@ -713,7 +718,7 @@ return [
                 'auto_extend_targets' => [
                     'type' => 'string',
                     'required' => false,
-                    'value' => ["REGION","GENDER", "AGE", "CUSTOM_AUDIENCE"],
+                    'value' => ["REGION", "GENDER", "AGE", "CUSTOM_AUDIENCE"],
                     'desc' => '智能放量定向'
                 ],
                 'launch_price' => [
@@ -724,13 +729,13 @@ return [
                 'interest_action_mode' => [
                     'type' => 'string',
                     'required' => false,
-                    'value' => ["UNLIMITED","CUSTOM","RECOMMEND"],
+                    'value' => ["UNLIMITED", "CUSTOM", "RECOMMEND"],
                     'desc' => '行为兴趣选择',
                 ],
                 'action_scene' => [
                     'type' => 'array',
                     'required' => false,
-                    'value' => ["E-COMMERCE","NEWS", "APP"],
+                    'value' => ["E-COMMERCE", "NEWS", "APP"],
                     'desc' => '行为场景'
                 ],
                 'action_days' => [
@@ -774,6 +779,165 @@ return [
                     'required' => false,
                     'value' => ['CITY', 'COUNTY', 'BUSINESS_DISTRICT', 'NONE']
                 ]
+            ]
+        ],
+        'create_ad_convert' => [
+            'advertiser_id' => [
+                'type' => 'numeric',
+                'required' => true,
+                'desc' => '广告主id',
+            ],
+            'name' => [
+                'type' => 'string',
+                'required' => true,
+                'desc' => '转化名称',
+                'max' => 25,
+                'min' => 1
+            ],
+            'convert_source_type' => [
+                'type' => 'string',
+                'required' => true,
+                'desc' => '转化来源',
+                'values' => ['AD_CONVERT_SOURCE_TYPE_APP_DOWNLOAD', 'AD_CONVERT_SOURCE_TYPE_SDK'],
+            ],
+            'convert_type' => [
+                'type' => 'string',
+                'required' => true,
+                'desc' => '转化类型',
+                'value' => ['AD_CONVERT_TYPE_ACTIVE', 'AD_CONVERT_TYPE_ACTIVE_REGISTER', 'AD_CONVERT_TYPE_GAME_ADDICTION', 'AD_CONVERT_TYPE_PAY']
+            ],
+            'download_url' => [
+                'type' => 'url',
+                'required' => true,
+                'desc' => '下载链接',
+            ],
+            'action_track_url' => [
+                'type' => 'url',
+                'required' => true,
+                'desc' => '监测链接'
+            ],
+            'display_track_url' => [
+                'type' => 'url',
+                'required' => false,
+                'desc' => '展示监测链接',
+            ],
+            'deep_external_action' => [
+                'type' => 'string',
+                'required' => false,
+                'desc' => '深度转化目标',
+                'value' => ['AD_CONVERT_TYPE_PAY', 'AD_CONVERT_TYPE_NEXT_DAY_OPEN', 'AD_CONVERT_TYPE_GAME_ADDICTION']
+            ],
+            'package_name' => [
+                'type' => 'string',
+                'required' => true,
+                'desc' => '包名'
+            ],
+            'app_type' => [
+                'type' => 'string',
+                'required' => true,
+                'value' => ['APP_ANDROID', 'APP_IOS'],
+            ],
+            'app_id' => [
+                'type' => 'string',
+                'required' => false,
+                'required_if' => [
+                    'key' => 'app_type',
+                    'val' => 'APP_ANDROID'
+                ],
+                'desc' => 'APP ID',
+            ]
+        ],
+        'upload_data_source' => [
+            'advertiser_id' => [
+                'type' => 'numeric',
+                'required' => true,
+                'desc' => '广告主id',
+            ],
+            'file_signature' => [
+                'type' => 'string',
+                'required' => false,
+                'desc' => '文件md5'
+            ]
+        ],
+        'create_data_source' => [
+            'advertiser_id' => [
+                'type' => 'numeric',
+                'required' => true,
+                'desc' => '广告主id',
+            ],
+            'data_source_name' => [
+                'type' => 'string',
+                'required' => true,
+                'desc' => '数据源名称',
+                'max' => 30,
+            ],
+            'description' => [
+                'type' => 'string',
+                'required' => true,
+                'desc' => '数据源描述',
+                'max' => 256,
+            ],
+            'data_format' => [
+                'type' => 'numeric',
+                'required' => true,
+                'desc' => '数据格式',
+            ],
+            'file_storage_type' => [
+                'type' => 'numeric',
+                'required' => true,
+                'desc' => '数据存储类型'
+            ],
+            'file_paths' => [
+                'type' => 'array',
+                'required' => true,
+                'desc' => '数据源文件路径',
+            ],
+            'data_source_type' => [
+                'type' => 'string',
+                'required' => false,
+                'value' => ['UID', 'DID'],
+                'desc' => '数据源类型'
+            ]
+        ],
+        'custom_audience_push' => [
+            'advertiser_id' => [
+                'type' => 'numeric',
+                'required' => true,
+                'desc' => '广告主id',
+            ],
+            'custom_audience_id' => [
+                'type' => 'numeric',
+                'required' => true,
+                'desc' => '人群包id'
+            ],
+            'target_advertiser_ids' => [
+                'type' => 'array',
+                'required' => true,
+                'desc' => '推送广告主id列表'
+            ]
+        ],
+        'data_source_read' => [
+            'advertiser_id' => [
+                'type' => 'numeric',
+                'required' => true,
+                'desc' => '广告主id',
+            ],
+            'data_source_id_list' => [
+                'type' => 'array',
+                'required' => true,
+                'desc' => '数据源ID列表'
+            ]
+        ],
+        'custom_audience_publish' => [
+            'advertiser_id' => [
+                'type' => 'numeric',
+                'required' => true,
+                'desc' => '广告主id',
+            ],
+            'custom_audience_id' => [
+                'type' => 'numeric',
+                'required' => true,
+                'desc' => '广告主id',
             ]
         ]
     ],

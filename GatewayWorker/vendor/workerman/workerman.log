@@ -1,3 +1,6 @@
 2019-11-28 09:21:03 pid:4245 Workerman[start.php] start in DEBUG mode
 2019-11-29 05:56:56 pid:17733 Workerman[start.php] start in DEBUG mode
 2019-12-09 12:28:40 pid:7843 Workerman[start.php] start in DAEMON mode
+2020-01-10 06:46:16 pid:31834 Workerman[start.php] start in DEBUG mode
+2020-01-10 12:11:20 pid:31834 Workerman[start.php] stopping ...
+2020-01-10 12:11:20 pid:31834 Workerman[start.php] has been stopped

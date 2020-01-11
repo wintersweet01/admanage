@@ -1,1 +1,4 @@
-runtime
+/runtime/
+/.idea/
+/GatewayWorker/
+*.log

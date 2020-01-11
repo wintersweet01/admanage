@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8332e327-d876-48d6-8631-24338f3f5b16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/model/ModJrttAdPushRecord.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/cronJob/ConJrttDataSourceRead.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/cronJob/Console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/model/ModJrttCustomAudience.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/model/ModMonitorConvert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayWorker/vendor/workerman/_home_vagrant_code_admin_GatewayWorker_start.php.pid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayWorker/vendor/workerman/workerman.log" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayWorker/vendor/workerman/workerman.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/library/LibTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/library/LibTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/config/games.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/config/games.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/admin/config/ConfJrttApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/config/ConfJrttApi.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/admin/controller/CtlJrtt.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/controller/CtlJrtt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/model/ModCopywriting.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/model/ModCopywriting.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/service/SrvAdPlatformAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/service/SrvAdPlatformAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/model/ModAdProject.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/model/ModAdProject.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/model/ModBatchCreateAd.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/model/ModBatchCreateAd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/model/ModChannelUserAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/model/ModChannelUserAuth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/model/ModJrttAdPushRecord.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/model/ModJrttAdPushRecord.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/admin/service/SrvBatchCreateAd.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/service/SrvBatchCreateAd.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/admin/service/SrvJrttAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/service/SrvJrttAction.php" afterDir="false" />
     </list>
@@ -23,6 +32,20 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,20 +74,20 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/admin/static/jquery-autocompleter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/admin/cronJob" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\code\admin\web\admin\static\layui-v2.5.5" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\code\admin\web\admin\cronJob" />
       <recent name="C:\Users\Administrator\code\admin\web\admin\static\jquery-autocompleter" />
       <recent name="C:\Users\Administrator\code\admin\web\admin\static\zTree_v3\js" />
       <recent name="C:\Users\Administrator\code\admin\web\admin\static" />
       <recent name="C:\Users\Administrator\code\admin\web\admin\static\jrtt" />
-      <recent name="C:\Users\Administrator\code\admin\web\admin\model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\code\admin\web\admin\static\layui-v2.5.5" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -102,7 +125,7 @@
       <workItem from="1578276262646" duration="353000" />
       <workItem from="1578276633936" duration="121765000" />
       <workItem from="1578574225422" duration="88000" />
-      <workItem from="1578574321260" duration="5468000" />
+      <workItem from="1578574321260" duration="68007000" />
     </task>
     <servers />
   </component>
@@ -110,6 +133,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#SQL_Dialects" timestamp="1578642566929">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1578642566929" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578642579320">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578642579320" />
     <state x="671" y="266" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577432034070">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -118,24 +149,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578579911326" />
-    <state x="733" y="284" key="FileChooserDialogImpl" timestamp="1578020936645">
+    <state x="733" y="284" key="FileChooserDialogImpl" timestamp="1578732734899">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="733" y="284" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578020936645" />
+    <state x="733" y="284" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578732734898" />
     <state x="771" y="295" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1577243886064" />
-    <state x="688" y="340" key="NewPhpClassDialog" timestamp="1578555113418">
+    <state x="688" y="340" key="NewPhpClassDialog" timestamp="1578737698167">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="688" y="340" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578555113418" />
+    <state x="688" y="340" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578737698167" />
     <state x="728" y="353" key="NewPhpClassDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1577947302221" />
-    <state x="636" y="253" width="647" height="534" key="find.popup" timestamp="1578033709362">
+    <state x="636" y="253" width="647" height="534" key="find.popup" timestamp="1578748395334">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="636" y="253" width="647" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578033709362" />
-    <state x="612" y="226" width="695" height="653" key="search.everywhere.popup" timestamp="1578572614947">
+    <state x="636" y="253" width="647" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578748395334" />
+    <state x="590" y="160" key="refactoring.ChangeSignatureDialog" timestamp="1578723203511">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="612" y="226" width="695" height="653" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578572614947" />
+    <state x="590" y="160" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578723203511" />
+    <state x="612" y="226" width="695" height="653" key="search.everywhere.popup" timestamp="1578737330670">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="612" y="226" width="695" height="653" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578737330670" />
     <state x="654" y="235" width="672" height="678" key="search.everywhere.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1577955379488" />
     <state x="682" y="431" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1578463833805">
       <screen x="0" y="0" width="1920" height="1040" />

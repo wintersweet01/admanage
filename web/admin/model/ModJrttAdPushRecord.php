@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * 今日头条广告推送记录表模型
+ * Class ModJrttAdPushRecord
+ * @author dyh
+ * @version 2020/01/11
+ */
 
 class ModJrttAdPushRecord extends Model
 {

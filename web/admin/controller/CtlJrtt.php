@@ -33,6 +33,18 @@ class CtlJrtt extends Controller
         exit('授权成功');
     }
 
+    public function createAdConvert()
+    {
+        $monitor_id = $this->post('monitor_id'); // 推广链id
+        $app_id = $this->post('app_id');
+        $convert_type = $this->post('convert_type');
+        $srv = new SrvBatchCreateAd();
+        $response = $srv->createAdConvert($monitor_id, $app_id, $convert_type);
+    }
+
+    /**
+     * 批量创建广告
+     */
     public function batchCreateAd()
     {
         $data = [
@@ -77,6 +89,7 @@ class CtlJrtt extends Controller
         ];
         $this->out = $this->srv->audienceSelect($param, ['Access-Token:32e02251a7d8797202a57913524f5b46039cf937']);
     }
+
 
     /**
      * 获取兴趣关键词

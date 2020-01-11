@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * 今日头条批量创建广告操作类
+ * Class SrvBatchCreateAd
+ * @author dyh
+ * @version 2020/01/10
+ */
 
 class SrvBatchCreateAd
 {
@@ -10,6 +15,103 @@ class SrvBatchCreateAd
     {
         $this->mod = new ModBatchCreateAd();
         $this->srv_jrtt = new SrvJrttAction();
+    }
+
+    /**
+     * 创建转化id
+     * @param int $monitor_id
+     * @param string $app_id
+     * @param string $convert_type
+     * @param string $deep_external_action
+     * @return resource|string
+     * @throws Exception
+     */
+    public function createAdConvert(int $monitor_id, string $app_id, string $convert_type, string $deep_external_action = '')
+    {
+        if (empty($monitor_id) || empty($app_id) || empty($convert_type))
+            throw new Exception('客户端请求参数错误');
+        $mod_link = new ModAdProject();
+        $link_info = $mod_link->getLinkInfo($monitor_id);
+        if (empty($link_info))
+            throw new Exception('未找到需操作的推广链信息');
+
+        $link_info = $this->_referralLinkHandle($link_info);
+        $param = [
+            'advertiser_id' => $link_info['account_id'],
+            'name' => "api-{$link_info['game_id']}-{$link_info['monitor_id']}" . date('YmdHis'),
+            'convert_type' => $convert_type, // 允许值："AD_CONVERT_TYPE_ACTIVE","AD_CONVERT_TYPE_ACTIVE_REGISTER","AD_CONVERT_TYPE_PAY"
+            'download_url' => $link_info['download_url'],
+            'action_track_url' => $link_info['monitor_url'],
+            'display_track_url' => '',
+            'deep_external_action' => $deep_external_action,
+            'package_name' => $link_info['package_name'],
+        ];
+        if ($link_info['platform'] == 1) {
+            $param['convert_source_type'] = 'AD_CONVERT_SOURCE_TYPE_APP_DOWNLOAD'; // 转化来源，应用下载api
+            $param['app_type'] = 'APP_IOS';
+        } else if ($link_info['platform'] == 2) {
+            $param['convert_source_type'] = 'AD_CONVERT_SOURCE_TYPE_SDK';
+            $param['app_type'] = 'APP_ANDROID';
+            $param['app_id'] = $app_id;
+        }
+        $header = ["Access-Token: {$link_info['access_token']}"];
+        $response = $this->srv_jrtt->createAdConvert($param, $header);
+        $mod_mon = new ModMonitorConvert();
+        $status = ['AD_CONVERT_STATUS_ACTIVE' => 1, 'AD_CONVERT_STATUS_INACTIVE' => 2];
+        $opt_status = ['AD_CONVERT_OPT_STATUS_ENABLE' => 1, 'AD_CONVERT_OPT_STATUS_DISABLE' => 2, 'AD_CONVERT_OPT_STATUS_PAUSE' => 3];
+        return $mod_mon->addConvertId([
+            'monitor_id' => $link_info['monitor_id'],
+            'convert_id' => $response['convert_id'],
+            'status' => $status[$response['status']],
+            'opt_status' => $opt_status[$response['opt_status']],
+            'create_time' => date('Y-m-d H:i:s'),
+            'update_time' => date('Y-m-d H:i:s')
+        ]);
+    }
+
+    /**
+     * 推广链处理
+     * @param $link_info
+     * @return mixed
+     */
+    private function _referralLinkHandle($link_info)
+    {
+        $srvAd = new SrvAd();
+        $link_info['monitor_url'] = $srvAd->getMonitorUrl($link_info['channel_short'], $link_info['monitor_url'], $link_info['device_type']);
+        //CDN投放地址，替换自定义投放地址域名
+        if ($link_info['jump_url'] && filter_var($link_info['jump_url'], FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED)) {
+            preg_match('/^http[s]?:\/\/(.*)\/(.*)\/index\.html$/', $link_info['jump_url'], $matches);
+            //替换自定义域名
+            if ($link_info['domain'] && filter_var($link_info['domain'], FILTER_VALIDATE_URL)) {
+                if (substr($link_info['domain'], -1) != '/') {
+                    $link_info['domain'] = $link_info['domain'] . '/';
+                }
+                $link_info['jump_url'] = $link_info['domain'] . $matches[2] . '/index.html';
+            }
+        } else {
+            $link_info['jump_url'] = '';
+        }
+
+        //下载地址
+        $link_info['download_url'] = '';
+        if ($link_info['down_url']) {
+            if ($link_info['platform'] == PLATFORM['ios']) {
+                $link_info['down_url'] = APPSTORE_URL . $link_info['down_url'];
+                $link_info['download_url'] = $link_info['down_url'];
+            } else {
+                //替换自定义下载地址域名
+                if (filter_var($link_info['down_url'], FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED)) {
+                    $link_info['download_url'] = $link_info['down_url'];
+                    if ($link_info['download_domain'] && filter_var($link_info['download_domain'], FILTER_VALIDATE_URL)) {
+                        if (substr($link_info['download_domain'], -1) != '/') {
+                            $link_info['download_domain'] = $link_info['download_domain'] . '/';
+                        }
+                        $link_info['download_url'] = $link_info['download_domain'] . substr(strrchr($link_info['down_url'], "/"), 1);
+                    }
+                }
+            }
+        }
+        return $link_info;
     }
 
     /**
@@ -35,8 +137,9 @@ class SrvBatchCreateAd
         $batch_id = $this->mod->createAd($param);
         if ($batch_id) {
             $this->_pushAd2Platform($param, $batch_id);
+            return $batch_id;
         }
-        return $batch_id;
+        throw new Exception('创建广告入库失败');
     }
 
     /**
@@ -132,6 +235,9 @@ class SrvBatchCreateAd
 
         $user = $users[0];
         $referral_link = $this->_getReferralLink($user['user_id'], $batch_data['channel_id'], $batch_data['game_id']);
+        if (empty($referral_link))
+            throw new Exception('广告主ID：' . $user['account_id'] . '下没有未使用的推广链接资源');
+        $referral_link = $this->_referralLinkHandle($referral_link);
         $store_data = [];
         foreach ($materials as $item) {
             $ad_name = $item['material_name'] . '-' . date('Y-m-d') . '-' . $referral_link['name'] . '-' . uniqid();
@@ -165,17 +271,21 @@ class SrvBatchCreateAd
         $users = $mod_user->getUserById(json_decode($batch_data['user_id'], true)); // 媒体账户
         if (empty($users))
             throw new Exception('参数错误：媒体账户不存在');
+
         $package = $this->_getDirectionalPackage($batch_data['package_id']); // 定向包
+
         $material_ids = json_decode($batch_data['image_list'], true);
         $material = $mod_material->getAdmaterialById($material_ids[0]); // 素材
         if (empty($material))
             throw new Exception('参数错误：素材不存在');
+
         $store_data = [];
         foreach ($users as $key => $user) {
-            // TODO::关联转化包表
             $referral_link = $this->_getReferralLink($user['user_id'], $batch_data['channel_id'], $batch_data['game_id']);
             if (empty($referral_link))
                 throw new Exception('广告主ID：' . $user['account_id'] . '下没有未使用的推广链接资源');
+            $referral_link = $this->_referralLinkHandle($referral_link);
+
             $ad_name = $material['material_name'] . '-' . date('Y-m-d') . '-' . $referral_link['name'] . '-' . uniqid();
             $store_data[] = [
                 'group_param' => json_encode($this->_createAdGroup($user['account_id'], $ad_name, $batch_data['operation'])),
@@ -191,11 +301,6 @@ class SrvBatchCreateAd
         }
         $mod = new ModJrttAdPushRecord();
         return $mod->addAdRecord($store_data);
-    }
-
-    private function _getWebUrl($advertiser_id)
-    {
-
     }
 
     /**
@@ -264,7 +369,7 @@ class SrvBatchCreateAd
             'schedule_type' => $package['schedule_type'],
             'pricing' => $package['pricing'], // CPM ，出价范围（单位元）: 4-100，日预算范围（单位元）：大于100，总预算范围：大于最低日预算乘投放天数
             'flow_control_mode' => $package['flow_control_mode'],
-            'convert_id' => $referral_link['convert_id'], // 转化ID TODO::待关联
+            'convert_id' => $referral_link['convert_id'], // 转化ID
             'hide_if_converted' => $package['hide_if_converted'],
             'smart_bid_type' => $package['smart_bid_type'],
             'audience_package_id' => 0, // 定向包ID 用0代替
@@ -366,7 +471,7 @@ class SrvBatchCreateAd
         // 获取素材
         $mod = new ModAdMaterial();
         $materials = $mod->getByIds($ids);
-        if(empty($materials))
+        if (empty($materials))
             throw new Exception("未选中任何素材");
 
         $img_data = $video_data = [];
@@ -463,4 +568,153 @@ class SrvBatchCreateAd
         $mod = new ModDirectionalPackage();
         return $mod->getPackageById($id);
     }
+
+    /**
+     * 创建人群包
+     * @param array $data
+     * @return resource|string
+     * @throws Exception
+     */
+    public function createCustomAudience(array $data)
+    {
+        if (empty($data['user_id']) || empty($data['file_path']))
+            throw new Exception('客户端请求参数错误');
+        if (empty($data['data_source_name']) || strlen($data['data_source_name']) > 30)
+            throw new Exception('请输入人群包名称并不大于30个字符');
+        if (empty($data['description']) || strlen($data['description']) > 256)
+            throw new Exception('请输入人群包名称并不大于256个字符');
+        if (empty($data['data_source_type']))
+            throw new Exception('请选择数据源类型');
+        $mod_user = new ModChannelUserAuth();
+        $user = $mod_user->getUserById([$data['user_id']]);
+        if (empty($user))
+            throw new Exception('该媒体账号不存在或已被删除');
+        $header = ["Access-Token: {$user['access_token']}"];
+        $up_response = $this->_uploadDataSource($user['account_id'], $data['file_path'], $header);
+        $source_response = $this->_createDataSource($user['account_id'], $header, $data['data_source_name'], $up_response['data']['file_path'], $data['data_source_type']);
+        // 记录数据源, 计划任务处理发布、推送
+        $mod_audience = new ModJrttCustomAudience();
+        return $mod_audience->insertAudience([
+            'user_id' => $user['user_id'],
+            'name' => $data['data_source_name'],
+            'data_source_id' => $source_response['data_source_id'],
+            'create_time' => time(),
+            'update_time' => time()
+        ]);
+    }
+
+    /**
+     * 上传人群包数据源文件
+     * @param int $advertiser_id
+     * @param string $file_path
+     * @param array $header
+     * @return mixed
+     * @throws Exception
+     */
+    private function _uploadDataSource(int $advertiser_id, string $file_path, array $header)
+    {
+        if (!file_exists($file_path))
+            throw new Exception('数据源文件不存在,请先上传。');
+        $param = [
+            'advertiser_id' => $advertiser_id,
+            'file_signature' => md5_file($file_path),
+        ];
+        $files = [
+            'file' => ['path' => $file_path, 'type' => mime_content_type($file_path), 'name' => basename($file_path)]
+        ];
+
+        return $this->srv_jrtt->uploadDataSource($param, $header, $files);
+    }
+
+    /**
+     * 人群包创建数据源
+     * @param $advertiser_id
+     * @param $header
+     * @param $data_source_name
+     * @param $description
+     * @param $file_paths
+     * @param string $data_source_type
+     * @param int $data_format
+     * @param int $file_storage_type
+     * @return mixed
+     * @throws Exception
+     */
+    private function _createDataSource($advertiser_id, $header, $data_source_name, $description, $file_paths, $data_source_type = 'UID', $data_format = 0, $file_storage_type = 0)
+    {
+        if (empty($file_paths) || !is_array($file_paths))
+            throw new Exception('数据源文件路径不存在');
+
+        $param = [
+            'advertiser_id' => $advertiser_id,
+            'data_source_name' => $data_source_name,
+            'description' => $description,
+            'data_format' => $data_format,
+            'file_storage_type' => $file_storage_type,
+            'file_paths' => $file_paths,
+            'data_source_type' => $data_source_type,
+        ];
+        return $this->srv_jrtt->createDataSource($param, $header);
+    }
+
+    /**
+     * 获取数据源详细信息
+     * @param int $advertiser_id
+     * @param array $header
+     * @param array $data_source_id_list
+     * @return mixed
+     * @throws Exception
+     */
+    public function dataSourceRead(int $advertiser_id, array $header, array $data_source_id_list)
+    {
+        $param = [
+            'advertiser_id' => $advertiser_id,
+            'data_source_id_list' => $data_source_id_list
+        ];
+        return $this->srv_jrtt->dataSourceRead($param, $header);
+    }
+
+    /**
+     * 发布人群包
+     * @param $advertiser_id
+     * @param $custom_audience_id
+     * @param $header
+     * @return array
+     * @throws Exception
+     */
+    public function customAudiencePublish($advertiser_id, $custom_audience_id, $header)
+    {
+        if(empty($advertiser_id) || empty($custom_audience_id) || empty($header))
+            throw new Exception('发布人群参数错误');
+
+        return $this->srv_jrtt->customAudiencePublish([
+            'advertiser_id' => $advertiser_id,
+            'custom_audience_id' => $custom_audience_id,
+        ], $header);
+    }
+
+    /**
+     * 推送同主体人群包
+     * @param $advertiser_id
+     * @param array $header
+     * @param array $target_advertiser_ids
+     * @param array $custom_audience_id
+     * @return mixed
+     * @throws Exception
+     */
+    public function customAudiencePush($advertiser_id, array $header, array $target_advertiser_ids, array $custom_audience_id)
+    {
+        if (empty($target_advertiser_ids))
+            throw new Exception('目标广告主列表不能为空');
+        if (count($target_advertiser_ids) > 100)
+            throw new Exception('目标广告主列表不能超过100条');
+
+        $param = [
+            'advertiser_id' => $advertiser_id,
+            'custom_audience_id' => $custom_audience_id,
+            'target_advertiser_ids' => $target_advertiser_ids,
+        ];
+
+        return $this->srv_jrtt->customAudiencePush($param, $header);
+    }
+
 }

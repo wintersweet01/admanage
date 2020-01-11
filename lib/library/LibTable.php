@@ -125,7 +125,8 @@ class LibTable
     static $directional_package = 'directional_package';
     static $batch_create_ad = 'batch_create_ad'; // 批量创建广告
     static $jrtt_ad_push_record = 'jrtt_ad_push_record';
-
+    static $monitor_convert = 'monitor_convert';
+    static $jrtt_custom_audience = 'jrtt_custom_audience';
     //联运分发
     static $platform = 'platform';
     static $platform_game = 'platform_game';

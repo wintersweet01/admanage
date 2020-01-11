@@ -385,4 +385,95 @@ class SrvJrttAction extends SrvAdPlatformAction
         $url = $this->getRequestUrl('create_audience_package');
         return $this->_resultHandle($this->send($url, $param, $header, 'create_audience_package'));
     }
+
+    /**
+     * 创建转化id
+     * @param array $param
+     * @param array $header
+     * @return mixed
+     * @throws Exception
+     */
+    public function createAdConvert(array $param, array $header)
+    {
+        $this->checkParams($param, 'create_ad_convert');
+        $url = $this->getRequestUrl('create_ad_convert');
+        return $this->_resultHandle($this->send($url, $param, $header, 'create_ad_convert'));
+    }
+
+    /**
+     * 上传人群包源文件
+     * @param array $param
+     * @param array $header
+     * @param array $files
+     * @return mixed
+     * @throws Exception
+     */
+    public function uploadDataSource(array $param, array $header, array $files)
+    {
+        $this->checkParams($param, 'upload_data_source');
+        $url = $this->getRequestUrl('upload_data_source');
+        $this->writeLog('upload_data_source', $param, 'request');
+        $response = LibUtil::request($url, $param, 30, '', $header, '', false, $files);
+        $response['result'] = json_decode($response['result'], true);
+        if ($response['code'] != '200')
+            throw new Exception('第三方接口请求失败，curl错误码:' . $response['code'] . '。请求地址：' . $url);
+        $this->writeLog('upload_data_source', $response, 'response');
+        return $this->_resultHandle($response['result']);
+    }
+
+    /**
+     * 创建人群包数据源
+     * @param array $param
+     * @param $header
+     * @return mixed
+     * @throws Exception
+     */
+    public function createDataSource(array $param, $header)
+    {
+        $this->checkParams($param, 'create_data_source');
+        $url = $this->getRequestUrl('create_data_source');
+        return $this->_resultHandle($this->send($url, $param, $header, 'create_data_source'));
+    }
+
+    /**
+     * 获取数据源详细信息
+     * @param array $param
+     * @param array $header
+     * @return mixed
+     * @throws Exception
+     */
+    public function dataSourceRead(array $param, array $header)
+    {
+        $this->checkParams($param, 'data_source_read');
+        $url = $this->getRequestUrl('data_source_read') . '?' . http_build_query($param);
+        return $this->_resultHandle($this->send($url, [], $header, 'data_source_read'));
+    }
+
+    /**
+     * 发布人群包
+     * @param array $param
+     * @param array $header
+     * @return array
+     * @throws Exception
+     */
+    public function customAudiencePublish(array $param, array $header)
+    {
+        $this->checkParams($param, 'custom_audience_publish');
+        $url = $this->getRequestUrl('custom_audience_publish');
+        return $this->send($url, $param, $header, 'custom_audience_publish');
+    }
+
+    /**
+     * 推送人群包
+     * @param array $param
+     * @param array $header
+     * @return mixed
+     * @throws Exception
+     */
+    public function customAudiencePush(array $param, array $header)
+    {
+        $this->checkParams($param, 'custom_audience_push');
+        $url = $this->getRequestUrl('custom_audience_push');
+        return $this->_resultHandle($this->send($url, $param, $header, 'custom_audience_push'));
+    }
 }
